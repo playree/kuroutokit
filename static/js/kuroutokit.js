@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function kkReady() {
     document.addEventListener("click", (event) => {
-        console.log(event);
+        // Accordion.
         if(event.target.classList.contains("kk-accordion")) {
             const ac = event.target.nextElementSibling;
             if(event.target.hasAttribute("closed")) {
@@ -18,4 +18,10 @@ function kkReady() {
             }
         }
     }, false);
+    [].forEach.call(document.getElementsByClassName("kk-accordion"), (el) => {
+        if(!el.hasAttribute("closed")) {
+            const ac = el.nextElementSibling;
+            ac.style.height = ac.scrollHeight + "px";
+        }
+    });
 }
