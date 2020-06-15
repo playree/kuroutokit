@@ -8,7 +8,7 @@
  */
 
 /*
- * Custom properties.
+ * Root Custom properties.
  */
 :root {
   --kk-font-family: "Kosugi Maru", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, 
@@ -72,7 +72,7 @@ svg {
 }
 
 /*
- * Containers.
+ * Container.
  * s:720px, m:1200px, l:1600px
  */
 .kk-container,
@@ -146,10 +146,15 @@ svg {
 
 /*
  * SideNav.
+ * ==== Custom properties.
+ * --kk-sidenav-width
+ * --kk-sidenav-bg-color
+ * --kk-sidenav-icon
  */
 .kk-sidenav-container {
-  --kk-sidenav-width: 300px;
-  --kk-sidenav-bg-color: #f4f4f4;
+  --kk-sidenav-width: 280px;
+  --kk-sidenav-bg-color: #f8f8f8;
+  --kk-sidenav-icon: var(--kk-svg-menu);
 }
 .kk-sidenav-menu {
   position: fixed;
@@ -182,11 +187,13 @@ svg {
     position: absolute;
     top: 4px;
     left: calc(4px +  var(--kk-sidenav-width));
-    content: var(--kk-svg-menu);
+    content: var(--kk-sidenav-icon);
     height: 24px;
     width: 32px;
+    color: #888;
     background-color: #e8e8ff;
     text-align: center;
+    line-height: 24px;
     opacity: 0.8;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
   }
@@ -198,8 +205,12 @@ svg {
   list-style: none;
   padding-left: 0;
 }
+.kk-sidenav-menu>ul {
+  padding-right: 8px;
+}
 .kk-sidenav-menu>ul li {
   padding-left: 24px;
+  font-size: var(--kk-font-size-small);
   line-height: 1.6;
   color: var(--kk-font-color-mute);
 }
@@ -217,6 +228,6 @@ svg {
   color: var(--kk-font-color-base);
 }
 .kk-sidenav-menu>ul li:empty {
-  border-top: solid 1px #fff;
+  border-top: solid 1px #ddd;
   margin: 8px;
 }
