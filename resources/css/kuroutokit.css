@@ -140,12 +140,26 @@ svg {
 .kk-margin-top,
 .kk-margin-top-m { margin-top: 1.0rem; }
 .kk-margin-top-l { margin-top: 2.0rem; }
+.kk-margin-child-s>* { margin: 0.25rem; }
+.kk-margin-child>*,
+.kk-margin-child-m>* { margin: 0.5rem; }
+.kk-margin-child-l>* { margin: 1.0rem; }
 
 /*
- * Text.
+ * Align
  */
-.kk-text-center {
-  text-align: center;
+.kk-align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kk-align-center-v {
+  display: flex;
+  align-items: center;
+}
+.kk-align-center-h {
+  display: flex;
+  justify-content: center;
 }
 
 /*
