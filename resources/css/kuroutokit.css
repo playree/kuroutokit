@@ -268,10 +268,14 @@ svg {
  * Box / CodeBox.
  */
 .kk-box,
+.kk-box-dashed,
 .kk-codebox {
   border: solid 1px var(--kk-border-color-base);
   border-radius: var(--kk-border-radius-base);
   padding: 8px;
+}
+.kk-box-dashed {
+  border-style: dashed;
 }
 .kk-codebox[title]::before {
   content: attr(title);
@@ -290,4 +294,26 @@ svg {
 .kk-codebox[type="dark"] {
   background-color: #244;
   color: #fff;
+}
+
+/*
+ * With SubText
+ */
+.kk-withsubtext,
+.kk-withsubtext-end {
+    display: inline-block;
+}
+.kk-withsubtext>p,
+.kk-withsubtext-end>p {
+    font-size: var(--kk-font-size-small);
+    font-weight: normal;
+    color: var(--kk-font-color-mute);
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.kk-withsubtext-end>p {
+    text-align: end;
+}
+.kk-withsubtext>p::before {
+    content: "\0bb\00a0";
 }
