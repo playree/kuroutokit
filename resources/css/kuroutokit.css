@@ -14,7 +14,7 @@
   --kk-font-family: "Kosugi Maru", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, 
                     "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", 
                     Verdana, "メイリオ", Meiryo, sans-serif;
-  --kk-font-family-head: var(--kk-font-family);
+  --kk-font-family-heading: var(--kk-font-family);
   --kk-font-family-code: "Kosugi Maru", "BIZ UDGothic", SFMono-Regular, Consolas, "Roboto Mono", "Courier New", 
                          Meiryo, monospace;
   --kk-font-size-base: 16px;
@@ -40,7 +40,7 @@ body {
   margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--kk-font-family-head);
+  font-family: var(--kk-font-family-heading);
 }
 code, pre {
   font-family: var(--kk-font-family-code);
@@ -126,6 +126,13 @@ svg {
 .kk-row10 { grid-row: span 10; }
 
 /*
+ * Paragraph.
+ */
+[par] {
+  margin-left: 1rem;
+}
+
+/*
  * Padding.
  */
 .kk-padding-s { padding: 0.5rem; }
@@ -140,6 +147,10 @@ svg {
 .kk-margin-top,
 .kk-margin-top-m { margin-top: 1.0rem; }
 .kk-margin-top-l { margin-top: 2.0rem; }
+.kk-margin-left-s { margin-left: 0.5rem; }
+.kk-margin-left,
+.kk-margin-left-m { margin-left: 1.0rem; }
+.kk-margin-left-l { margin-left: 2.0rem; }
 .kk-margin-child-s>* { margin: 0.25rem; }
 .kk-margin-child>*,
 .kk-margin-child-m>* { margin: 0.5rem; }
@@ -160,6 +171,33 @@ svg {
 .kk-align-center-h {
   display: flex;
   justify-content: center;
+}
+
+/*
+ * Heading Line.
+ */
+.kk-heading-line {
+  overflow: hidden;
+}
+.kk-heading-line>* {
+  display: inline-block;
+  position: relative;
+}
+.kk-heading-line>::before,
+.kk-heading-line>::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - ((0.2px + 0.05em) / 2));
+  width: 1980px;
+  border-bottom: calc(0.2px + 0.05em) solid var(--kk-border-color-base)
+}
+.kk-heading-line>::before {
+  right: 100%;
+  margin-right: calc(5px + 0.3em);
+}
+.kk-heading-line>::after {
+  left: 100%;
+  margin-left: calc(5px + 0.3em);
 }
 
 /*
