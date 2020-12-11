@@ -135,26 +135,26 @@ svg {
 /*
  * Padding.
  */
-.kk-padding-s { padding: 0.5rem; }
+.kk-padding-s { padding: 0.5rem !important; }
 .kk-padding,
-.kk-padding-m { padding: 1.0rem; }
-.kk-padding-l { padding: 2.0rem; }
+.kk-padding-m { padding: 1.0rem !important; }
+.kk-padding-l { padding: 2.0rem !important; }
 
 /*
  * Margin.
  */
-.kk-margin-top-s { margin-top: 0.5rem; }
+.kk-margin-top-s { margin-top: 0.5rem !important; }
 .kk-margin-top,
-.kk-margin-top-m { margin-top: 1.0rem; }
-.kk-margin-top-l { margin-top: 2.0rem; }
-.kk-margin-left-s { margin-left: 0.5rem; }
+.kk-margin-top-m { margin-top: 1.0rem !important; }
+.kk-margin-top-l { margin-top: 2.0rem !important; }
+.kk-margin-left-s { margin-left: 0.5rem !important; }
 .kk-margin-left,
-.kk-margin-left-m { margin-left: 1.0rem; }
-.kk-margin-left-l { margin-left: 2.0rem; }
-.kk-margin-child-s>* { margin: 0.25rem; }
+.kk-margin-left-m { margin-left: 1.0rem !important; }
+.kk-margin-left-l { margin-left: 2.0rem !important; }
+.kk-margin-child-s>* { margin: 0.25rem !important; }
 .kk-margin-child>*,
-.kk-margin-child-m>* { margin: 0.5rem; }
-.kk-margin-child-l>* { margin: 1.0rem; }
+.kk-margin-child-m>* { margin: 0.5rem !important; }
+.kk-margin-child-l>* { margin: 1.0rem !important; }
 
 /*
  * Align
