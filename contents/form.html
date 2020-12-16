@@ -9,27 +9,42 @@
     <h1>Form Parts</h1>
 </div>
 <div class="kk-container-m">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Input<p>インプットボックス</p></span></h2>
+    <h2 class="kk-heading-line"><span class="kk-withsubtext">Input<p>インプット</p></span></h2>
     <div par>
 	    <pre class="kk-codebox" type="dark" title="HTML">
-<code>&lt;div class=&quot;kk-container-s kk-margin-top&quot;&gt;
-    &lt;div class=&quot;kk-box kk-align-center&quot; style=&quot;background-color: yellow;&quot;&gt;
-        kk-container-s (max-width: 720px)
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;kk-container-m kk-margin-top&quot;&gt;
-    &lt;div class=&quot;kk-box kk-align-center&quot; style=&quot;background-color: yellow;&quot;&gt;
-        kk-container-m (max-width:1200px)
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;kk-container-l kk-margin-top&quot;&gt;
-    &lt;div class=&quot;kk-box kk-align-center&quot; style=&quot;background-color: yellow;&quot;&gt;
-        kk-container-l (max-width:1600px)
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        <div class="kk-container-s kk-margin-top">
-            <input class="kk-input kk-margin-top" type="text" value="abcあいう">
-            <input class="kk-input kk-margin-top" type="text" value="123" disabled>
+<code>&lt;input class=&quot;kk-input kk-margin-top&quot; type=&quot;text&quot; value=&quot;abc123あいう&quot;&gt;
+&lt;input class=&quot;kk-input kk-margin-top&quot; type=&quot;text&quot; value=&quot;Disabled&quot; disabled&gt;</code></pre>
+        <div grid-col>
+            <div class="kk-col5">
+                <input class="kk-input kk-margin-top" type="text" value="abc123あいう">
+                <input class="kk-input kk-margin-top" type="text" value="Disabled" disabled>
+            </div>
+            <div class="kk-col5">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="kk-container-m">
+    <h2 class="kk-heading-line"><span class="kk-withsubtext">Button<p>ボタン</p></span></h2>
+    <div par>
+	    <pre class="kk-codebox" type="dark" title="HTML">
+<code>&lt;button class=&quot;kk-button kk-margin-top&quot; type=&quot;submit&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;kk-button kk-margin-top&quot; type=&quot;submit&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;kk-button kk-margin-top&quot; theme=&quot;primary&quot; type=&quot;submit&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;kk-button kk-margin-top&quot; theme=&quot;secondary&quot; type=&quot;submit&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;kk-button kk-margin-top&quot; theme=&quot;caution&quot; type=&quot;submit&quot;&gt;Caution&lt;/button&gt;</code></pre>
+        <div grid-col>
+            <div class="kk-col5">
+                <button class="kk-button kk-margin-top" type="submit">Default</button>
+                <button class="kk-button kk-margin-top" type="submit" disabled>Disabled</button>
+                <button class="kk-button kk-margin-top" theme="primary" type="submit">Primary</button>
+                <button class="kk-button kk-margin-top" theme="secondary" type="submit">Secondary</button>
+                <button class="kk-button kk-margin-top" theme="caution" type="submit">Caution</button>
+            </div>
+            <div class="kk-col5">
+
+            </div>
         </div>
     </div>
 </div>
