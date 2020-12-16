@@ -1,0 +1,37 @@
+<!--params
+    {
+        "title":"KUTOUTO Kit - Form Parts"
+    }
+-->
+{{extends "_parts/base.html"}}
+{{define "content"}}
+<div class="kk-container-m">
+    <h1>Form Parts</h1>
+</div>
+<div class="kk-container-m">
+    <h2 class="kk-heading-line"><span class="kk-withsubtext">Input<p>インプットボックス</p></span></h2>
+    <div par>
+	    <pre class="kk-codebox" type="dark" title="HTML">
+<code>&lt;div class=&quot;kk-container-s kk-margin-top&quot;&gt;
+    &lt;div class=&quot;kk-box kk-align-center&quot; style=&quot;background-color: yellow;&quot;&gt;
+        kk-container-s (max-width: 720px)
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-container-m kk-margin-top&quot;&gt;
+    &lt;div class=&quot;kk-box kk-align-center&quot; style=&quot;background-color: yellow;&quot;&gt;
+        kk-container-m (max-width:1200px)
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-container-l kk-margin-top&quot;&gt;
+    &lt;div class=&quot;kk-box kk-align-center&quot; style=&quot;background-color: yellow;&quot;&gt;
+        kk-container-l (max-width:1600px)
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        <div class="kk-container-s kk-margin-top">
+            <input class="kk-input kk-margin-top" type="text" value="abcあいう">
+            <input class="kk-input kk-margin-top" type="text" value="123" disabled>
+        </div>
+    </div>
+</div>
+<br><br><br>
+{{end}}
