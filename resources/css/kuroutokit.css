@@ -20,7 +20,8 @@
   --kk-font-size-base: 16px;
   --kk-font-size-small: 0.875rem;
   --kk-font-color-base: #333;
-  --kk-font-color-form: #666;
+  --kk-font-color-light: #666;
+  --kk-font-color-form: var(--kk-font-color-light);
   --kk-font-color-mute: #888;
   --kk-font-color-inverse: #fff;
 
@@ -30,11 +31,11 @@
   --kk-border-radius-base: 2px 2px;
 
   --kk-color-primary: #29f;
-  --kk-color-primary-active: #18f;
+  --kk-color-primary-active: #07f;
   --kk-color-secondary: #444;
-  --kk-color-secondary-active: #333;
+  --kk-color-secondary-active: #222;
   --kk-color-caution: #f33;
-  --kk-color-caution-active: #f11;
+  --kk-color-caution-active: #f00;
 
   --kk-disabled-color: #fff;
   --kk-disabled-bg-color: #eee;
@@ -138,9 +139,84 @@ svg {
 .kk-row8  { grid-row: span 8; }
 .kk-row9  { grid-row: span 9; }
 .kk-row10 { grid-row: span 10; }
+@media (min-width: 640px) {
+  .kk-col1\@s  { grid-column: span 1; }
+  .kk-col2\@s  { grid-column: span 2; }
+  .kk-col3\@s  { grid-column: span 3; }
+  .kk-col4\@s  { grid-column: span 4; }
+  .kk-col5\@s  { grid-column: span 5; }
+  .kk-col6\@s  { grid-column: span 6; }
+  .kk-col7\@s  { grid-column: span 7; }
+  .kk-col8\@s  { grid-column: span 8; }
+  .kk-col9\@s  { grid-column: span 9; }
+  .kk-col10\@s { grid-column: span 10; }
+}
+@media (min-width: 960px) {
+  .kk-col1\@m  { grid-column: span 1; }
+  .kk-col2\@m  { grid-column: span 2; }
+  .kk-col3\@m  { grid-column: span 3; }
+  .kk-col4\@m  { grid-column: span 4; }
+  .kk-col5\@m  { grid-column: span 5; }
+  .kk-col6\@m  { grid-column: span 6; }
+  .kk-col7\@m  { grid-column: span 7; }
+  .kk-col8\@m  { grid-column: span 8; }
+  .kk-col9\@m  { grid-column: span 9; }
+  .kk-col10\@m { grid-column: span 10; }
+}
+@media (min-width: 1200px) {
+  .kk-col1\@l  { grid-column: span 1; }
+  .kk-col2\@l  { grid-column: span 2; }
+  .kk-col3\@l  { grid-column: span 3; }
+  .kk-col4\@l  { grid-column: span 4; }
+  .kk-col5\@l  { grid-column: span 5; }
+  .kk-col6\@l  { grid-column: span 6; }
+  .kk-col7\@l  { grid-column: span 7; }
+  .kk-col8\@l  { grid-column: span 8; }
+  .kk-col9\@l  { grid-column: span 9; }
+  .kk-col10\@l { grid-column: span 10; }
+}
+@media (min-width: 1600px) {
+  .kk-col1\@xl  { grid-column: span 1; }
+  .kk-col2\@xl  { grid-column: span 2; }
+  .kk-col3\@xl  { grid-column: span 3; }
+  .kk-col4\@xl  { grid-column: span 4; }
+  .kk-col5\@xl  { grid-column: span 5; }
+  .kk-col6\@xl  { grid-column: span 6; }
+  .kk-col7\@xl  { grid-column: span 7; }
+  .kk-col8\@xl  { grid-column: span 8; }
+  .kk-col9\@xl  { grid-column: span 9; }
+  .kk-col10\@xl { grid-column: span 10; }
+}
 
 /*
- * Form Parts
+ * Table.
+ */
+.kk-table {
+  width: 100%;
+  border-spacing: 0;
+}
+.kk-table caption {
+  color: var(--kk-font-color-light);
+  text-align: left;
+  text-decoration: underline;
+}
+.kk-table th, .kk-table td {
+  padding: 0.25em 0.5em;
+}
+.kk-table th {
+  color: var(--kk-font-color-light);
+  font-weight: normal;
+  text-align: left;
+}
+.kk-table[theme="hline"] th {
+  border-bottom: 3px double var(--kk-border-color-base);
+}
+.kk-table[theme="hline"] tr:not(:first-child)>td {
+  border-top: 1px solid var(--kk-border-color-base);
+}
+
+/*
+ * Form Parts.
  */
 .kk-input {
   outline: none;
