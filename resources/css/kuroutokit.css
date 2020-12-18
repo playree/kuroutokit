@@ -20,7 +20,7 @@
   --kk-font-size-base: 16px;
   --kk-font-size-small: 0.875rem;
   --kk-font-color-base: #333;
-  --kk-font-color-light: #666;
+  --kk-font-color-light: #888;
   --kk-font-color-form: var(--kk-font-color-light);
   --kk-font-color-mute: #888;
   --kk-font-color-inverse: #fff;
@@ -197,6 +197,7 @@ svg {
 }
 .kk-table caption {
   color: var(--kk-font-color-light);
+  margin-bottom: 0.5em;
   text-align: left;
   text-decoration: underline;
 }
@@ -208,11 +209,14 @@ svg {
   font-weight: normal;
   text-align: left;
 }
-.kk-table[theme="hline"] th {
+.kk-table[theme="hline"] th, .kk-table[theme="cross"] th {
   border-bottom: 3px double var(--kk-border-color-base);
 }
-.kk-table[theme="hline"] tr:not(:first-child)>td {
+.kk-table[theme="hline"] tr:not(:first-child)>td, .kk-table[theme="cross"] tr:not(:first-child)>td {
   border-top: 1px solid var(--kk-border-color-base);
+}
+.kk-table[theme="cross"] th:not(:first-child), .kk-table[theme="cross"] td:not(:first-child) {
+  border-left: 1px solid var(--kk-border-color-base);
 }
 
 /*

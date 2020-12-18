@@ -12,9 +12,30 @@
     <h2 class="kk-heading-line"><span class="kk-withsubtext">Table<p>デフォルトテーブル</p></span></h2>
     <div par>
 	    <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;table class=&quot;kk-table&quot;&gt;
+    &lt;caption&gt;Default Table&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header&lt;/th&gt;
+            &lt;th&gt;ヘッダ&lt;/th&gt;
+            &lt;th&gt;123456789&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data1&lt;/td&gt;
+            &lt;td&gt;データ1&lt;/td&gt;
+            &lt;td&gt;1111111111&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data2&lt;/td&gt;
+            &lt;td&gt;データ2&lt;/td&gt;
+            &lt;td&gt;2222222222&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
         <table class="kk-table">
-            <caption>Default</caption>
+            <caption>Default Table</caption>
             <thead>
                 <tr>
                     <th>Header</th>
@@ -24,9 +45,14 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Data</td>
-                    <td>データ</td>
-                    <td>123456789</td>
+                    <td>Data1</td>
+                    <td>データ1</td>
+                    <td>1111111111</td>
+                </tr>
+                <tr>
+                    <td>Data2</td>
+                    <td>データ2</td>
+                    <td>2222222222</td>
                 </tr>
             </tbody>
         </table>
@@ -36,9 +62,30 @@
     <h2 class="kk-heading-line"><span class="kk-withsubtext">Table H-Line<p>水平ラインテーブル</p></span></h2>
     <div par>
 	    <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;table class=&quot;kk-table&quot; theme=&quot;hline&quot;&gt;
+    &lt;caption&gt;H-Line Table&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header&lt;/th&gt;
+            &lt;th&gt;ヘッダ&lt;/th&gt;
+            &lt;th&gt;123456789&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data1&lt;/td&gt;
+            &lt;td&gt;データ1&lt;/td&gt;
+            &lt;td&gt;1111111111&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data2&lt;/td&gt;
+            &lt;td&gt;データ2&lt;/td&gt;
+            &lt;td&gt;2222222222&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
         <table class="kk-table" theme="hline">
-            <caption>H-Line</caption>
+            <caption>H-Line Table</caption>
             <thead>
                 <tr>
                     <th>Header</th>
@@ -48,14 +95,64 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Data</td>
-                    <td>データ</td>
-                    <td>123456789</td>
+                    <td>Data1</td>
+                    <td>データ1</td>
+                    <td>1111111111</td>
                 </tr>
                 <tr>
-                    <td>Data</td>
-                    <td>データ</td>
-                    <td>123456789</td>
+                    <td>Data2</td>
+                    <td>データ2</td>
+                    <td>2222222222</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="kk-container-m">
+    <h2 class="kk-heading-line"><span class="kk-withsubtext">Table Cross-Line<p>交差ラインテーブル</p></span></h2>
+    <div par>
+	    <pre class="kk-codebox" type="dark" title="HTML">
+<code>&lt;table class=&quot;kk-table&quot; theme=&quot;cross&quot;&gt;
+    &lt;caption&gt;H-Line Table&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header&lt;/th&gt;
+            &lt;th&gt;ヘッダ&lt;/th&gt;
+            &lt;th&gt;123456789&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data1&lt;/td&gt;
+            &lt;td&gt;データ1&lt;/td&gt;
+            &lt;td&gt;1111111111&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data2&lt;/td&gt;
+            &lt;td&gt;データ2&lt;/td&gt;
+            &lt;td&gt;2222222222&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        <table class="kk-table" theme="cross">
+            <caption>Cross Table</caption>
+            <thead>
+                <tr>
+                    <th>Header</th>
+                    <th>ヘッダ</th>
+                    <th>123456789</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data1</td>
+                    <td>データ1</td>
+                    <td>1111111111</td>
+                </tr>
+                <tr>
+                    <td>Data2</td>
+                    <td>データ2</td>
+                    <td>2222222222</td>
                 </tr>
             </tbody>
         </table>
