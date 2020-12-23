@@ -392,13 +392,26 @@ svg {
  * SideNav.
  * ==== Custom properties.
  * --kk-sidenav-width
- * --kk-sidenav-bg-color
+ * --kk-sidenav-menu-bg-color
+ * --kk-sidenav-main-bg-color
  * --kk-sidenav-icon
+ * --kk-sidenav-line-height
+ *
+ * --kk-sidenav-select-color
+ * --kk-sidenav-select-bg-color
  */
 .kk-sidenav-container {
   --kk-sidenav-width: 280px;
-  --kk-sidenav-bg-color: #f8f8f8;
+  --kk-sidenav-menu-bg-color: #f8f8f8;
+  --kk-sidenav-main-bg-color: #fff;
   --kk-sidenav-icon: var(--kk-svg-menu);
+  --kk-sidenav-line-height: 24px;
+}
+.kk-sidenav-container[theme="panel"] {
+  --kk-sidenav-menu-bg-color: #fff;
+  --kk-sidenav-main-bg-color: #f8f8f8;
+  --kk-sidenav-select-color: #bbf;
+  --kk-sidenav-select-bg-color: #eef;
 }
 .kk-sidenav-menu {
   position: fixed;
@@ -406,7 +419,7 @@ svg {
   bottom: 0;
   left: 0;
   width: var(--kk-sidenav-width);
-  background-color: var(--kk-sidenav-bg-color);
+  background-color: var(--kk-sidenav-menu-bg-color);
   z-index: 99;
   transition: left .3s;
 }
@@ -417,6 +430,7 @@ svg {
   bottom: 0;
   right: 0;
   left: var(--kk-sidenav-width);
+  background-color: var(--kk-sidenav-main-bg-color);
   overflow: auto;
   transition: left .3s;
 }
@@ -455,8 +469,9 @@ svg {
 .kk-sidenav-menu>ul li {
   padding-left: 24px;
   font-size: var(--kk-font-size-small);
-  line-height: 1.6;
+  line-height: var(--kk-sidenav-line-height);
   color: var(--kk-font-color-mute);
+  background-color: var(--kk-sidenav-menu-bg-color);
 }
 .kk-sidenav-menu>ul li>a {
   color: unset;
@@ -468,8 +483,18 @@ svg {
   position: absolute;
   margin-left: -16px;
 }
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul li:hover::before {
+  content: "";
+  margin-left: -24px;
+  width: 6px;
+  height: var(--kk-sidenav-line-height);
+  background-color: var(--kk-sidenav-select-color);
+}
 .kk-sidenav-menu>ul li:hover {
   color: var(--kk-font-color-base);
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul li:hover {
+  background-color: var(--kk-sidenav-select-bg-color);
 }
 .kk-sidenav-menu>ul li:empty {
   border-top: solid 1px var(--kk-border-color-base);
