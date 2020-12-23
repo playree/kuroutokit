@@ -405,13 +405,14 @@ svg {
   --kk-sidenav-menu-bg-color: #f8f8f8;
   --kk-sidenav-main-bg-color: #fff;
   --kk-sidenav-icon: var(--kk-svg-menu);
-  --kk-sidenav-line-height: 24px;
+  --kk-sidenav-line-height: 22px;
 }
 .kk-sidenav-container[theme="panel"] {
   --kk-sidenav-menu-bg-color: #fff;
   --kk-sidenav-main-bg-color: #f8f8f8;
   --kk-sidenav-select-color: #bbf;
   --kk-sidenav-select-bg-color: #eef;
+  --kk-sidenav-line-height: 28px;
 }
 .kk-sidenav-menu {
   position: fixed;
@@ -466,12 +467,25 @@ svg {
 .kk-sidenav-menu>ul {
   padding-right: 8px;
 }
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul {
+  padding-right: 0;
+}
 .kk-sidenav-menu>ul li {
   padding-left: 24px;
   font-size: var(--kk-font-size-small);
   line-height: var(--kk-sidenav-line-height);
   color: var(--kk-font-color-mute);
   background-color: var(--kk-sidenav-menu-bg-color);
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul li {
+  border: solid 1px var(--kk-border-color-base);
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul>li:not(:last-child) {
+  border-bottom: none;
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul ul li {
+  border-right: none;
+  border-bottom: none;
 }
 .kk-sidenav-menu>ul li>a {
   color: unset;
@@ -499,6 +513,10 @@ svg {
 .kk-sidenav-menu>ul li:empty {
   border-top: solid 1px var(--kk-border-color-base);
   margin: 8px;
+}
+.kk-sidenav-container[theme="panel"] ul li:empty {
+  border-top: solid 1px var(--kk-border-color-base);
+  margin: 0 0 8px 0;
 }
 
 /*
