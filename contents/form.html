@@ -5,25 +5,28 @@
 -->
 {{extends "_parts/base.html"}}
 {{define "content"}}
-<div class="kk-container-m">
+<div class="kk-container">
     <h1>Form Parts</h1>
 </div>
-<div class="kk-container-m">
+<div class="kk-container">
     <h2 class="kk-heading-line"><span class="kk-withsubtext">Input<p>インプット</p></span></h2>
     <div par>
 	    <pre class="kk-codebox" type="dark" title="HTML">
 <code>&lt;input class=&quot;kk-input kk-margin-top&quot; type=&quot;text&quot; value=&quot;abc123あいう&quot;&gt;
-&lt;input class=&quot;kk-input kk-margin-top&quot; type=&quot;text&quot; value=&quot;Disabled&quot; disabled&gt;</code></pre>
+&lt;input class=&quot;kk-input kk-margin-top&quot; type=&quot;text&quot; value=&quot;Disabled&quot; disabled&gt;
+&lt;input class=&quot;kk-inpu kk-margin-top&quot; size-s type=&quot;text&quot; value=&quot;size-s&quot;&gt;
+&lt;input class=&quot;kk-input kk-margin-top&quot; size-l type=&quot;text&quot; value=&quot;size-l&quot;&gt;</code></pre>
         <div grid-col>
             <div class="kk-col5@m kk-col10">
                 <input class="kk-input kk-margin-top" type="text" value="abc123あいう">
                 <input class="kk-input kk-margin-top" type="text" value="Disabled" disabled>
+                <input class="kk-input kk-margin-top" size-s type="text" value="size-s">
+                <input class="kk-input kk-margin-top" size-l type="text" value="size-l">
             </div>
-            
         </div>
     </div>
 </div>
-<div class="kk-container-m">
+<div class="kk-container">
     <h2 class="kk-heading-line"><span class="kk-withsubtext">Button<p>ボタン</p></span></h2>
     <div par>
 	    <pre class="kk-codebox" type="dark" title="HTML">
@@ -31,7 +34,9 @@
 &lt;button class=&quot;kk-button kk-margin-top&quot; type=&quot;submit&quot; disabled&gt;Disabled&lt;/button&gt;
 &lt;button class=&quot;kk-button kk-margin-top&quot; theme=&quot;primary&quot; type=&quot;submit&quot;&gt;Primary&lt;/button&gt;
 &lt;button class=&quot;kk-button kk-margin-top&quot; theme=&quot;secondary&quot; type=&quot;submit&quot;&gt;Secondary&lt;/button&gt;
-&lt;button class=&quot;kk-button kk-margin-top&quot; theme=&quot;caution&quot; type=&quot;submit&quot;&gt;Caution&lt;/button&gt;</code></pre>
+&lt;button class=&quot;kk-button kk-margin-top&quot; theme=&quot;caution&quot; type=&quot;submit&quot;&gt;Caution&lt;/button&gt;
+&lt;button class=&quot;kk-button kk-margin-top&quot; size-s theme=&quot;primary&quot; type=&quot;submit&quot;&gt;size-s&lt;/button&gt;
+&lt;button class=&quot;kk-button kk-margin-top&quot; size-l theme=&quot;primary&quot; type=&quot;submit&quot;&gt;size-l&lt;/button&gt;</code></pre>
         <div grid-col>
             <div class="kk-col5@m kk-col10">
                 <button class="kk-button kk-margin-top" type="submit">Default</button>
@@ -39,6 +44,8 @@
                 <button class="kk-button kk-margin-top" theme="primary" type="submit">Primary</button>
                 <button class="kk-button kk-margin-top" theme="secondary" type="submit">Secondary</button>
                 <button class="kk-button kk-margin-top" theme="caution" type="submit">Caution</button>
+                <button class="kk-button kk-margin-top" size-s theme="primary" type="submit">size-s</button>
+                <button class="kk-button kk-margin-top" size-l theme="primary" type="submit">size-l</button>
             </div>
         </div>
     </div>
