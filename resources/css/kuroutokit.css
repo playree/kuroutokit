@@ -18,7 +18,8 @@
   --kk-font-family-code: "Kosugi Maru", "BIZ UDGothic", SFMono-Regular, Consolas, "Roboto Mono", "Courier New", 
                          Meiryo, monospace;
   --kk-font-size-base: 16px;
-  --kk-font-size-small: 0.875rem;
+  --kk-font-size-s: 0.875rem;
+  --kk-font-size-l: 1.25rem;
   --kk-font-color-base: #333;
   --kk-font-color-light: #888;
   --kk-font-color-form: var(--kk-font-color-light);
@@ -63,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 code, pre {
   font-family: var(--kk-font-family-code);
-  font-size: var(--kk-font-size-small);
+  font-size: var(--kk-font-size-s);
 }
 svg {
   fill: currentColor;
@@ -230,23 +231,53 @@ svg {
   color: var(--kk-font-color-form);
   height: var(--kk-form-obj-height-m);
   max-width: 100%;
-  width: calc(100% - 1em);
-  padding: 0 0.5em;
+  width: calc(100% - 1rem);
+  padding: 0 0.5rem;
   border: 1px solid var(--kk-border-color-base);
   border-radius: var(--kk-border-radius-base);
-  transition: .2s ease-in-out;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
 }
 .kk-input[size-s] {
   height: var(--kk-form-obj-height-s);
+  font-size: var(--kk-font-size-s);
 }
 .kk-input[size-l] {
   height: var(--kk-form-obj-height-l);
+  font-size: var(--kk-font-size-l);
 }
 .kk-input:focus {
   border-color: var(--kk-border-radius-focus);
 }
 .kk-input:disabled {
   background-color: var(--kk-disabled-bg-color);
+}
+
+.kk-input-field {
+  position: relative;
+  margin-top: 2em;
+}
+.kk-input-label {
+  position: absolute;
+  top: 0.75em;
+  left: 0.5em;
+  color: #aaa;
+  line-height: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.kk-input[size-l]+.kk-input-label {
+  font-size: var(--kk-font-size-l);
+}
+.kk-input[size-s]+.kk-input-label {
+  font-size: var(--kk-font-size-s);
+}
+.kk-input-field>input:focus+.kk-input-label,
+.kk-input-field>input[kk-active]+.kk-input-label {
+  top: -1.5em;
+  left: 0.25em;
+  font-size: 0.8em;
+  color: var(--kk-font-color-light);
 }
 
 .kk-button {
@@ -258,13 +289,16 @@ svg {
   padding: 0 0.5em;
   border: 1px solid var(--kk-border-color-base);
   border-radius: var(--kk-border-radius-base);
+  -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 .kk-button[size-s] {
   height: var(--kk-form-obj-height-s);
+  font-size: var(--kk-font-size-s);
 }
 .kk-button[size-l] {
   height: var(--kk-form-obj-height-l);
+  font-size: var(--kk-font-size-l);
 }
 .kk-button[theme] {
   color: var(--kk-font-color-inverse);
@@ -393,6 +427,7 @@ svg {
   cursor: pointer;
 }
 .kk-accordion+* {
+  -webkit-transition: height .3s;
   transition: height .3s;
   overflow-y: hidden;
 }
@@ -434,6 +469,7 @@ svg {
   width: var(--kk-sidenav-width);
   background-color: var(--kk-sidenav-menu-bg-color);
   z-index: 99;
+  -webkit-transition: left .3s;
   transition: left .3s;
 }
 .kk-sidenav-main {
@@ -445,6 +481,7 @@ svg {
   left: var(--kk-sidenav-width);
   background-color: var(--kk-sidenav-main-bg-color);
   overflow: auto;
+  -webkit-transition: left .3s;
   transition: left .3s;
 }
 @media (max-width: 959px) {
@@ -484,7 +521,7 @@ svg {
 }
 .kk-sidenav-menu>ul li {
   padding-left: 24px;
-  font-size: var(--kk-font-size-small);
+  font-size: var(--kk-font-size-s);
   line-height: var(--kk-sidenav-line-height);
   color: var(--kk-font-color-mute);
   background-color: var(--kk-sidenav-menu-bg-color);
@@ -572,7 +609,7 @@ svg {
 }
 .kk-withsubtext>p,
 .kk-withsubtext-end>p {
-    font-size: var(--kk-font-size-small);
+    font-size: var(--kk-font-size-s);
     font-weight: normal;
     color: var(--kk-font-color-mute);
     margin-top: 2px;

@@ -29,5 +29,24 @@
                 ac.style.height = ac.scrollHeight + 'px';
             }
         });
+
+        document.addEventListener("change", (event) => {
+            if(event.target.tagName == "INPUT") {
+                if(event.target.parentElement.classList.contains("kk-input-field")) {
+                    if(event.target.value == "") {
+                        event.target.removeAttribute("kk-active");
+                    } else {
+                        event.target.setAttribute("kk-active", "");
+                    }
+                }
+            }
+        }, false);
+        [].forEach.call(document.getElementsByTagName("INPUT"), (el) => {
+            if(el.parentElement.classList.contains("kk-input-field")) {
+                if(el.value != "") {
+                    el.setAttribute("kk-active", "");
+                }
+            }
+        });
     }
 })));
