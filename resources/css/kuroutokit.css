@@ -457,7 +457,7 @@ svg {
 .kk-sidenav-container[theme="panel"] {
   --kk-sidenav-menu-bg-color: #fff;
   --kk-sidenav-main-bg-color: #f8f8f8;
-  --kk-sidenav-select-color: #bbf;
+  --kk-sidenav-select-color: #88f;
   --kk-sidenav-select-bg-color: #eef;
   --kk-sidenav-line-height: 28px;
 }
@@ -549,8 +549,9 @@ svg {
 .kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul li:hover::before {
   content: "";
   margin-left: -24px;
+  margin-top: -1px;
   width: 6px;
-  height: var(--kk-sidenav-line-height);
+  height: calc(var(--kk-sidenav-line-height) + 2px);
   background-color: var(--kk-sidenav-select-color);
 }
 .kk-sidenav-menu>ul li:hover {
