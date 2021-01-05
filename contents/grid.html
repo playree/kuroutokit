@@ -25,7 +25,7 @@
     &lt;div class=&quot;kk-box-dashed kk-align-center kk-col1&quot;&gt;9&lt;/div&gt;
     &lt;div class=&quot;kk-box-dashed kk-align-center kk-col1&quot;&gt;10&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        <div class="kk-container kk-margin-top" grid-col>
+        <div class="kk-container kk-margin-top" style="background-color: white;" grid-col>
             {{range $i, $val := .roop10}}
             <div class="kk-box-dashed kk-align-center kk-col1">{{$val}}</div>
             {{end}}
@@ -49,7 +49,7 @@
     &lt;div class=&quot;kk-box-dashed kk-align-center kk-row1&quot;&gt;9&lt;/div&gt;
     &lt;div class=&quot;kk-box-dashed kk-align-center kk-row1&quot;&gt;10&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        <div class="kk-container kk-margin-top" style="height: 320px;" grid-row>
+        <div class="kk-container kk-margin-top" style="height: 320px; background-color: white;" grid-row>
             {{range $i, $val := .roop10}}
             <div class="kk-box-dashed kk-align-center kk-row1">{{$val}}</div>
             {{end}}
@@ -81,7 +81,7 @@
     &lt;div class=&quot;kk-box-dashed kk-align-center kk-row4&quot;&gt;row4&lt;/div&gt;
     &lt;div class=&quot;kk-box-dashed kk-align-center kk-row3&quot;&gt;row3&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        <div class="kk-container kk-margin-top" style="height: 320px;" grid>
+        <div class="kk-container kk-margin-top" style="height: 320px; background-color: white;" grid>
             <div class="kk-box-dashed kk-align-center kk-col1">col1</div>
             <div class="kk-box-dashed kk-align-center kk-col9">col9</div>
 
@@ -116,7 +116,7 @@
     <div par>
 	    <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <table style="width: 100%;">
+        <table class="kk-table" theme="hline" style="background-color: white;">
             <thead>
                 <tr>
                     <th>CLASS</th>
@@ -127,6 +127,18 @@
                 <tr>
                     <td>.kk-col1@s</td>
                     <td>640px 以上の場合のみ適用</td>
+                </tr>
+                <tr>
+                    <td>.kk-col1@m</td>
+                    <td>960px 以上の場合のみ適用</td>
+                </tr>
+                <tr>
+                    <td>.kk-col1@l</td>
+                    <td>1200px 以上の場合のみ適用</td>
+                </tr>
+                <tr>
+                    <td>.kk-col1@xl</td>
+                    <td>1600px 以上の場合のみ適用</td>
                 </tr>
             </tbody>
         </table>
