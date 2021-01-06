@@ -37,6 +37,7 @@
   --kk-color-secondary-active: #222;
   --kk-color-caution: #f33;
   --kk-color-caution-active: #f00;
+  --kk-color-select: #eef; 
 
   --kk-disabled-color: #fff;
   --kk-disabled-bg-color: #eee;
@@ -226,6 +227,9 @@ svg {
 }
 .kk-table[theme="cross"] th:not(:first-child), .kk-table[theme="cross"] td:not(:first-child) {
   border-left: 1px solid var(--kk-border-color-base);
+}
+.kk-table[hover]>tbody>tr:hover {
+  background-color: var(--kk-color-select);
 }
 
 /*
@@ -465,7 +469,7 @@ svg {
   --kk-sidenav-menu-bg-color: #fff;
   --kk-sidenav-main-bg-color: #f8f8f8;
   --kk-sidenav-select-color: #88f;
-  --kk-sidenav-select-bg-color: #eef;
+  --kk-sidenav-select-bg-color: var(--kk-color-select);
   --kk-sidenav-line-height: 28px;
 }
 .kk-sidenav-menu {
