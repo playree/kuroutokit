@@ -22,6 +22,7 @@
   --kk-font-size-l: 1.25rem;
   --kk-font-color-base: #333;
   --kk-font-color-light: #888;
+  --kk-font-color-superlight: #bbb;
   --kk-font-color-form: var(--kk-font-color-light);
   --kk-font-color-mute: #888;
   --kk-font-color-inverse: #fff;
@@ -235,12 +236,11 @@ svg {
 /*
  * Form Parts.
  */
-.kk-input {
+.kk-input, .kk-textarea {
   outline: none;
   -webkit-appearance: none;
   font: inherit;
   color: var(--kk-font-color-form);
-  height: var(--kk-form-obj-height-m);
   max-width: 100%;
   width: calc(100% - 1rem);
   padding: 0 0.5rem;
@@ -249,18 +249,30 @@ svg {
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
 }
+.kk-input {
+  height: var(--kk-form-obj-height-m);
+}
+.kk-input::placeholder, .kk-textarea::placeholder {
+  color: var(--kk-font-color-superlight);
+}
 .kk-input[size-s] {
   height: var(--kk-form-obj-height-s);
+  font-size: var(--kk-font-size-s);
+}
+.kk-textarea[size-s] {
   font-size: var(--kk-font-size-s);
 }
 .kk-input[size-l] {
   height: var(--kk-form-obj-height-l);
   font-size: var(--kk-font-size-l);
 }
-.kk-input:focus {
+.kk-textarea[size-l] {
+  font-size: var(--kk-font-size-l);
+}
+.kk-input:focus, .kk-textarea:focus {
   border-color: var(--kk-border-radius-focus);
 }
-.kk-input:disabled {
+.kk-input:disabled, , .kk-textarea:disabled {
   background-color: var(--kk-disabled-bg-color);
 }
 
@@ -272,7 +284,7 @@ svg {
   position: absolute;
   top: 0.75em;
   left: 0.5em;
-  color: #aaa;
+  color: var(--kk-font-color-superlight);
   line-height: 1;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -370,6 +382,7 @@ svg {
 .kk-padding,
 .kk-padding-m { padding: 1.0rem !important; }
 .kk-padding-l { padding: 2.0rem !important; }
+.kk-padding-leftl { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
 
 /*
  * Margin.
@@ -386,6 +399,10 @@ svg {
 .kk-margin-child>*,
 .kk-margin-child-m>* { margin: 0.5rem !important; }
 .kk-margin-child-l>* { margin: 1.0rem !important; }
+.kk-margin-rm-top { margin-top: 0 !important; }
+.kk-margin-rm-bottom { margin-bottom: 0 !important; }
+.kk-margin-rm-right { margin-right: 0 !important; }
+.kk-margin-rm-left { margin-left: 0 !important; }
 
 /*
  * Align
