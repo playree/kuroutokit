@@ -31,7 +31,7 @@
         });
 
         document.addEventListener("change", (event) => {
-            if(event.target.tagName == "INPUT") {
+            if(event.target.tagName == "INPUT" || event.target.tagName == "TEXTAREA") {
                 if(event.target.parentElement.classList.contains("kk-input-field")) {
                     if(event.target.value == "") {
                         event.target.removeAttribute("kk-active");
@@ -42,6 +42,13 @@
             }
         }, false);
         [].forEach.call(document.getElementsByTagName("INPUT"), (el) => {
+            if(el.parentElement.classList.contains("kk-input-field")) {
+                if(el.value != "") {
+                    el.setAttribute("kk-active", "");
+                }
+            }
+        });
+        [].forEach.call(document.getElementsByTagName("TEXTAREA"), (el) => {
             if(el.parentElement.classList.contains("kk-input-field")) {
                 if(el.value != "") {
                     el.setAttribute("kk-active", "");

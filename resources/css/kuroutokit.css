@@ -98,7 +98,24 @@ svg {
   }
 }
 
-[shadow],
+/*
+ * Attribute.
+ */
+.kk-font-size-s {
+  font-size: var(--kk-font-size-s);
+}
+.kk-font-size-l {
+  font-size: var(--kk-font-size-l);
+}
+.kk-font-color-mute {
+  color: var(--kk-font-color-mute);
+}
+.kk-font-color-light {
+  color: var(--kk-font-color-light);
+}
+.kk-font-color-superlight {
+  color: var(--kk-font-color-superlight);
+}
 .kk-shadow {
   box-shadow: var(--kk-shadow);
 }
@@ -269,7 +286,7 @@ svg {
 .kk-textarea[size-l] {
   font-size: var(--kk-font-size-l);
 }
-.kk-input:focus, .kk-textarea:focus {
+.kk-input:focus:not(:read-only), .kk-textarea:focus:not(:read-only) {
   border-color: var(--kk-border-radius-focus);
 }
 .kk-input:disabled, , .kk-textarea:disabled {
@@ -296,7 +313,9 @@ svg {
   font-size: var(--kk-font-size-s);
 }
 .kk-input-field>input:focus+.kk-input-label,
-.kk-input-field>input[kk-active]+.kk-input-label {
+.kk-input-field>input[kk-active]+.kk-input-label,
+.kk-input-field>textarea:focus+.kk-input-label,
+.kk-input-field>textarea[kk-active]+.kk-input-label {
   top: -1.5em;
   left: 0.25em;
   font-size: 0.8em;
