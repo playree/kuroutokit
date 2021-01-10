@@ -499,6 +499,10 @@ svg {
   display: flex;
   justify-content: center;
 }
+.kk-align-bottom {
+  display: flex;
+  align-items: flex-end;
+}
 
 /*
  * Heading Line.
