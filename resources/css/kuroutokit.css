@@ -391,8 +391,9 @@ svg {
 
 .kk-checkbox {
   display: inline-block;
-  height: 16px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
+  background-size: 16px 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
   overflow: hidden;
@@ -404,13 +405,29 @@ svg {
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--kk-border-color-base);
   transition: 0.2s ease-in-out;
   transition-property: background-color, border;
+}
+.kk-checkbox[size-s]{
+  height: 14px;
+  width: 14px;
+  background-size: 12px 12px;
+}
+.kk-checkbox[size-l]{
+  height: 22px;
+  width: 22px;
+  background-size: 20px 20px;
 }
 .kk-checkbox+label {
   font: inherit;
   color: var(--kk-font-color-form);
+}
+.kk-checkbox[size-s]+label {
+  font-size: var(--kk-font-size-s);
+}
+.kk-checkbox[size-l]+label {
+  font-size: var(--kk-font-size-l);
 }
 .kk-checkbox:not(:disabled), .kk-checkbox:not(:disabled)+label {
   cursor: pointer;
@@ -630,6 +647,9 @@ svg {
   color: unset;
   text-decoration: unset;
   display: block;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .kk-sidenav-menu>ul li:hover::before {
   content: var(--kk-svg-select);
