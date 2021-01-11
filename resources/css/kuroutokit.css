@@ -299,7 +299,15 @@ svg {
   position: relative;
   margin-top: 2em;
 }
-.kk-input-label {
+.kk-input-field>.kk-input-label {
+  position: absolute;
+  top: -1.5em;
+  left: 0.25em;
+  font-size: 0.8em;
+  color: var(--kk-font-color-light);
+  line-height: 1;
+}
+.kk-movable-label {
   position: absolute;
   top: 0.75em;
   left: 0.5em;
@@ -308,16 +316,16 @@ svg {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
-.kk-input[size-l]+.kk-input-label {
+.kk-input[size-l]+.kk-movable-label {
   font-size: var(--kk-font-size-l);
 }
-.kk-input[size-s]+.kk-input-label {
+.kk-input[size-s]+.kk-movable-label {
   font-size: var(--kk-font-size-s);
 }
-.kk-input-field>input:focus+.kk-input-label,
-.kk-input-field>input[kk-active]+.kk-input-label,
-.kk-input-field>textarea:focus+.kk-input-label,
-.kk-input-field>textarea[kk-active]+.kk-input-label {
+.kk-input-field>input:focus+.kk-movable-label,
+.kk-input-field>input[kk-active]+.kk-movable-label,
+.kk-input-field>textarea:focus+.kk-movable-label,
+.kk-input-field>textarea[kk-active]+.kk-movable-label {
   top: -1.5em;
   left: 0.25em;
   font-size: 0.8em;
