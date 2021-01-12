@@ -43,9 +43,9 @@
   --kk-disabled-color: #fff;
   --kk-disabled-bg-color: #ddd;
 
-  --kk-form-obj-height-s: 28px;
-  --kk-form-obj-height-m: 36px;
-  --kk-form-obj-height-l: 44px;
+  --kk-form-obj-height-s: 24px;
+  --kk-form-obj-height-m: 32px;
+  --kk-form-obj-height-l: 40px;
 
   --kk-shadow: 2px 2px 6px 0 rgba(0,0,0,.5);
 
@@ -407,9 +407,9 @@ svg {
 
 .kk-checkbox {
   display: inline-block;
-  height: 18px;
-  width: 18px;
-  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+  background-size: 14px 14px;
   overflow: hidden;
   margin: -4px 0 0 0;
   vertical-align: middle;
@@ -419,14 +419,14 @@ svg {
   background-position: 50% 50%;
 }
 .kk-checkbox[size-s]{
-  height: 14px;
-  width: 14px;
-  background-size: 12px 12px;
+  height: 12px;
+  width: 12px;
+  background-size: 10px 10px;
 }
 .kk-checkbox[size-l]{
-  height: 22px;
-  width: 22px;
-  background-size: 20px 20px;
+  height: 20px;
+  width: 20px;
+  background-size: 18px 18px;
 }
 .kk-checkbox+label {
   font: inherit;
