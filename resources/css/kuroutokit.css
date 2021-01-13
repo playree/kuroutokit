@@ -42,6 +42,15 @@
   --kk-color-caution-active: #f00;
   --kk-color-select: #eef;
 
+  --kk-color-infomation: #adf;
+  --kk-font-color-infomation: #29f;
+  --kk-color-success: #afc;
+  --kk-font-color-success: #3c8;
+  --kk-color-warning: #feb;
+  --kk-font-color-warning: #e95;
+  --kk-color-error: #fcd;
+  --kk-font-color-error: #f57;
+
   --kk-disabled-color: #fff;
   --kk-disabled-bg-color: #ddd;
 
@@ -772,6 +781,30 @@ svg {
 }
 .kk-card[theme="caution"] {
   background-color: var(--kk-color-caution);
+}
+
+/*
+ * Message.
+ */
+.kk-message {
+  border-radius: var(--kk-border-radius-base);
+  padding: .5rem;
+}
+.kk-message:not([theme]), .kk-message[theme="infomation"] {
+  color: var(--kk-font-color-infomation);
+  background-color: var(--kk-color-infomation);
+}
+.kk-message[theme="success"] {
+  color: var(--kk-font-color-success);
+  background-color: var(--kk-color-success);
+}
+.kk-message[theme="warning"] {
+  color: var(--kk-font-color-warning);
+  background-color: var(--kk-color-warning);
+}
+.kk-message[theme="error"] {
+  color: var(--kk-font-color-error);
+  background-color: var(--kk-color-error);
 }
 
 /*
