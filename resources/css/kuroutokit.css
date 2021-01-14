@@ -314,6 +314,7 @@ svg {
  */
 .kk-input, .kk-textarea, .kk-button, .kk-checkbox, .kk-select {
   font: inherit;
+  box-sizing: border-box;
   border: 1px solid var(--kk-border-color-base);
   border-radius: var(--kk-border-radius-base);
   outline: none;
@@ -326,8 +327,11 @@ svg {
 .kk-input, .kk-textarea {
   color: var(--kk-font-color-form);
   max-width: 100%;
-  width: calc(100% - 1rem);
+  width: 100%;
   padding: 0 0.5rem;
+}
+.kk-input[type="date"]::-webkit-calendar-picker-indicator {
+  margin-inline-start: 8px;
 }
 .kk-input {
   height: var(--kk-form-obj-height-m);
@@ -360,7 +364,6 @@ svg {
 }
 .kk-input[list] {
   padding-right: 20px;
-  width: calc(100% - 0.5rem - 20px);
   background-repeat: no-repeat;
   background-position: calc(100% - 6px) 50%;
   background-image: var(--kk-svg-list);
@@ -473,7 +476,6 @@ svg {
   overflow: hidden;
   margin: -4px 0 0 0;
   vertical-align: middle;
-  box-sizing: border-box;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -517,7 +519,6 @@ svg {
 }
 
 .kk-select {
-  box-sizing: border-box;
   margin: 0;
   max-width: 100%;
   width: 100%;
@@ -694,7 +695,7 @@ svg {
   -webkit-transition: left .3s;
   transition: left .3s;
 }
-@media (max-width: 959px) {
+@media (max-width: 1199px) {
   .kk-sidenav-menu {
     left: calc(-1 * var(--kk-sidenav-width));
   }

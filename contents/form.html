@@ -20,6 +20,7 @@
                 <input class="kk-input kk-margin-top" type="text" value="Readonly" readonly>
                 <input class="kk-input kk-margin-top" size-s type="text" value="size-s">
                 <input class="kk-input kk-margin-top" size-l type="text" value="size-l">
+                <input class="kk-input kk-margin-top" type="date" value="2021-01-02">
                 <input class="kk-input kk-margin-top" type="text" value="" placeholder="Datalist" list="datalist">
                 <datalist id="datalist">
                     <option value="123">
@@ -36,7 +37,7 @@
 	    <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
         <div grid-col>
-            <div class="kk-col5@m kk-col10">
+            <div class="kk-col6@m kk-col12">
                 <div class="kk-input-field">
                     <input id="input1" class="kk-input" type="text">
                     <label class="kk-input-label" for="input1">label</label>
@@ -104,7 +105,7 @@
 	    <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
         <div grid-col>
-            <div class="kk-col5@m kk-col10">
+            <div class="kk-col6@m kk-col12">
                 <div class="kk-input-field">
                     <textarea id="text1" class="kk-textarea" rows="3"></textarea>
                     <label class="kk-input-label" for="text1">Textarea</label>
@@ -124,14 +125,21 @@
 <code></code></pre>
         <div grid-col>
             <div class="kk-col6@m kk-col12">
-                <select class="kk-select kk-margin-top" name=”switch”>
+                <select class="kk-select kk-margin-top">
                     <option value=”on”>ON</option>
                     <option value=”off”>OFF</option>
                 </select>
-                <select class="kk-select kk-margin-top" name=”switch” disabled>
+                <select class="kk-select kk-margin-top" disabled>
                     <option value=”on”>ON</option>
                     <option value=”off”>OFF</option>
                 </select>
+                <div class="kk-input-field">
+                    <select id=”sel” class="kk-select">
+                        <option value=”on”>ON</option>
+                        <option value=”off”>OFF</option>
+                    </select>
+                    <label class="kk-input-label" for="sel">Select</label>
+                </div>
             </div>
         </div>
     </div>
