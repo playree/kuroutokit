@@ -18,8 +18,10 @@
   --kk-font-family-code: "Kosugi Maru", "BIZ UDGothic", SFMono-Regular, Consolas, "Roboto Mono", "Courier New", 
                          Meiryo, monospace;
   --kk-font-size-base: 16px;
+  --kk-font-size-ss: 0.75rem;
   --kk-font-size-s: 0.875rem;
   --kk-font-size-l: 1.25rem;
+  --kk-font-size-xl: 1.5rem;
   --kk-font-color-base: #333;
   --kk-font-color-light: #888;
   --kk-font-color-superlight: #bbb;
@@ -45,9 +47,9 @@
   --kk-color-infomation: #adf;
   --kk-font-color-infomation: #29f;
   --kk-color-success: #afc;
-  --kk-font-color-success: #3c8;
+  --kk-font-color-success: #2b7;
   --kk-color-warning: #feb;
-  --kk-font-color-warning: #e95;
+  --kk-font-color-warning: #d84;
   --kk-color-error: #fcd;
   --kk-font-color-error: #f57;
 
@@ -114,11 +116,20 @@ svg {
 /*
  * Attribute.
  */
+ .kk-font-bold {
+   font-weight: bold;
+ }
+ .kk-font-size-ss {
+  font-size: var(--kk-font-size-ss);
+}
 .kk-font-size-s {
   font-size: var(--kk-font-size-s);
 }
 .kk-font-size-l {
   font-size: var(--kk-font-size-l);
+}
+.kk-font-size-xl {
+  font-size: var(--kk-font-size-xl);
 }
 .kk-font-color-base {
   color: var(--kk-font-color-base);
@@ -173,11 +184,15 @@ svg {
 }
 [grid], [grid-col],
 .kk-grid, .kk-grid-col {
-  grid-template-columns: repeat(10, 10%);
+  grid-template-columns: repeat(12, calc(100% / 12));
 }
 [grid], [grid-row],
 .kk-grid, .kk-grid-row {
-  grid-template-rows: repeat(10, 10%);
+  grid-template-rows: repeat(12, calc(100% / 12));
+}
+[cell],
+.kk-cell {
+  padding: 0 0.25rem;
 }
 .kk-col1  { grid-column: span 1; }
 .kk-col2  { grid-column: span 2; }
@@ -189,6 +204,8 @@ svg {
 .kk-col8  { grid-column: span 8; }
 .kk-col9  { grid-column: span 9; }
 .kk-col10 { grid-column: span 10; }
+.kk-col11 { grid-column: span 11; }
+.kk-col12 { grid-column: span 12; }
 .kk-row1  { grid-row: span 1; }
 .kk-row2  { grid-row: span 2; }
 .kk-row3  { grid-row: span 3; }
@@ -199,6 +216,8 @@ svg {
 .kk-row8  { grid-row: span 8; }
 .kk-row9  { grid-row: span 9; }
 .kk-row10 { grid-row: span 10; }
+.kk-row11 { grid-row: span 11; }
+.kk-row12 { grid-row: span 12; }
 @media (min-width: 640px) {
   .kk-col1\@s  { grid-column: span 1; }
   .kk-col2\@s  { grid-column: span 2; }
@@ -210,6 +229,8 @@ svg {
   .kk-col8\@s  { grid-column: span 8; }
   .kk-col9\@s  { grid-column: span 9; }
   .kk-col10\@s { grid-column: span 10; }
+  .kk-col11\@s { grid-column: span 11; }
+  .kk-col12\@s { grid-column: span 12; }
 }
 @media (min-width: 960px) {
   .kk-col1\@m  { grid-column: span 1; }
@@ -222,6 +243,8 @@ svg {
   .kk-col8\@m  { grid-column: span 8; }
   .kk-col9\@m  { grid-column: span 9; }
   .kk-col10\@m { grid-column: span 10; }
+  .kk-col11\@m { grid-column: span 11; }
+  .kk-col12\@m { grid-column: span 12; }
 }
 @media (min-width: 1200px) {
   .kk-col1\@l  { grid-column: span 1; }
@@ -234,6 +257,8 @@ svg {
   .kk-col8\@l  { grid-column: span 8; }
   .kk-col9\@l  { grid-column: span 9; }
   .kk-col10\@l { grid-column: span 10; }
+  .kk-col11\@l { grid-column: span 11; }
+  .kk-col12\@l { grid-column: span 12; }
 }
 @media (min-width: 1600px) {
   .kk-col1\@xl  { grid-column: span 1; }
@@ -246,6 +271,8 @@ svg {
   .kk-col8\@xl  { grid-column: span 8; }
   .kk-col9\@xl  { grid-column: span 9; }
   .kk-col10\@xl { grid-column: span 10; }
+  .kk-col11\@xl { grid-column: span 11; }
+  .kk-col12\@xl { grid-column: span 12; }
 }
 
 /*
@@ -550,10 +577,6 @@ svg {
 .kk-margin-left,
 .kk-margin-left-m { margin-left: 1.0rem !important; }
 .kk-margin-left-l { margin-left: 2.0rem !important; }
-.kk-margin-child-s>* { margin: 0.25rem !important; }
-.kk-margin-child>*,
-.kk-margin-child-m>* { margin: 0.5rem !important; }
-.kk-margin-child-l>* { margin: 1.0rem !important; }
 .kk-margin-rm-top { margin-top: 0 !important; }
 .kk-margin-rm-bottom { margin-bottom: 0 !important; }
 .kk-margin-rm-right { margin-right: 0 !important; }
@@ -789,6 +812,7 @@ svg {
 .kk-message {
   border-radius: var(--kk-border-radius-base);
   padding: .5rem;
+  word-break: keep-all;
 }
 .kk-message:not([theme]), .kk-message[theme="infomation"] {
   color: var(--kk-font-color-infomation);
