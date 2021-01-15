@@ -360,6 +360,9 @@ svg {
 .kk-input:disabled, .kk-textarea:disabled {
   background-color: var(--kk-disabled-bg-color);
 }
+.kk-input:read-only, .kk-textarea:read-only {
+  border-style: dashed;
+}
 .kk-input[list]::-webkit-calendar-picker-indicator {
   display: none;
 }
