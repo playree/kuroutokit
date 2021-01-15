@@ -65,6 +65,7 @@
   --kk-svg-select: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%3Cpath%20d%3D%22m8.7708%205c0.0051811-0.14952-0.080888-0.28982-0.22507-0.36685l-5.5825-2.9741c-0.30973-0.16558-0.7042%200.03264-0.70428%200.35391v5.9481c8.37e-5%200.32127%200.39456%200.5195%200.70428%200.35391l5.5825-2.9741c0.13529-0.072344%200.22004-0.20075%200.22507-0.34098z%22%20fill%3D%22%23888%22%20stroke-width%3D%22.78946%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   --kk-svg-menu: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%225%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%3C%2Fsvg%3E");
   --kk-svg-check: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22rect1943%22%20d%3D%22M%204%2C6%2011%2C0%205%2C11%200%2C5%20Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
+  --kk-svg-radio: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22path34%22%20d%3D%22M%207.1328125%201.8476562%20A%202%202%200%200%201%207.4980469%203%20A%202%202%200%200%201%205.4980469%205%20A%202%202%200%200%201%203.4980469%203%20A%202%202%200%200%201%203.8613281%201.8515625%20A%204%204%200%200%200%201.5%205.5%20A%204%204%200%200%200%205.5%209.5%20A%204%204%200%200%200%209.5%205.5%20A%204%204%200%200%200%207.1328125%201.8476562%20z%20%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E%0D%0A");
   --kk-svg-list: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22rect3338%22%20d%3D%22M%205.4908703%2C9%20C%205.6452164%2C9.00555%205.7900455%2C8.913389%205.8695593%2C8.7590091%20L%208.9395942%2C2.7815544%20C%209.1105185%2C2.4499121%208.9059008%2C2.0275285%208.57426%2C2.0274389%20H%202.4341902%20C%202.1025498%2C2.0275285%201.897932%2C2.4499121%202.0688562%2C2.7815544%20L%205.1388909%2C8.7590091%20C%205.2135688%2C8.9038728%205.3461182%2C8.9946139%205.4908703%2C9%20Z%22%20fill%3D%22%23888%22%20style%3D%22stroke-width%3A0.829983%22%20%2F%3E%3C%2Fsvg%3E%0D%0A");
 }
 
@@ -312,7 +313,7 @@ svg {
 /*
  * Form Parts.
  */
-.kk-input, .kk-textarea, .kk-button, .kk-checkbox, .kk-select {
+.kk-input, .kk-textarea, .kk-button, .kk-checkbox, .kk-radio, .kk-select {
   font: inherit;
   box-sizing: border-box;
   border: 1px solid var(--kk-border-color-base);
@@ -468,7 +469,7 @@ svg {
   cursor: pointer;
 }
 
-.kk-checkbox {
+.kk-checkbox, .kk-radio {
   display: inline-block;
   height: 16px;
   width: 16px;
@@ -480,41 +481,48 @@ svg {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.kk-checkbox[size-s]{
+.kk-radio {
+  border-radius: 50%;
+}
+.kk-checkbox[size-s], .kk-radio[size-s] {
   height: 12px;
   width: 12px;
   background-size: 10px 10px;
 }
-.kk-checkbox[size-l]{
+.kk-checkbox[size-l], .kk-radio[size-l] {
   height: 20px;
   width: 20px;
   background-size: 18px 18px;
 }
-.kk-checkbox+label {
+.kk-checkbox+label, .kk-radio+label {
   font: inherit;
   color: var(--kk-font-color-form);
 }
-.kk-checkbox[size-s]+label {
+.kk-checkbox[size-s]+label, .kk-radio[size-s]+label {
   font-size: var(--kk-font-size-s);
 }
-.kk-checkbox[size-l]+label {
+.kk-checkbox[size-l]+label, .kk-radio[size-l]+label {
   font-size: var(--kk-font-size-l);
 }
-.kk-checkbox:not(:disabled), .kk-checkbox:not(:disabled)+label {
+.kk-checkbox:not(:disabled), .kk-checkbox:not(:disabled)+label,
+.kk-radio:not(:disabled), .kk-radio:not(:disabled)+label {
   cursor: pointer;
 }
-.kk-checkbox:focus {
+.kk-checkbox:focus, .kk-radio:focus {
   outline: none;
   border-color: var(--kk-border-radius-focus);
 }
-.kk-checkbox:checked {
+.kk-checkbox:checked, .kk-radio:checked {
   background-color: var(--kk-border-radius-focus);
   border-color: transparent;
 }
-.kk-checkbox:checked {
+.kk-checkbox:checked{
   background-image: var(--kk-svg-check)
 }
-.kk-checkbox:disabled:checked {
+.kk-radio:checked {
+  background-image: var(--kk-svg-radio)
+}
+.kk-checkbox:disabled:checked, .kk-radio:disabled:checked {
   background-color: var(--kk-disabled-bg-color);
 }
 
