@@ -24,7 +24,7 @@
   --kk-font-size-xl: 1.5rem;
   --kk-font-color-base: #333;
   --kk-font-color-light: #888;
-  --kk-font-color-superlight: #bbb;
+  --kk-font-color-superlight: #ccc;
   --kk-font-color-form: var(--kk-font-color-light);
   --kk-font-color-mute: #888;
   --kk-font-color-inverse: #fff;
@@ -412,6 +412,7 @@ svg {
 
 .kk-button {
   background-color: #fff;
+  color: var(--kk-font-color-base);
   height: var(--kk-form-obj-height-m);
   width: 100%;
   padding: 0 0.5em;
@@ -465,7 +466,7 @@ svg {
 }
 .kk-button:disabled {
   color: var(--kk-font-color-mute);
-  background-color: #fff;
+  background-color: var(--kk-disabled-bg-color);
   border-color: var(--kk-border-color-base);
 }
 .kk-button:not(:disabled) {
@@ -589,6 +590,7 @@ svg {
 .kk-margin-left,
 .kk-margin-left-m { margin-left: 1.0rem !important; }
 .kk-margin-left-l { margin-left: 2.0rem !important; }
+.kk-margin-rm { margin: 0 !important; }
 .kk-margin-rm-top { margin-top: 0 !important; }
 .kk-margin-rm-bottom { margin-bottom: 0 !important; }
 .kk-margin-rm-right { margin-right: 0 !important; }
