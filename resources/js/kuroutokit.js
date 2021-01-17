@@ -10,6 +10,20 @@
     });
 
     function loaded() {
+        KuroutoKit.initAccordion();
+        KuroutoKit.initMovableLabel();
+    }
+})));
+
+let kk_initAccordion = false;
+let kk_initMovableLabel = false;
+let kk_initEnableWithCheck = false;
+
+class KuroutoKit {
+    static initAccordion() {
+        if(kk_initAccordion) return;
+        kk_initAccordion = true;
+
         document.addEventListener("click", (event) => {
             // Accordion.
             if(event.target.classList.contains("kk-accordion")) {
@@ -29,6 +43,11 @@
                 ac.style.height = ac.scrollHeight + "px";
             }
         });
+    }
+
+    static initMovableLabel() {
+        if(kk_initMovableLabel) return;
+        kk_initMovableLabel = true;
 
         document.addEventListener("change", (event) => {
             if(event.target.tagName == "INPUT" || event.target.tagName == "TEXTAREA") {
@@ -56,14 +75,15 @@
             }
         });
     }
-})));
 
-class KuroutoKit {
     static initEnableWithCheck() {
+        if(kk_initEnableWithCheck) return;
+        kk_initEnableWithCheck = true;
+
         document.addEventListener("change", (event) => {
             if(event.target.tagName == "INPUT") {
                 if(event.target.classList.contains("kk-enable-with-check")) {
-                    var targets = event.target.getAttribute("target").split(",");
+                    const targets = event.target.getAttribute("target").split(",");
                     [].forEach.call(targets, (target) => {
                         if(event.target.checked) {
                             document.getElementById(target.trim()).removeAttribute("disabled");
@@ -72,7 +92,7 @@ class KuroutoKit {
                         }
                     });
                 } else if(event.target.classList.contains("kk-disable-with-check")) {
-                    var targets = event.target.getAttribute("target").split(",");
+                    const targets = event.target.getAttribute("target").split(",");
                     [].forEach.call(targets, (target) => {
                         if(event.target.checked) {
                             document.getElementById(target.trim()).setAttribute("disabled", "");
@@ -86,7 +106,7 @@ class KuroutoKit {
         [].forEach.call(document.getElementsByTagName("INPUT"), (el) => {
             if(el.classList.contains("kk-enable-with-check")) {
                 if(el.hasAttribute("target")) {
-                    var targets = el.getAttribute("target").split(",");
+                    const targets = el.getAttribute("target").split(",");
                     [].forEach.call(targets, (target) => {
                         if(el.checked) {
                             document.getElementById(target.trim()).removeAttribute("disabled");
@@ -97,7 +117,7 @@ class KuroutoKit {
                 }
             } else if(el.classList.contains("kk-disable-with-check")) {
                 if(el.hasAttribute("target")) {
-                    var targets = el.getAttribute("target").split(",");
+                    const targets = el.getAttribute("target").split(",");
                     [].forEach.call(targets, (target) => {
                         if(el.checked) {
                             document.getElementById(target.trim()).setAttribute("disabled", "");

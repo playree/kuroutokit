@@ -67,6 +67,8 @@
   --kk-svg-check: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22rect1943%22%20d%3D%22M%204%2C6%2011%2C0%205%2C11%200%2C5%20Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
   --kk-svg-radio: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22path34%22%20d%3D%22M%207.1328125%201.8476562%20A%202%202%200%200%201%207.4980469%203%20A%202%202%200%200%201%205.4980469%205%20A%202%202%200%200%201%203.4980469%203%20A%202%202%200%200%201%203.8613281%201.8515625%20A%204%204%200%200%200%201.5%205.5%20A%204%204%200%200%200%205.5%209.5%20A%204%204%200%200%200%209.5%205.5%20A%204%204%200%200%200%207.1328125%201.8476562%20z%20%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E%0D%0A");
   --kk-svg-list: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22rect3338%22%20d%3D%22M%205.4908703%2C9%20C%205.6452164%2C9.00555%205.7900455%2C8.913389%205.8695593%2C8.7590091%20L%208.9395942%2C2.7815544%20C%209.1105185%2C2.4499121%208.9059008%2C2.0275285%208.57426%2C2.0274389%20H%202.4341902%20C%202.1025498%2C2.0275285%201.897932%2C2.4499121%202.0688562%2C2.7815544%20L%205.1388909%2C8.7590091%20C%205.2135688%2C8.9038728%205.3461182%2C8.9946139%205.4908703%2C9%20Z%22%20fill%3D%22%23888%22%20style%3D%22stroke-width%3A0.829983%22%20%2F%3E%3C%2Fsvg%3E%0D%0A");
+  --kk-svg-open: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C1%201%2C3%205.5%2C6%2010%2C3%2010%2C1%205.5%2C4%20%22%20id%3D%22polygon1%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C5%201%2C7%205.5%2C10%2010%2C7%2010%2C5%205.5%2C8%20%22%20id%3D%22polygon2%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%3C%2Fsvg%3E");
+  --kk-svg-close: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C10%201%2C8%205.5%2C5%2010%2C8%2010%2C10%205.5%2C7%20%22%20id%3D%22polygon1%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C6%201%2C4%205.5%2C1%2010%2C4%2010%2C6%205.5%2C3%20%22%20id%3D%22polygon2%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%3C%2Fsvg%3E");
 }
 
 /*
@@ -649,6 +651,19 @@ svg {
  */
 .kk-accordion {
   cursor: pointer;
+}
+.kk-accordion[theme="icon"]::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+  background-image: var(--kk-svg-close);
+  background-size: 18px 18px;
+}
+.kk-accordion[theme="icon"][closed]::before {
+  background-image: var(--kk-svg-open);
 }
 .kk-accordion+* {
   -webkit-transition: height .3s;
