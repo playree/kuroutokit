@@ -333,7 +333,8 @@ svg {
   width: 100%;
   padding: 0 0.5rem;
 }
-.kk-input[type="date"]::-webkit-calendar-picker-indicator {
+.kk-input[type="date"]::-webkit-calendar-picker-indicator,
+.kk-input[type="month"]::-webkit-calendar-picker-indicator {
   margin-inline-start: 8px;
 }
 .kk-input {
@@ -377,11 +378,11 @@ svg {
 
 .kk-input-field {
   position: relative;
-  margin-top: 2em;
+  margin-top: 1.75em;
 }
 .kk-input-field>.kk-input-label {
   position: absolute;
-  top: -1.5em;
+  top: -1.3em;
   left: 0.25em;
   font-size: 0.8em;
   color: var(--kk-font-color-light);
@@ -406,7 +407,7 @@ svg {
 .kk-input-field>input[kk-active]+.kk-movable-label,
 .kk-input-field>textarea:focus+.kk-movable-label,
 .kk-input-field>textarea[kk-active]+.kk-movable-label {
-  top: -1.5em;
+  top: -1.3em;
   left: 0.25em;
   font-size: var(--kk-font-size-s);
   color: var(--kk-font-color-light);
