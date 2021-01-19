@@ -69,6 +69,7 @@
   --kk-svg-list: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22rect3338%22%20d%3D%22M%205.4908703%2C9%20C%205.6452164%2C9.00555%205.7900455%2C8.913389%205.8695593%2C8.7590091%20L%208.9395942%2C2.7815544%20C%209.1105185%2C2.4499121%208.9059008%2C2.0275285%208.57426%2C2.0274389%20H%202.4341902%20C%202.1025498%2C2.0275285%201.897932%2C2.4499121%202.0688562%2C2.7815544%20L%205.1388909%2C8.7590091%20C%205.2135688%2C8.9038728%205.3461182%2C8.9946139%205.4908703%2C9%20Z%22%20fill%3D%22%23888%22%20style%3D%22stroke-width%3A0.829983%22%20%2F%3E%3C%2Fsvg%3E%0D%0A");
   --kk-svg-open: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C1%201%2C3%205.5%2C6%2010%2C3%2010%2C1%205.5%2C4%20%22%20id%3D%22polygon1%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C5%201%2C7%205.5%2C10%2010%2C7%2010%2C5%205.5%2C8%20%22%20id%3D%22polygon2%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%3C%2Fsvg%3E");
   --kk-svg-close: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C10%201%2C8%205.5%2C5%2010%2C8%2010%2C10%205.5%2C7%20%22%20id%3D%22polygon1%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C6%201%2C4%205.5%2C1%2010%2C4%2010%2C6%205.5%2C3%20%22%20id%3D%22polygon2%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%3C%2Fsvg%3E");
+  --kk-svg-toggle: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%20%3Crect%20id%3D%22rect18%22%20width%3D%229%22%20height%3D%229%22%20x%3D%221%22%20y%3D%221%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%3C%2Fsvg%3E");
 }
 
 /*
@@ -564,6 +565,65 @@ svg {
 }
 .kk-select:disabled {
   background-color: var(--kk-disabled-bg-color);
+}
+
+/*
+ * Toggle.
+ */
+.kk-toggle {
+  position: absolute;
+  width: 0;
+}
+.kk-toggle+label::before {
+  content: attr(data-off);
+  display: inline-block;
+  width: calc(50% - 4px);
+  box-sizing: border-box;
+  margin: 4px 0 0 4px;
+  line-height: calc(var(--kk-form-obj-height-m) - 10px);
+  text-align: center;
+  border-radius: var(--kk-border-radius-base);
+  transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
+}
+.kk-toggle+label::after {
+  content: attr(data-on);
+  display: inline-block;
+  width: calc(50% - 4px);
+  box-sizing: border-box;
+  margin: 4px 4px 0 0;
+  line-height: calc(var(--kk-form-obj-height-m) - 10px);
+  text-align: center;
+  border-radius: var(--kk-border-radius-base);
+  transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
+}
+.kk-toggle+label {
+  display: block;
+  height: var(--kk-form-obj-height-m);
+  background-color: var(--kk-color-normal);
+  box-sizing: border-box;
+  border: 1px solid var(--kk-border-color-base);
+  border-radius: var(--kk-border-radius-base);
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
+}
+.kk-toggle:not(:checked)+label::before {
+  background-color: var(--kk-color-primary);
+  color: var(--kk-color-normal);
+}
+.kk-toggle:checked+label::after {
+  background-color: var(--kk-color-primary);
+  color: var(--kk-color-normal);
+}
+.kk-toggle:not(:disabled)+label {
+  cursor: pointer;
+}
+.kk-toggle:focus+label, .kk-toggle+label:hover {
+  border-color: var(--kk-border-radius-focus);
 }
 
 /*

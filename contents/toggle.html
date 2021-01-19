@@ -1,0 +1,31 @@
+<!--params
+    {
+        "title":"KUROUTO Kit - Toggle"
+    }
+-->
+{{extends "_parts/base.html"}}
+{{define "content"}}
+<div class="kk-container">
+    <h1>Toggle</h1>
+</div>
+<div class="kk-container">
+    <h2 class="kk-heading-line"><span class="kk-withsubtext">Toggle<p>トグル</p></span></h2>
+    <div par>
+	    <pre class="kk-codebox" type="dark" title="HTML">
+<code></code></pre>
+        <div grid-col>
+            <div class="kk-col3@m kk-col6" cell>
+                <input id="toggle1" class="kk-toggle" type="checkbox">
+                <label for="toggle1" data-on="ON" data-off="OFF"></label>
+            </div>
+            <div class="kk-col3@m kk-col6" cell>
+                <input id="toggle2" class="kk-toggle" type="checkbox">
+                <label for="toggle2" data-on="する" data-off="しない"></label>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<script>
+</script>
+{{end}}
