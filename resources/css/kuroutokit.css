@@ -11,11 +11,11 @@
  * Root Custom properties.
  */
 :root {
-  --kk-font-family: "Kosugi Maru", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, 
+  --kk-font-family: 'Noto Sans JP', sans-serif, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, 
                     "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", 
                     Verdana, "メイリオ", Meiryo, sans-serif;
   --kk-font-family-heading: var(--kk-font-family);
-  --kk-font-family-code: "Kosugi Maru", "BIZ UDGothic", SFMono-Regular, Consolas, "Roboto Mono", "Courier New", 
+  --kk-font-family-code: "BIZ UDGothic", SFMono-Regular, Consolas, "Roboto Mono", "Courier New", 
                          Meiryo, monospace;
   --kk-font-size-base: 16px;
   --kk-font-size-ss: 0.75rem;
@@ -28,6 +28,7 @@
   --kk-font-color-form: var(--kk-font-color-light);
   --kk-font-color-mute: #888;
   --kk-font-color-inverse: #fff;
+  --kk-font-color-link: #29f;
 
   --kk-border-color-base: #ddd;
   --kk-border-color-active: #888;
@@ -43,14 +44,19 @@
   --kk-color-caution: #f33;
   --kk-color-caution-active: #f00;
   --kk-color-select: #eef;
+  --kk-color-attention: #feb;
 
   --kk-color-infomation: #adf;
+  --kk-border-color-infomation: #9de;
   --kk-font-color-infomation: #29f;
   --kk-color-success: #afc;
+  --kk-border-color-success: #9eb;
   --kk-font-color-success: #2b7;
   --kk-color-warning: #feb;
+  --kk-border-color-warning: #eda;
   --kk-font-color-warning: #d84;
   --kk-color-error: #fcd;
+  --kk-border-color-error: #ebc;
   --kk-font-color-error: #f57;
 
   --kk-disabled-color: #fff;
@@ -82,12 +88,31 @@ body {
   line-height: 1.4;
   margin: 0;
 }
+a {
+  color: var(--kk-font-color-link);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--kk-font-family-heading);
 }
-code, pre {
+ul, ol {
+  padding-left: 24px;
+}
+li {
+  margin-bottom: 6px;
+}
+code {
   font-family: var(--kk-font-family-code);
   font-size: var(--kk-font-size-s);
+  font-weight: bold;
+  color: var(--kk-color-caution-active);
+  background-color: var(--kk-color-attention);
+  padding: 4px 4px;
 }
 svg {
   fill: currentColor;
@@ -161,6 +186,9 @@ svg {
 }
 .kk-bg-color-dim {
   background-color: var(--kk-color-dim);
+}
+.kk-bg-color-attention {
+  background-color: var(--kk-color-attention);
 }
 .kk-shadow {
   box-shadow: var(--kk-shadow);
@@ -642,6 +670,27 @@ svg {
 .kk-padding-m { padding: 1.0rem !important; }
 .kk-padding-l { padding: 2.0rem !important; }
 .kk-padding-leftl { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
+@media (min-width: 640px) {
+  .kk-padding-s\@s { padding: 0.5rem !important; }
+  .kk-padding\@s,
+  .kk-padding-m\@s { padding: 1.0rem !important; }
+  .kk-padding-l\@s { padding: 2.0rem !important; }
+  .kk-padding-leftl\@s { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
+}
+@media (min-width: 960px) {
+  .kk-padding-s\@m { padding: 0.5rem !important; }
+  .kk-padding\@m,
+  .kk-padding-m\@m { padding: 1.0rem !important; }
+  .kk-padding-l\@m { padding: 2.0rem !important; }
+  .kk-padding-leftl\@m { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
+}
+@media (min-width: 1200px) {
+  .kk-padding-s\@l { padding: 0.5rem !important; }
+  .kk-padding\@l,
+  .kk-padding-m\@l { padding: 1.0rem !important; }
+  .kk-padding-l\@l { padding: 2.0rem !important; }
+  .kk-padding-leftl\@l { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
+}
 
 /*
  * Margin.
@@ -753,7 +802,8 @@ svg {
   --kk-sidenav-menu-bg-color: var(--kk-color-dim);
   --kk-sidenav-main-bg-color: var(--kk-color-normal);
   --kk-sidenav-icon: var(--kk-svg-menu);
-  --kk-sidenav-line-height: 22px;
+  --kk-sidenav-select-bg-color: var(--kk-sidenav-menu-bg-color);
+  --kk-sidenav-line-height: 24px;
 }
 .kk-sidenav-container[theme="panel"] {
   --kk-sidenav-menu-bg-color: var(--kk-color-normal);
@@ -821,6 +871,9 @@ svg {
   padding-right: 0;
 }
 .kk-sidenav-menu>ul li {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
   padding-left: 24px;
   font-size: var(--kk-font-size-s);
   line-height: var(--kk-sidenav-line-height);
@@ -837,7 +890,7 @@ svg {
   border-right: none;
   border-bottom: none;
 }
-.kk-sidenav-menu>ul li>a {
+.kk-sidenav-menu>ul a {
   color: unset;
   text-decoration: unset;
   display: block;
@@ -871,6 +924,16 @@ svg {
 .kk-sidenav-container[theme="panel"] ul li:empty {
   border-top: solid 1px var(--kk-border-color-base);
   margin: 0 0 8px 0;
+}
+.kk-sidenav-container>.kk-sidenav-menu>ul li>a[data-over]:hover:before,
+.kk-sidenav-container>.kk-sidenav-menu>ul li:hover>.kk-accordion[data-over]:before {
+  content: attr(data-over);
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  font: inherit;
+  line-height: var(--kk-sidenav-line-height);
+  background-color: var(--kk-sidenav-select-bg-color);
 }
 
 /*
@@ -907,18 +970,22 @@ svg {
 }
 .kk-message:not([theme]), .kk-message[theme="infomation"] {
   color: var(--kk-font-color-infomation);
+  border: solid 1px var(--kk-border-color-infomation);
   background-color: var(--kk-color-infomation);
 }
 .kk-message[theme="success"] {
   color: var(--kk-font-color-success);
+  border: solid 1px var(--kk-border-color-success);
   background-color: var(--kk-color-success);
 }
 .kk-message[theme="warning"] {
   color: var(--kk-font-color-warning);
+  border: solid 1px var(--kk-border-color-warning);
   background-color: var(--kk-color-warning);
 }
 .kk-message[theme="error"] {
   color: var(--kk-font-color-error);
+  border: solid 1px var(--kk-border-color-error);
   background-color: var(--kk-color-error);
 }
 
@@ -935,13 +1002,21 @@ svg {
 .kk-box-dashed {
   border-style: dashed;
 }
+.kk-codebox, .kk-codebox>code {
+  font-size: var(--kk-font-size-ss);
+  font-weight: normal;
+}
+.kk-codebox>code {
+  color: inherit;
+  background-color: unset;
+}
 .kk-codebox[title]::before {
   content: attr(title);
   position: relative;
   top: -8px;
   left: -8px;
   display: block;
-  width: fit-content;
+  width: max-content;
   padding: 1px 8px;
   border-top-left-radius: var(--kk-border-radius-base);
   border-bottom: solid 1px var(--kk-border-color-base);

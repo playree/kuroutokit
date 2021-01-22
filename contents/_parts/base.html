@@ -10,9 +10,8 @@
 		<link rel="shortcut icon" href="/resources/img/favicon.ico">
 
 		<!-- Google Fonts -->
-		<!--
-		<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
-		-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
 		<!-- KUROUTO Kit -->
 		<link rel="stylesheet" href="/resources/css/kuroutokit.css?v=2020043009" />
@@ -23,34 +22,33 @@
 	</head>
 	<body>
 		<div class="kk-sidenav-container" theme="panel">
-			<div class="kk-sidenav-menu kk-shadow">
+			<div class="kk-sidenav-menu kk-shadow kk-font-bold">
 				<ul>
-					<li><a href="/">Getting Started</a></li>
+					<li><a href="/" data-over="はじめに">Getting Started</a></li>
 					<li class="kk-divider"></li>
 					<li>
-						<div class="kk-accordion">Layout</div>
+						<div class="kk-accordion" data-over="レイアウト系">Layout</div>
 						<ul>
-							<li><a href="/container.html">Container</a></li>
-							<li><a href="/grid.html">Grid</a></li>
-							<li><a href="/table.html">Table</a></li>
-							<li><a href="/padding_margin.html">Padding & Margin</a></li>
-							</li>
+							<li><a href="/container.html" data-over="コンテナ">Container</a></li>
+							<li><a href="/grid.html" data-over="グリッド">Grid</a></li>
+							<li><a href="/table.html" data-over="テーブル">Table</a></li>
+							<li><a href="/padding_margin.html" data-over="余白関連">Padding & Margin</a></li>
 						</ul>
 					</li>
 					<li>
-						<div class="kk-accordion">Component</div>
+						<div class="kk-accordion" data-over="コンポーネント系">Component</div>
 						<ul>
-							<li><a href="/form.html">Form Parts</a></li>
-							<li><a href="/card.html">Card</a></li>
-							<li><a href="/message.html">Message</a></li>
-							<li><a href="/accordion.html">Accordion</a></li>
-							<li><a href="/toggle.html">Toggle</a></li>
-							<li><a href="/enable_with_check.html">Enable With Check</a></li>
+							<li><a href="/form.html" data-over="フォーム関連部品">Form Parts</a></li>
+							<li><a href="/card.html" data-over="カード型表示">Card</a></li>
+							<li><a href="/message.html" data-over="メッセージ表示">Message</a></li>
+							<li><a href="/accordion.html" data-over="アコーディオン">Accordion</a></li>
+							<li><a href="/toggle.html" data-over="トグルスイッチ">Toggle</a></li>
+							<li><a href="/enable_with_check.html" data-over="チェック連動型の有効/無効化">Enable With Check</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
-			<div class="kk-sidenav-main kk-padding-leftl">
+			<div class="kk-sidenav-main kk-padding-leftl@s kk-padding-s">
 				{{template "content" .}}
 			</div>
 		</div>
