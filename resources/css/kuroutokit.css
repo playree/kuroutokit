@@ -11,7 +11,7 @@
  * Root Custom properties.
  */
 :root {
-  --kk-font-family: 'Noto Sans JP', sans-serif, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, 
+  --kk-font-family: "Noto Sans JP", sans-serif, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, 
                     "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", 
                     Verdana, "メイリオ", Meiryo, sans-serif;
   --kk-font-family-heading: var(--kk-font-family);
@@ -999,16 +999,21 @@ svg {
   border-radius: var(--kk-border-radius-base);
   padding: 8px;
 }
+.kk-codebox {
+  overflow: auto;
+}
 .kk-box-dashed {
   border-style: dashed;
 }
 .kk-codebox, .kk-codebox>code {
   font-size: var(--kk-font-size-ss);
   font-weight: normal;
+  line-height: var(--kk-font-size-s);
 }
 .kk-codebox>code {
   color: inherit;
   background-color: unset;
+  padding: 0;
 }
 .kk-codebox[title]::before {
   content: attr(title);
@@ -1023,6 +1028,7 @@ svg {
   border-right: solid 1px var(--kk-border-color-base);
   background-color: #888;
   color: #fff;
+  font-family: var(--kk-font-family-code);
 }
 .kk-codebox[type="dark"] {
   background-color: #244;

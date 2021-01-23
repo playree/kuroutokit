@@ -1,175 +1,175 @@
 <!--params
-    {
-        "title":"KUROUTO Kit - Form Parts"
-    }
+  {
+    "title":"KUROUTO Kit - Form Parts"
+  }
 -->
 {{extends "_parts/base.html"}}
 {{define "content"}}
 <div class="kk-container">
-    <h1>Form Parts</h1>
+  <h1>Form Parts</h1>
 </div>
 <div class="kk-container">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Input<p>インプット</p></span></h2>
-    <div par>
-	    <pre class="kk-codebox" type="dark" title="HTML">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Input<p>インプット</p></span></h2>
+  <div par>
+	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <div grid-col>
-            <div class="kk-col6@m kk-col12">
-                <input class="kk-input kk-margin-top" type="text" value="abc123あいう" placeholder="Input">
-                <input class="kk-input kk-margin-top" type="text" value="Disabled" disabled>
-                <input class="kk-input kk-margin-top" type="text" value="Readonly" readonly>
-                <input class="kk-input kk-margin-top" size-s type="text" value="size-s">
-                <input class="kk-input kk-margin-top" size-l type="text" value="size-l">
-                <input class="kk-input kk-margin-top" type="date" value="2021-01-02">
-                <input class="kk-input kk-margin-top" type="text" value="" placeholder="Datalist" list="datalist">
-                <datalist id="datalist">
-                    <option>123</option>
-                    <option>abc</option>
-                    <option>あいう</option>
-                </datalist>
-            </div>
-        </div>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12">
+        <input class="kk-input kk-margin-top" type="text" value="abc123あいう" placeholder="Input">
+        <input class="kk-input kk-margin-top" type="text" value="Disabled" disabled>
+        <input class="kk-input kk-margin-top" type="text" value="Readonly" readonly>
+        <input class="kk-input kk-margin-top" size-s type="text" value="size-s">
+        <input class="kk-input kk-margin-top" size-l type="text" value="size-l">
+        <input class="kk-input kk-margin-top" type="date" value="2021-01-02">
+        <input class="kk-input kk-margin-top" type="text" value="" placeholder="Datalist" list="datalist">
+        <datalist id="datalist">
+          <option>123</option>
+          <option>abc</option>
+          <option>あいう</option>
+        </datalist>
+      </div>
     </div>
+  </div>
 </div>
 <div class="kk-container">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Movable Label Input<p>ラベルが動くインプット</p></span></h2>
-    <div par>
-	    <pre class="kk-codebox" type="dark" title="HTML">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Movable Label Input<p>ラベルが動くインプット</p></span></h2>
+  <div par>
+	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <div grid-col>
-            <div class="kk-col6@m kk-col12">
-                <div class="kk-input-field">
-                    <input id="input1" class="kk-input" type="text">
-                    <label class="kk-input-label" for="input1">label</label>
-                </div>
-                <div class="kk-input-field">
-                    <input id="input2" class="kk-input" type="text">
-                    <label class="kk-movable-label" for="input2">label</label>
-                </div>
-                <div class="kk-input-field">
-                    <input id="input3" class="kk-input" type="text" value="Test">
-                    <label class="kk-movable-label" for="input3">label</label>
-                </div>
-            </div>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12">
+        <div class="kk-input-field">
+          <input id="input1" class="kk-input" type="text">
+          <label class="kk-input-label" for="input1">label</label>
         </div>
+        <div class="kk-input-field">
+          <input id="input2" class="kk-input" type="text">
+          <label class="kk-movable-label" for="input2">label</label>
+        </div>
+        <div class="kk-input-field">
+          <input id="input3" class="kk-input" type="text" value="Test">
+          <label class="kk-movable-label" for="input3">label</label>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="kk-container">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Button<p>ボタン</p></span></h2>
-    <div par>
-	    <pre class="kk-codebox" type="dark" title="HTML">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Button<p>ボタン</p></span></h2>
+  <div par>
+	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <div grid-col>
-            <div class="kk-col6@m kk-col12">
-                <button class="kk-button kk-margin-top" type="submit">Default</button>
-                <button class="kk-button kk-margin-top" type="submit" disabled>Disabled</button>
-                <button class="kk-button kk-margin-top" theme="primary" type="submit">Primary</button>
-                <button class="kk-button kk-margin-top" theme="secondary" type="submit">Secondary</button>
-                <button class="kk-button kk-margin-top" theme="caution" type="submit">Caution</button>
-                <button class="kk-button kk-margin-top" size-s theme="primary" type="submit">size-s</button>
-                <button class="kk-button kk-margin-top" size-l theme="primary" type="submit">size-l</button>
-            </div>
-        </div>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12">
+        <button class="kk-button kk-margin-top" type="submit">Default</button>
+        <button class="kk-button kk-margin-top" type="submit" disabled>Disabled</button>
+        <button class="kk-button kk-margin-top" theme="primary" type="submit">Primary</button>
+        <button class="kk-button kk-margin-top" theme="secondary" type="submit">Secondary</button>
+        <button class="kk-button kk-margin-top" theme="caution" type="submit">Caution</button>
+        <button class="kk-button kk-margin-top" size-s theme="primary" type="submit">size-s</button>
+        <button class="kk-button kk-margin-top" size-l theme="primary" type="submit">size-l</button>
+      </div>
     </div>
+  </div>
 </div>
 <div class="kk-container">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Checkbox<p>チェックボックス</p></span></h2>
-    <div par>
-	    <pre class="kk-codebox" type="dark" title="HTML">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Checkbox<p>チェックボックス</p></span></h2>
+  <div par>
+	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <div grid-col>
-            <div class="kk-col6@m kk-col12" grid-col>
-                <div class="kk-col5 kk-margin-top-s">
-                    <input id="check1" class="kk-checkbox" type="checkbox">
-                    <label for="check1">CheckBox</label>
-                </div>
-                <div class="kk-col5 kk-margin-top-s">
-                    <input id="check2" class="kk-checkbox" type="checkbox" checked disabled>
-                    <label for="check2">Disabled</label>
-                </div>
-                <div class="kk-col5 kk-margin-top-s">
-                    <input id="check3" class="kk-checkbox" type="checkbox" size-s>
-                    <label for="check3">size-s</label>
-                </div>
-                <div class="kk-col5 kk-margin-top-s">
-                    <input id="check4" class="kk-checkbox" type="checkbox" size-l>
-                    <label for="check4">size-l</label>
-                </div>
-            </div>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12" grid-col>
+        <div class="kk-col5 kk-margin-top-s">
+          <input id="check1" class="kk-checkbox" type="checkbox">
+          <label for="check1">CheckBox</label>
         </div>
+        <div class="kk-col5 kk-margin-top-s">
+          <input id="check2" class="kk-checkbox" type="checkbox" checked disabled>
+          <label for="check2">Disabled</label>
+        </div>
+        <div class="kk-col5 kk-margin-top-s">
+          <input id="check3" class="kk-checkbox" type="checkbox" size-s>
+          <label for="check3">size-s</label>
+        </div>
+        <div class="kk-col5 kk-margin-top-s">
+          <input id="check4" class="kk-checkbox" type="checkbox" size-l>
+          <label for="check4">size-l</label>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="kk-container">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Radio Button<p>ラジオボタン</p></span></h2>
-    <div par>
-	    <pre class="kk-codebox" type="dark" title="HTML">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Radio Button<p>ラジオボタン</p></span></h2>
+  <div par>
+	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <div grid-col>
-            <div class="kk-col6@m kk-col12" grid-col>
-                <div class="kk-col5 kk-margin-top-s">
-                    <input id="radio1" name="radio" class="kk-radio" type="radio">
-                    <label for="radio1">Normal</label>
-                </div>
-                <div class="kk-col5 kk-margin-top-s">
-                    <input id="radio2" name="radio" class="kk-radio" type="radio" disabled>
-                    <label for="radio2">Disabled</label>
-                </div>
-                <div class="kk-col5 kk-margin-top-s">
-                    <input id="radio3" name="radio" class="kk-radio" type="radio" size-s>
-                    <label for="radio3">size-s</label>
-                </div>
-                <div class="kk-col5 kk-margin-top-s">
-                    <input id="radio4" name="radio" class="kk-radio" type="radio" size-l>
-                    <label for="radio4">size-l</label>
-                </div>
-            </div>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12" grid-col>
+        <div class="kk-col5 kk-margin-top-s">
+          <input id="radio1" name="radio" class="kk-radio" type="radio">
+          <label for="radio1">Normal</label>
         </div>
+        <div class="kk-col5 kk-margin-top-s">
+          <input id="radio2" name="radio" class="kk-radio" type="radio" disabled>
+          <label for="radio2">Disabled</label>
+        </div>
+        <div class="kk-col5 kk-margin-top-s">
+          <input id="radio3" name="radio" class="kk-radio" type="radio" size-s>
+          <label for="radio3">size-s</label>
+        </div>
+        <div class="kk-col5 kk-margin-top-s">
+          <input id="radio4" name="radio" class="kk-radio" type="radio" size-l>
+          <label for="radio4">size-l</label>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="kk-container">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Textarea<p>テキストエリア</p></span></h2>
-    <div par>
-	    <pre class="kk-codebox" type="dark" title="HTML">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Textarea<p>テキストエリア</p></span></h2>
+  <div par>
+	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <div grid-col>
-            <div class="kk-col6@m kk-col12">
-                <div class="kk-input-field">
-                    <textarea id="text1" class="kk-textarea" rows="3"></textarea>
-                    <label class="kk-input-label" for="text1">Textarea</label>
-                </div>
-                <textarea class="kk-textarea kk-margin-top" rows="3" placeholder="Textarea" disabled>Disabled</textarea>
-                <textarea class="kk-textarea kk-margin-top" rows="3" placeholder="Textarea" readonly>Readonly</textarea>
-                <textarea class="kk-textarea kk-margin-top" size-s rows="3" placeholder="Textarea">size-s</textarea>
-                <textarea class="kk-textarea kk-margin-top" size-l rows="3" placeholder="Textarea">size-l</textarea>
-            </div>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12">
+        <div class="kk-input-field">
+          <textarea id="text1" class="kk-textarea" rows="3"></textarea>
+          <label class="kk-input-label" for="text1">Textarea</label>
         </div>
+        <textarea class="kk-textarea kk-margin-top" rows="3" placeholder="Textarea" disabled>Disabled</textarea>
+        <textarea class="kk-textarea kk-margin-top" rows="3" placeholder="Textarea" readonly>Readonly</textarea>
+        <textarea class="kk-textarea kk-margin-top" size-s rows="3" placeholder="Textarea">size-s</textarea>
+        <textarea class="kk-textarea kk-margin-top" size-l rows="3" placeholder="Textarea">size-l</textarea>
+      </div>
     </div>
+  </div>
 </div>
 <div class="kk-container">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Select<p>選択リスト</p></span></h2>
-    <div par>
-	    <pre class="kk-codebox" type="dark" title="HTML">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Select<p>選択リスト</p></span></h2>
+  <div par>
+	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <div grid-col>
-            <div class="kk-col6@m kk-col12">
-                <select class="kk-select kk-margin-top">
-                    <option value=”on”>ON</option>
-                    <option value=”off”>OFF</option>
-                </select>
-                <select class="kk-select kk-margin-top" disabled>
-                    <option value=”on”>ON</option>
-                    <option value=”off”>OFF</option>
-                </select>
-                <div class="kk-input-field">
-                    <select id=”sel” class="kk-select">
-                        <option value=”on”>ON</option>
-                        <option value=”off”>OFF</option>
-                    </select>
-                    <label class="kk-input-label" for="sel">Select</label>
-                </div>
-            </div>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12">
+        <select class="kk-select kk-margin-top">
+          <option value=”on”>ON</option>
+          <option value=”off”>OFF</option>
+        </select>
+        <select class="kk-select kk-margin-top" disabled>
+          <option value=”on”>ON</option>
+          <option value=”off”>OFF</option>
+        </select>
+        <div class="kk-input-field">
+          <select id=”sel” class="kk-select">
+            <option value=”on”>ON</option>
+            <option value=”off”>OFF</option>
+          </select>
+          <label class="kk-input-label" for="sel">Select</label>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <br><br><br>
 {{end}}

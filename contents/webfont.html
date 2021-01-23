@@ -1,0 +1,37 @@
+<!--params
+  {
+    "title":"KUROUTO Kit - Web Font"
+  }
+-->
+{{extends "_parts/base.html"}}
+{{define "content"}}
+<div class="kk-container" size-l>
+  <h1>Web Font</h1>
+  <span>
+    <code>KUROUTO Kit</code>は基本のフォントとしてWebフォント(<a href="https://fonts.google.com/specimen/Noto+Sans+JP#standard-styles">Google FontsのNoto Sans JP</a>)を採用しています。<br>
+    指定のWebフォントを取り込むことで全デバイス共通のフォントでコンテンツを表示することができます。<br>
+    と言っても、Webフォントを最優先のフォントとして指定しているだけですので、Webフォントを取り込まなかった場合は通常のフォントが使用されます。
+  </span>
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Usage<p>使い方</p></span></h2>
+  <div par>
+    <span>
+      下記をコードを記載してWebフォントを取り込んでください。<br>
+      取り込むだけで基本フォントとしてWebフォント(Google FontsのNoto Sans JP)が使用されるようになります。
+    </span>
+	  <pre class="kk-codebox" type="dark" title="HTML">
+<code>&lt;head&gt;
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;</code></pre>
+    <span>
+      <code>KUROUTO Kit</code>におけるフォントの優先順位は下記のとおりです。
+    </span>
+    <pre class="kk-codebox" type="dark" title="HTML">
+<code>font-family: &quot;Noto Sans JP&quot;, sans-serif, -apple-system, BlinkMacSystemFont, Roboto, &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, HelveticaNeue, 
+             &quot;游ゴシック体&quot;, YuGothic, &quot;游ゴシック Medium&quot;, &quot;Yu Gothic Medium&quot;, &quot;游ゴシック&quot;, &quot;Yu Gothic&quot;, Verdana, 
+             &quot;メイリオ&quot;, Meiryo, sans-serif;</code></pre>
+    
+  </div>
+</div>
+<br><br><br>
+{{end}}

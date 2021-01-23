@@ -1,37 +1,37 @@
 <!--params
-    {
-        "title":"KUROUTO Kit - Enable With Check"
-    }
+  {
+    "title":"KUROUTO Kit - Enable With Check"
+  }
 -->
 {{extends "_parts/base.html"}}
 {{define "content"}}
 <div class="kk-container">
-    <h1>Enable With Check</h1>
+  <h1>Enable With Check</h1>
 </div>
 <div class="kk-container">
-    <h2 class="kk-heading-line"><span class="kk-withsubtext">Enable With Check<p>チェックで有効化</p></span></h2>
-    <div par>
-	    <pre class="kk-codebox" type="dark" title="HTML">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Enable With Check<p>チェックで有効化</p></span></h2>
+  <div par>
+	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
-        <div grid-col>
-            <div class="kk-col6@m kk-col12">
-                <input id="check_enable" class="kk-checkbox kk-enable-with-check" type="checkbox" target="input1, button1">
-                <label for="check_enable">以下の要素を有効にする</label>
-                <input id="input1" class="kk-input kk-margin-top" type="text" value="INPUT" placeholder="Input">
-                <button id="button1" class="kk-button kk-margin-top" type="submit">Button</button>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12">
+        <input id="check_enable" class="kk-checkbox kk-enable-with-check" type="checkbox" target="input1, button1">
+        <label for="check_enable">以下の要素を有効にする</label>
+        <input id="input1" class="kk-input kk-margin-top" type="text" value="INPUT" placeholder="Input">
+        <button id="button1" class="kk-button kk-margin-top" type="submit">Button</button>
 
-                <br><br>
+        <br><br>
 
-                <input id="check_disable" class="kk-checkbox kk-disable-with-check" type="checkbox" target="input2, button2">
-                <label for="check_disable">以下の要素を無効にする</label>
-                <input id="input2" class="kk-input kk-margin-top" type="text" value="INPUT" placeholder="Input">
-                <button id="button2" class="kk-button kk-margin-top" type="submit">Button</button>
-            </div>
-        </div>
+        <input id="check_disable" class="kk-checkbox kk-disable-with-check" type="checkbox" target="input2, button2">
+        <label for="check_disable">以下の要素を無効にする</label>
+        <input id="input2" class="kk-input kk-margin-top" type="text" value="INPUT" placeholder="Input">
+        <button id="button2" class="kk-button kk-margin-top" type="submit">Button</button>
+      </div>
     </div>
+  </div>
 </div>
 <br><br><br>
 <script>
-    KuroutoKit.initEnableWithCheck();
+  KuroutoKit.initEnableWithCheck();
 </script>
 {{end}}

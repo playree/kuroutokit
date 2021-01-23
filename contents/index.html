@@ -5,12 +5,12 @@
 -->
 {{extends "_parts/base.html"}}
 {{define "content"}}
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
 <div class="kk-container">
-	<div class="kk-align-center-h" style="font-family: 'Architects Daughter', cursive; font-size: 48px;">Kurouto Kit</div>
+	<div class="kk-align-center-h" style="font-family: 'Merienda', cursive; font-size: 48px;">KUROUTO Kit</div>
 	<br><br>
 	<p>
-		<code>Kurouto Kit</code>は、製作者の好みを大いに盛り込んだCSSフレームワークです。<br>
+		<code>KUROUTO Kit</code>は、製作者の好みを大いに盛り込んだCSSフレームワークです。<br>
 		ですので、おそらくはとんがった仕様になっているのではないかと。(笑)<br>
 	</p>
 	<p>
@@ -33,11 +33,24 @@
 				基本フォントにWebフォントを採用。<br>
 				各種デバイスでフォントを統一。(もちろん、通常フォントも使えます。)
 			</li>
+			<li>
+				Class名は<code>kk-*</code>で統一し、クラス名の衝突を回避。
+			</li>
 			<li>おそらく、既存CSSフレームワークとして<code><a href="https://getuikit.com/" target="_blank">UIkit</a></code>の影響を一番受けています。</li>
 		</ul>
 	</div>
 	<h2 class="kk-heading-line"><span class="kk-withsubtext">History<p>履歴</p></span></h2>
   <div par>
+		<div grid-col>
+			<table class="kk-col6@m kk-col12 kk-table kk-bg-color-normal kk-margin-top" theme="hline">
+				<tbody>
+						<tr>
+								<td>v0.0.1</td>
+								<td>公開開始</td>
+						</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </div>
 {{end}}
