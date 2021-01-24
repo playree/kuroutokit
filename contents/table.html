@@ -7,12 +7,70 @@
 {{define "content"}}
 <div class="kk-container">
   <h1>Table</h1>
-</div>
-<div class="kk-container">
+  <span>
+    テーブル表示です。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-table</td>
+            <td>テーブル</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>theme="hline"</td>
+            <td>横に線が入るタイプ</td>
+          </tr>
+          <tr>
+            <td>theme="cross"</td>
+            <td>縦横に線が入るタイプ</td>
+          </tr>
+          <tr>
+            <td>hover</td>
+            <td>マウスオーバーで行を強調</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <h2 class="kk-heading-line"><span class="kk-withsubtext">Table<p>デフォルトテーブル</p></span></h2>
   <div par>
+    <span>
+      線無しタイプのテーブルです。（デフォルト）<br>
+      背景色などは別途指定してください。
+    </span>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;table class=&quot;kk-table kk-bg-color-normal&quot;&gt;
+  &lt;caption&gt;Default Table&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header&lt;/th&gt;
+      &lt;th&gt;ヘッダ&lt;/th&gt;
+      &lt;th&gt;123456789&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data1&lt;/td&gt;
+      &lt;td&gt;データ1&lt;/td&gt;
+      &lt;td&gt;1111111111&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data2&lt;/td&gt;
+      &lt;td&gt;データ2&lt;/td&gt;
+      &lt;td&gt;2222222222&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
     <table class="kk-table kk-bg-color-normal">
       <caption>Default Table</caption>
       <thead>
@@ -40,8 +98,14 @@
 <div class="kk-container">
   <h2 class="kk-heading-line"><span class="kk-withsubtext">Table H-Line<p>水平ラインテーブル</p></span></h2>
   <div par>
+    <span>
+      横線が入ったタイプです。<br>
+      属性として<code>theme="hline"</code>を指定してください。
+    </span>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;table class=&quot;kk-table kk-bg-color-normal&quot; theme=&quot;hline&quot;&gt;
+  ・・・
+&lt;/table&gt;</code></pre>
     <table class="kk-table kk-bg-color-normal" theme="hline">
       <caption>H-Line Table</caption>
       <thead>
@@ -69,8 +133,14 @@
 <div class="kk-container">
   <h2 class="kk-heading-line"><span class="kk-withsubtext">Table Cross-Line<p>交差ラインテーブル</p></span></h2>
   <div par>
+    <span>
+      縦横線が入ったタイプです。<br>
+      属性として<code>theme="cross"</code>を指定してください。
+    </span>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;table class=&quot;kk-table kk-bg-color-normal&quot; theme=&quot;cross&quot;&gt;
+  ・・・
+&lt;/table&gt;</code></pre>
     <table class="kk-table kk-bg-color-normal" theme="cross">
       <caption>Cross Table</caption>
       <thead>
@@ -98,8 +168,14 @@
 <div class="kk-container">
   <h2 class="kk-heading-line"><span class="kk-withsubtext">Table Hover<p>行のマウスオーバー</p></span></h2>
   <div par>
+    <span>
+      マウスオーバーで行が強調されます。<br>
+      属性として<code>hover</code>を指定してください。
+    </span>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;table class=&quot;kk-table kk-bg-color-normal&quot; theme=&quot;hline&quot; hover&gt;
+  ・・・
+&lt;/table&gt;</code></pre>
     <table class="kk-table kk-bg-color-normal" theme="hline" hover>
       <caption>H-Line Table (Hover)</caption>
       <thead>
