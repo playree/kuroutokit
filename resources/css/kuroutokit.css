@@ -11,17 +11,22 @@
  * Root Custom properties.
  */
 :root {
-  --kk-font-family: "Noto Sans JP", sans-serif, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, 
+  /* font family */
+  --kk-font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, 
                     "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", 
                     Verdana, "メイリオ", Meiryo, sans-serif;
   --kk-font-family-heading: var(--kk-font-family);
   --kk-font-family-code: "BIZ UDGothic", SFMono-Regular, Consolas, "Roboto Mono", "Courier New", 
                          Meiryo, monospace;
+
+  /* font size */
   --kk-font-size-base: 16px;
   --kk-font-size-ss: 0.75rem;
   --kk-font-size-s: 0.875rem;
   --kk-font-size-l: 1.25rem;
   --kk-font-size-xl: 1.5rem;
+
+  /* font color */
   --kk-font-color-base: #333;
   --kk-font-color-light: #888;
   --kk-font-color-superlight: #ccc;
@@ -30,11 +35,13 @@
   --kk-font-color-inverse: #fff;
   --kk-font-color-link: #29f;
 
+  /* border */
   --kk-border-color-base: #ddd;
   --kk-border-color-active: #888;
-  --kk-border-radius-focus: #29f;
+  --kk-border-color-focus: #29f;
   --kk-border-radius-base: 2px 2px;
 
+  /* color */
   --kk-color-normal: #fff;
   --kk-color-dim: #eee;
   --kk-color-primary: #29f;
@@ -47,27 +54,29 @@
   --kk-color-attention: #feb;
 
   --kk-color-infomation: #adf;
-  --kk-border-color-infomation: #9de;
-  --kk-font-color-infomation: #29f;
+  --kk-color-infomation-border: #9de;
+  --kk-color-infomation-font: #29f;
   --kk-color-success: #afc;
-  --kk-border-color-success: #9eb;
-  --kk-font-color-success: #2b7;
+  --kk-color-success-border: #9eb;
+  --kk-color-success-font: #2b7;
   --kk-color-warning: #feb;
-  --kk-border-color-warning: #eda;
-  --kk-font-color-warning: #d84;
+  --kk-color-warning-border: #eda;
+  --kk-color-warning-font: #d84;
   --kk-color-error: #fcd;
-  --kk-border-color-error: #ebc;
-  --kk-font-color-error: #f57;
+  --kk-color-error-border: #ebc;
+  --kk-color-error-font: #f57;
 
   --kk-disabled-color: #fff;
   --kk-disabled-bg-color: #ddd;
 
+  /* height */
   --kk-form-obj-height-s: 24px;
   --kk-form-obj-height-m: 32px;
   --kk-form-obj-height-l: 40px;
 
   --kk-shadow: 2px 2px 6px 0 rgba(0,0,0,.5);
 
+  /* svg */
   --kk-svg-select: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%3Cpath%20d%3D%22m8.7708%205c0.0051811-0.14952-0.080888-0.28982-0.22507-0.36685l-5.5825-2.9741c-0.30973-0.16558-0.7042%200.03264-0.70428%200.35391v5.9481c8.37e-5%200.32127%200.39456%200.5195%200.70428%200.35391l5.5825-2.9741c0.13529-0.072344%200.22004-0.20075%200.22507-0.34098z%22%20fill%3D%22%23888%22%20stroke-width%3D%22.78946%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   --kk-svg-menu: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%225%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%3C%2Fsvg%3E");
   --kk-svg-check: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22rect1943%22%20d%3D%22M%204%2C6%2011%2C0%205%2C11%200%2C5%20Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
@@ -224,7 +233,7 @@ svg {
 }
 [cell],
 .kk-cell {
-  padding: 0 0.25rem;
+  padding: 0.25rem;
 }
 .kk-col1  { grid-column: span 1; }
 .kk-col2  { grid-column: span 2; }
@@ -344,7 +353,7 @@ svg {
 /*
  * Form Parts.
  */
-.kk-input, .kk-textarea, .kk-button, .kk-checkbox, .kk-radio, .kk-select {
+.kk-input, .kk-textarea, .kk-button, .kk-checkbox, .kk-radio, .kk-select, .kk-toggle:not([theme]) {
   font: inherit;
   box-sizing: border-box;
   border: 1px solid var(--kk-border-color-base);
@@ -387,7 +396,7 @@ svg {
   font-size: var(--kk-font-size-l);
 }
 .kk-input:focus:not(:read-only), .kk-textarea:focus:not(:read-only) {
-  border-color: var(--kk-border-radius-focus);
+  border-color: var(--kk-border-color-focus);
 }
 .kk-input:disabled, .kk-textarea:disabled {
   background-color: var(--kk-disabled-bg-color);
@@ -407,7 +416,7 @@ svg {
 
 .kk-input-field {
   position: relative;
-  margin-top: 1.75em;
+  margin-top: 1.6em;
 }
 .kk-input-field>.kk-input-label {
   position: absolute;
@@ -546,10 +555,10 @@ svg {
 }
 .kk-checkbox:focus, .kk-radio:focus {
   outline: none;
-  border-color: var(--kk-border-radius-focus);
+  border-color: var(--kk-border-color-focus);
 }
 .kk-checkbox:checked, .kk-radio:checked {
-  background-color: var(--kk-border-radius-focus);
+  background-color: var(--kk-border-color-focus);
   border-color: transparent;
 }
 .kk-checkbox:checked{
@@ -589,7 +598,7 @@ svg {
   font-size: var(--kk-font-size-l);
 }
 .kk-select:focus {
-  border-color: var(--kk-border-radius-focus);
+  border-color: var(--kk-border-color-focus);
 }
 .kk-select:disabled {
   background-color: var(--kk-disabled-bg-color);
@@ -599,19 +608,11 @@ svg {
  * Toggle.
  */
 .kk-toggle:not([theme]) {
-  font: inherit;
-  box-sizing: border-box;
   width: 60px;
   height: var(--kk-form-obj-height-m);
   margin: 0;
-  border: 1px solid var(--kk-border-color-base);
   border-radius: var(--kk-form-obj-height-m) var(--kk-form-obj-height-m);
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   background-color: var(--kk-color-normal);
-  transition: ease-in-out .2s;
-  -webkit-transition: ease-in-out .2s;
 }
 .kk-toggle:not([theme])[size-s] {
   height: var(--kk-form-obj-height-s);
@@ -671,7 +672,7 @@ svg {
   cursor: pointer;
 }
 .kk-toggle:not([theme]):focus, .kk-toggle:not([theme]):hover {
-  border-color: var(--kk-border-radius-focus);
+  border-color: var(--kk-border-color-focus);
 }
 
 .kk-toggle[theme="select"] {
@@ -679,7 +680,8 @@ svg {
   width: 0;
   opacity: 0;
 }
-.kk-toggle[theme="select"]+label::before {
+.kk-toggle[theme="select"]+label::before,
+.kk-toggle[theme="select"]+label::after {
   content: attr(data-off);
   display: inline-block;
   width: calc(50% - 4px);
@@ -690,18 +692,21 @@ svg {
   border-radius: var(--kk-border-radius-base);
   transition: ease-in-out .2s;
   -webkit-transition: ease-in-out .2s;
+  word-break: keep-all;
+  overflow: hidden;
+}
+.kk-toggle[theme="select"][size-s]+label::before,
+.kk-toggle[theme="select"][size-s]+label::after {
+  line-height: calc(var(--kk-form-obj-height-s) - 10px);
+  font-size: var(--kk-font-size-ss);
+}
+.kk-toggle[theme="select"][size-l]+label::before,
+.kk-toggle[theme="select"][size-l]+label::after {
+  line-height: calc(var(--kk-form-obj-height-l) - 10px);
 }
 .kk-toggle[theme="select"]+label::after {
   content: attr(data-on);
-  display: inline-block;
-  width: calc(50% - 4px);
-  box-sizing: border-box;
   margin: 4px 4px 0 0;
-  line-height: calc(var(--kk-form-obj-height-m) - 10px);
-  text-align: center;
-  border-radius: var(--kk-border-radius-base);
-  transition: ease-in-out .2s;
-  -webkit-transition: ease-in-out .2s;
 }
 .kk-toggle[theme="select"]+label {
   display: block;
@@ -716,19 +721,22 @@ svg {
   transition: ease-in-out .2s;
   -webkit-transition: ease-in-out .2s;
 }
-.kk-toggle[theme="select"]:not(:checked)+label::before {
-  background-color: var(--kk-color-primary);
-  color: var(--kk-color-normal);
-}
+.kk-toggle[theme="select"]:not(:checked)+label::before,
 .kk-toggle[theme="select"]:checked+label::after {
   background-color: var(--kk-color-primary);
   color: var(--kk-color-normal);
+}
+.kk-toggle[theme="select"][size-s]+label {
+  height: var(--kk-form-obj-height-s);
+}
+.kk-toggle[theme="select"][size-l]+label {
+  height: var(--kk-form-obj-height-l);
 }
 .kk-toggle[theme="select"]:not(:disabled)+label {
   cursor: pointer;
 }
 .kk-toggle[theme="select"]:focus+label, .kk-toggle[theme="select"]+label:hover {
-  border-color: var(--kk-border-radius-focus);
+  border-color: var(--kk-border-color-focus);
 }
 
 /*
@@ -741,11 +749,13 @@ svg {
 /*
  * Padding.
  */
+.kk-padding-ss { padding: 0.25rem !important; }
 .kk-padding-s { padding: 0.5rem !important; }
 .kk-padding,
 .kk-padding-m { padding: 1.0rem !important; }
 .kk-padding-l { padding: 2.0rem !important; }
 .kk-padding-leftl { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
+.kk-padding-rm { padding: 0 !important; }
 @media (min-width: 640px) {
   .kk-padding-s\@s { padding: 0.5rem !important; }
   .kk-padding\@s,
@@ -1051,23 +1061,23 @@ svg {
   word-break: keep-all;
 }
 .kk-message:not([theme]), .kk-message[theme="infomation"] {
-  color: var(--kk-font-color-infomation);
-  border: solid 1px var(--kk-border-color-infomation);
+  color: var(--kk-color-infomation-font);
+  border: solid 1px var(--kk-color-infomation-border);
   background-color: var(--kk-color-infomation);
 }
 .kk-message[theme="success"] {
-  color: var(--kk-font-color-success);
-  border: solid 1px var(--kk-border-color-success);
+  color: var(--kk-color-success-font);
+  border: solid 1px var(--kk-color-success-border);
   background-color: var(--kk-color-success);
 }
 .kk-message[theme="warning"] {
-  color: var(--kk-font-color-warning);
-  border: solid 1px var(--kk-border-color-warning);
+  color: var(--kk-color-warning-font);
+  border: solid 1px var(--kk-color-warning-border);
   background-color: var(--kk-color-warning);
 }
 .kk-message[theme="error"] {
-  color: var(--kk-font-color-error);
-  border: solid 1px var(--kk-border-color-error);
+  color: var(--kk-color-error-font);
+  border: solid 1px var(--kk-color-error-border);
   background-color: var(--kk-color-error);
 }
 

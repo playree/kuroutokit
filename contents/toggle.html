@@ -7,31 +7,35 @@
 {{define "content"}}
 <div class="kk-container">
   <h1>Toggle Switch</h1>
-</div>
-<div class="kk-container">
+  <span>
+    スイッチデザインのチェックボックスです。
+  </span>
   <h2 class="kk-heading-line"><span class="kk-withsubtext">ON/OFF Switch<p>ON/OFF式スイッチ</p></span></h2>
   <div par>
 	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
     <div grid-col>
-      <div class="kk-col3@m kk-col6" cell>
-        <div class="kk-margin-top-s">
+      <div class="kk-col6@m kk-col12" cell>
+        <div class="kk-input-field">
           <input id="toggle1" class="kk-toggle" type="checkbox">
           <label for="toggle1">ON/OFFスイッチ</label>
+          <label class="kk-input-label">default</label>
         </div>
       </div>
       <div class="kk-col9 kk-hidden@m"></div>
-      <div class="kk-col3@m kk-col6" cell>
-        <div class="kk-margin-top-s">
+      <div class="kk-col6@m kk-col12" cell>
+        <div class="kk-input-field">
           <input id="toggle2" class="kk-toggle" type="checkbox" size-s>
-          <label for="toggle2">size-s</label>
+          <label for="toggle2">小さいサイズを使用する</label>
+          <label class="kk-input-label">size-s</label>
         </div>
       </div>
       <div class="kk-col9 kk-hidden@m"></div>
-      <div class="kk-col3@m kk-col6" cell>
-        <div class="kk-margin-top-s">
-          <input id="toggle2" class="kk-toggle" type="checkbox" size-l>
-          <label for="toggle2">size-l</label>
+      <div class="kk-col6@m kk-col12" cell>
+        <div class="kk-input-field">
+          <input id="toggle3" class="kk-toggle" type="checkbox" size-l>
+          <label for="toggle3">大きいサイズを使用する</label>
+          <label class="kk-input-label">size-l</label>
         </div>
       </div>
     </div>
@@ -43,13 +47,28 @@
 	  <pre class="kk-codebox" type="dark" title="HTML">
 <code></code></pre>
     <div grid-col>
-      <div class="kk-col3@m kk-col6" cell>
-        <input id="toggle4" class="kk-toggle" type="checkbox" theme="select">
-        <label for="toggle4" data-on="ON" data-off="OFF"></label>
+      <div class="kk-col4@m kk-col12" cell>
+        <div class="kk-input-field">
+          <input id="toggle4" class="kk-toggle" type="checkbox" theme="select">
+          <label for="toggle4" data-on="ON" data-off="OFF"></label>
+          <label class="kk-input-label">default</label>
+        </div>
       </div>
-      <div class="kk-col3@m kk-col6" cell>
-        <input id="toggle5" class="kk-toggle" type="checkbox" theme="select">
-        <label for="toggle5" data-on="する" data-off="しない"></label>
+      <div class="kk-col9 kk-hidden@m"></div>
+      <div class="kk-col4@m kk-col12" cell>
+        <div class="kk-input-field">
+          <input id="toggle5" class="kk-toggle" type="checkbox" theme="select" size-s>
+          <label for="toggle5" data-on="はい" data-off="いいえ"></label>
+          <label class="kk-input-label">size-s</label>
+        </div>
+      </div>
+      <div class="kk-col9 kk-hidden@m"></div>
+      <div class="kk-col4@m kk-col12" cell>
+        <div class="kk-input-field">
+          <input id="toggle6" class="kk-toggle" type="checkbox" theme="select" size-l>
+          <label for="toggle6" data-on="小さいサイズ" data-off="大きいサイズ"></label>
+          <label class="kk-input-label">size-l</label>
+        </div>
       </div>
     </div>
   </div>
