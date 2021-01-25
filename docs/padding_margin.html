@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Kazuki Minakawa (funlab, Inc.)">
+    <link rel="shortcut icon" href="/resources/img/favicon.ico">
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="/resources/css/kuroutokit.css?v=2021012600" />
+    <script src="/resources/js/kuroutokit.js?v=2021012600"></script>
+    
+    <title>KUROUTO Kit - Padding &amp; Margin</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="sidenav_container" class="kk-sidenav-container" theme="panel">
+      <div id="sidenav_menu" class="kk-sidenav-menu kk-font-bold" shadow>
+        <ul>
+          <li><a href="/" data-over="はじめに">Getting Started</a></li>
+          <li class="kk-divider"></li>
+          <li>
+            <div class="kk-accordion" data-over="レイアウト系">Layout</div>
+            <ul>
+              <li><a href="/custom_properties.html" data-over="カスタムプロパティ">Custom properties</a></li>
+              <li><a href="/webfont.html" data-over="Webフォント">Web Font</a></li>
+              <li><a href="/container.html" data-over="コンテナ">Container</a></li>
+              <li><a href="/grid.html" data-over="グリッド">Grid</a></li>
+              <li><a href="/table.html" data-over="テーブル">Table</a></li>
+              <li><a href="/padding_margin.html" data-over="余白関連">Padding & Margin</a></li>
+              <li><a href="/sidenav.html" data-over="サイドナビ">Side Navigation</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="kk-accordion" data-over="コンポーネント系">Component</div>
+            <ul>
+              <li><a href="/form.html" data-over="フォーム関連部品">Form Parts</a></li>
+              <li><a href="/card.html" data-over="カード型表示">Card</a></li>
+              <li><a href="/message.html" data-over="メッセージ表示">Message</a></li>
+              <li><a href="/accordion.html" data-over="アコーディオン">Accordion</a></li>
+              <li><a href="/toggle.html" data-over="トグルスイッチ">Toggle Switch</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="kk-accordion" data-over="スクリプト系">Script</div>
+            <ul>
+              <li><a href="/enable_with_check.html" data-over="チェック連動型の有効/無効化">Enable With Check</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="kk-sidenav-main kk-padding-leftl@s kk-padding-s">
+        
+<div class="kk-container">
+  <h1>Padding & Margin</h1>
+  <span>
+    パディングやマージンの定義です。
+  </span>
+</div>
+<div class="kk-container">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Padding<p>パディング</p></span></h2>
+  <span>
+    パディングの設定です。<br>
+    レスポンシブの記述が利用できます。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-padding-ss</td>
+            <td>padding: 0.25rem</td>
+          </tr>
+          <tr>
+            <td>kk-padding-s</td>
+            <td>padding: 0.5rem</td>
+          </tr>
+          <tr>
+            <td>kk-padding</td>
+            <td>padding: 1.0rem</td>
+          </tr>
+          <tr>
+            <td>kk-padding-l</td>
+            <td>padding: 2.0rem</td>
+          </tr>
+          <tr>
+            <td>kk-padding-rm</td>
+            <td>padding: 0</td>
+          </tr>
+          <tr>
+            <td>kk-padding*@s</td>
+            <td>640px 以上の場合のみ有効</td>
+          </tr>
+          <tr>
+            <td>kk-padding*@m</td>
+            <td>960px 以上の場合のみ有効</td>
+          </tr>
+          <tr>
+            <td>kk-padding*@l</td>
+            <td>1200px 以上の場合のみ有効</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+  
+<div class="kk-container">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Margin<p>マージン</p></span></h2>
+  <span>
+    マージンの設定です。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-margin-top-ss</td>
+            <td>margin-top: 0.25rem</td>
+          </tr>
+          <tr>
+            <td>kk-margin-top-s</td>
+            <td>margin-top: 0.5rem</td>
+          </tr>
+          <tr>
+            <td>kk-margin-top</td>
+            <td>margin-top: 1.0rem</td>
+          </tr>
+          <tr>
+            <td>kk-margin-top-l</td>
+            <td>margin-top: 2.0rem</td>
+          </tr>
+          <tr>
+            <td>kk-margin-left-ss</td>
+            <td>margin-left: 0.25rem</td>
+          </tr>
+          <tr>
+            <td>kk-margin-left-s</td>
+            <td>margin-left: 0.5rem</td>
+          </tr>
+          <tr>
+            <td>kk-margin-left</td>
+            <td>margin-left: 1.0rem</td>
+          </tr>
+          <tr>
+            <td>kk-margin-left-l</td>
+            <td>margin-left: 2.0rem</td>
+          </tr>
+          <tr>
+            <td>kk-margin-rm</td>
+            <td>margin: 0</td>
+          </tr>
+          <tr>
+            <td>kk-margin-top-rm</td>
+            <td>margin-top: 0</td>
+          </tr>
+          <tr>
+            <td>kk-margin-bottom-rm</td>
+            <td>margin-bottom: 0</td>
+          </tr>
+          <tr>
+            <td>kk-margin-right-rm</td>
+            <td>margin-right: 0</td>
+          </tr>
+          <tr>
+            <td>kk-margin-left-rm</td>
+            <td>margin-left: 0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+      </div>
+    </div>
+  </body>
+</html>

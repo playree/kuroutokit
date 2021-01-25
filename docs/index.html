@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Kazuki Minakawa (funlab, Inc.)">
+    <link rel="shortcut icon" href="/resources/img/favicon.ico">
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="/resources/css/kuroutokit.css?v=2021012600" />
+    <script src="/resources/js/kuroutokit.js?v=2021012600"></script>
+    
+    <title>KUROUTO Kit</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="sidenav_container" class="kk-sidenav-container" theme="panel">
+      <div id="sidenav_menu" class="kk-sidenav-menu kk-font-bold" shadow>
+        <ul>
+          <li><a href="/" data-over="はじめに">Getting Started</a></li>
+          <li class="kk-divider"></li>
+          <li>
+            <div class="kk-accordion" data-over="レイアウト系">Layout</div>
+            <ul>
+              <li><a href="/custom_properties.html" data-over="カスタムプロパティ">Custom properties</a></li>
+              <li><a href="/webfont.html" data-over="Webフォント">Web Font</a></li>
+              <li><a href="/container.html" data-over="コンテナ">Container</a></li>
+              <li><a href="/grid.html" data-over="グリッド">Grid</a></li>
+              <li><a href="/table.html" data-over="テーブル">Table</a></li>
+              <li><a href="/padding_margin.html" data-over="余白関連">Padding & Margin</a></li>
+              <li><a href="/sidenav.html" data-over="サイドナビ">Side Navigation</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="kk-accordion" data-over="コンポーネント系">Component</div>
+            <ul>
+              <li><a href="/form.html" data-over="フォーム関連部品">Form Parts</a></li>
+              <li><a href="/card.html" data-over="カード型表示">Card</a></li>
+              <li><a href="/message.html" data-over="メッセージ表示">Message</a></li>
+              <li><a href="/accordion.html" data-over="アコーディオン">Accordion</a></li>
+              <li><a href="/toggle.html" data-over="トグルスイッチ">Toggle Switch</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="kk-accordion" data-over="スクリプト系">Script</div>
+            <ul>
+              <li><a href="/enable_with_check.html" data-over="チェック連動型の有効/無効化">Enable With Check</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="kk-sidenav-main kk-padding-leftl@s kk-padding-s">
+        
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+<div class="kk-container">
+	<div class="kk-align-center-h" style="font-family: 'Merienda', cursive; font-size: 48px;">KUROUTO Kit</div>
+	<div class="kk-align-center-h">最新バージョン　<span class="kk-label">0.0.1</span></div>
+	<br><br>
+	<p>
+		<code>KUROUTO Kit</code>は、製作者の好みを大いに盛り込んだCSSフレームワークです。<br>
+		ですので、おそらくはかなりとんがった仕様になっているのではないかと。(笑)<br>
+	</p>
+	<p>
+		もし気に入ってくれる方がいれば、ご自由にお使いください！<br>
+		国産CSSフレームワークとして少しでも使っていただけたら嬉しいです。<br>
+		CSS定義はまだまだ少ないですが、徐々に追加していく予定です。<br>
+	</p>
+	<div class="kk-message kk-margin-top" theme="warning">
+		※いまだ開発途中なので、大幅に仕様が変更される可能性があります。
+	</div>
+	<h2 class="kk-heading-line"><span class="kk-withsubtext">Installation<p>使い方</p></span></h2>
+  <div par>
+		<pre class="kk-codebox" type="dark" title="HTML">
+<code>&lt;!-- KUROUTO Kit --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.1/dist/kuroutokit.min.css&quot; /&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.1/dist/kuroutokit.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+  <p>
+		ローカルに取り込む場合は、<a href="https://github.com/playree/kuroutokit/releases">GitHubのリリースページ</a>よりダウンロードすることができます。
+	</p>
+	</div>
+	<h2 class="kk-heading-line"><span class="kk-withsubtext">Feature<p>特徴</p></span></h2>
+  <div par>
+		<ul>
+			<li>
+				各種CSS定義にカスタムプロパティを採用。<br>
+				カスタムプロパティを上書きすることでデザインのカスタムが容易に。<br>
+				フレームワークを使うことによりデザインが似通ってしまうデメリットの対策にも。
+			</li>
+			<li>
+				基本フォントにWebフォントを採用。<br>
+				各種デバイスでフォントを統一。(もちろん、通常フォントも使えます。)
+			</li>
+			<li>
+				Class名は<code>kk-*</code>で統一し、クラス名の衝突を回避。
+			</li>
+			<li>
+				日本語のドキュメント。（整備中ですが。。。
+			</li>
+			<li>
+				おそらく、既存CSSフレームワークとして<code><a href="https://getuikit.com/" target="_blank">UIkit</a></code>の影響を一番受けています。</li>
+			<li>
+				もちろん、このページも<code>KUROUTO Kit</code>で作成しています。<br>
+				ページの編集には<code><a href="https://github.com/playree/htmlworks">HTML Works</a></code>を使用しています。（さりげなく宣伝
+			</li>
+		</ul>
+	</div>
+	<h2 class="kk-heading-line"><span class="kk-withsubtext">History<p>履歴</p></span></h2>
+  <div par>
+		<div grid-col>
+			<table class="kk-col6@m kk-col12 kk-table kk-bg-color-normal kk-margin-top" theme="hline">
+				<tbody>
+						<tr>
+								<td>ver 0.0.1</td>
+								<td>2021/01/26</td>
+								<td>公開開始</td>
+						</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<br><br><br>
+
+      </div>
+    </div>
+  </body>
+</html>

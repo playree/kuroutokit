@@ -5,10 +5,10 @@ CSS Framework
 
 ## テスト表示
 ```
-hugo server
+htmlworks serve
 ```
 
 ## 公開用ファイル生成
 ```
-hugo -d ./docs
+htmlworks gen
 ```
