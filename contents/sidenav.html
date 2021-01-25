@@ -1,0 +1,111 @@
+<!--params
+  {
+    "title":"KUROUTO Kit - Side Navigation"
+  }
+-->
+{{extends "_parts/base.html"}}
+{{define "content"}}
+<div class="kk-container">
+  <h1>Side Navigation</h1>
+  <span>
+    左横に表示するタイプのナビメニューです。<br>
+    本ページにも使用しています。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-sidenav-container</td>
+            <td>サイドナビ用コンテナ</td>
+          </tr>
+          <tr>
+            <td>kk-sidenav-menu</td>
+            <td>サイドナビ用メニュー領域</td>
+          </tr>
+          <tr>
+            <td>kk-sidenav-main</td>
+            <td>サイドナビ用メイン領域</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>theme="panel"</td>
+            <td>パネルデザイン</td>
+          </tr>
+          <tr>
+            <td>shadow</td>
+            <td>影付きデザイン</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Sample<p>サンプル</p></span></h2>
+  <div par>
+    <span>
+      下記の設定を変更することで、本ページのメニューでデザインをお試しいただけます。
+    </span>
+    <div grid-col>
+      <div class="kk-col6@m kk-col12" cell>
+        <div class="kk-margin-top-s">
+          <input id="theme" class="kk-toggle" type="checkbox" theme="select" checked>
+          <label for="theme" data-off="通常デザイン" data-on="パネルデザイン"></label>
+        </div>
+      </div>
+      <div class="kk-col12" cell>
+        <div class="kk-margin-top-s">
+          <input id="shadow" class="kk-toggle" type="checkbox" checked>
+          <label for="shadow">メニューに影を付ける</label>
+        </div>
+      </div>
+    </div>
+    <pre class="kk-codebox" type="dark" title="HTML">
+<code>&lt;div id=&quot;sidenav_container&quot; class=&quot;kk-sidenav-container&quot; theme=&quot;panel&quot;&gt;
+  &lt;div id=&quot;sidenav_menu&quot; class=&quot;kk-sidenav-menu kk-font-bold&quot; shadow&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;/&quot; data-over=&quot;はじめに&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;kk-divider&quot;&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class=&quot;kk-accordion&quot; data-over=&quot;レイアウト系&quot;&gt;Layout&lt;/div&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;/webfont.html&quot; data-over=&quot;Webフォント&quot;&gt;Web Font&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;/container.html&quot; data-over=&quot;コンテナ&quot;&gt;Container&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;kk-sidenav-main kk-padding-leftl@s kk-padding-s&quot;&gt;
+    メインコンテンツ
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+
+</div>
+<br><br><br>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("theme").addEventListener("change", (event) => {
+      if(event.target.checked) {
+        document.getElementById("sidenav_container").setAttribute("theme", "panel");
+      } else {
+        document.getElementById("sidenav_container").removeAttribute("theme");
+      }
+    });
+    document.getElementById("shadow").addEventListener("change", (event) => {
+      if(event.target.checked) {
+        document.getElementById("sidenav_menu").setAttribute("shadow", "");
+      } else {
+        document.getElementById("sidenav_menu").removeAttribute("shadow");
+      }
+    });
+  });
+</script>
+{{end}}

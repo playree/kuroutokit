@@ -1,4 +1,4 @@
-/*! KUROUTO Kit 0.0.1 | https:// | (c) 2020 Kazuki Minakawa (funlab, Inc.) | MIT License */
+/*! KUROUTO Kit 0.0.1 | https://playree.github.io/kuroutokit/ | (c) 2020 Kazuki Minakawa (funlab, Inc.) | MIT License */
 
 /*
  * @s = @media (max-width: 559px)  : Smart Phone
@@ -892,14 +892,14 @@ svg {
   --kk-sidenav-main-bg-color: var(--kk-color-normal);
   --kk-sidenav-icon: var(--kk-svg-menu);
   --kk-sidenav-select-bg-color: var(--kk-sidenav-menu-bg-color);
-  --kk-sidenav-line-height: 24px;
+  --kk-sidenav-line-height: 26px;
 }
 .kk-sidenav-container[theme="panel"] {
   --kk-sidenav-menu-bg-color: var(--kk-color-normal);
   --kk-sidenav-main-bg-color: var(--kk-color-dim);
   --kk-sidenav-select-color: #88f;
   --kk-sidenav-select-bg-color: var(--kk-color-select);
-  --kk-sidenav-line-height: 28px;
+  --kk-sidenav-line-height: 26px;
 }
 .kk-sidenav-menu {
   position: fixed;

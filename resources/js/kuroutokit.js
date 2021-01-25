@@ -1,4 +1,4 @@
-/*! KUROUTO kit 0.0.1 | https:// | (c) 2020 Kazuki Minakawa (funlab, Inc.) | MIT License */
+/*! KUROUTO kit 0.0.1 | https://playree.github.io/kuroutokit/ | (c) 2020 Kazuki Minakawa (funlab, Inc.) | MIT License */
 
 (function (global, factory) {
     typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() :

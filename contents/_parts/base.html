@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="author" content="Kazuki Minakawa (funlab, Inc.)">
-		<link rel="shortcut icon" href="/resources/img/favicon.ico">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Kazuki Minakawa (funlab, Inc.)">
+    <link rel="shortcut icon" href="/resources/img/favicon.ico">
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
-		<!-- KUROUTO Kit -->
-		<link rel="stylesheet" href="/resources/css/kuroutokit.css?v=2020043009" />
-		<script src="/resources/js/kuroutokit.js?v=2020043009"></script>
-		<title>{{.title}}</title>
-		<style>
-		</style>
-	</head>
-	<body>
-		<div class="kk-sidenav-container" theme="panel">
-			<div class="kk-sidenav-menu kk-font-bold" shadow>
-				<ul>
-					<li><a href="/" data-over="はじめに">Getting Started</a></li>
-					<li class="kk-divider"></li>
-					<li>
-						<div class="kk-accordion" data-over="レイアウト系">Layout</div>
-						<ul>
-							<li><a href="/custom_properties.html" data-over="カスタムプロパティ">Custom properties</a></li>
-							<li><a href="/webfont.html" data-over="Webフォント">Web Font</a></li>
-							<li><a href="/container.html" data-over="コンテナ">Container</a></li>
-							<li><a href="/grid.html" data-over="グリッド">Grid</a></li>
-							<li><a href="/table.html" data-over="テーブル">Table</a></li>
-							<li><a href="/padding_margin.html" data-over="余白関連">Padding & Margin</a></li>
-						</ul>
-					</li>
-					<li>
-						<div class="kk-accordion" data-over="コンポーネント系">Component</div>
-						<ul>
-							<li><a href="/form.html" data-over="フォーム関連部品">Form Parts</a></li>
-							<li><a href="/card.html" data-over="カード型表示">Card</a></li>
-							<li><a href="/message.html" data-over="メッセージ表示">Message</a></li>
-							<li><a href="/accordion.html" data-over="アコーディオン">Accordion</a></li>
-							<li><a href="/toggle.html" data-over="トグルスイッチ">Toggle Switch</a></li>
-						</ul>
-					</li>
-					<li>
-						<div class="kk-accordion" data-over="スクリプト系">Script</div>
-						<ul>
-							<li><a href="/enable_with_check.html" data-over="チェック連動型の有効/無効化">Enable With Check</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="kk-sidenav-main kk-padding-leftl@s kk-padding-s">
-				{{template "content" .}}
-			</div>
-		</div>
-	</body>
+    <!-- KUROUTO Kit -->
+    <link rel="stylesheet" href="/resources/css/kuroutokit.css?v=2021012600" />
+    <script src="/resources/js/kuroutokit.js?v=2021012600"></script>
+    <!--
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.1/dist/kuroutokit.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.1/dist/kuroutokit.min.js"></script>
+    -->
+    <title>{{.title}}</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="sidenav_container" class="kk-sidenav-container" theme="panel">
+      <div id="sidenav_menu" class="kk-sidenav-menu kk-font-bold" shadow>
+        <ul>
+          <li><a href="/" data-over="はじめに">Getting Started</a></li>
+          <li class="kk-divider"></li>
+          <li>
+            <div class="kk-accordion" data-over="レイアウト系">Layout</div>
+            <ul>
+              <li><a href="/custom_properties.html" data-over="カスタムプロパティ">Custom properties</a></li>
+              <li><a href="/webfont.html" data-over="Webフォント">Web Font</a></li>
+              <li><a href="/container.html" data-over="コンテナ">Container</a></li>
+              <li><a href="/grid.html" data-over="グリッド">Grid</a></li>
+              <li><a href="/table.html" data-over="テーブル">Table</a></li>
+              <li><a href="/padding_margin.html" data-over="余白関連">Padding & Margin</a></li>
+              <li><a href="/sidenav.html" data-over="サイドナビ">Side Navigation</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="kk-accordion" data-over="コンポーネント系">Component</div>
+            <ul>
+              <li><a href="/form.html" data-over="フォーム関連部品">Form Parts</a></li>
+              <li><a href="/card.html" data-over="カード型表示">Card</a></li>
+              <li><a href="/message.html" data-over="メッセージ表示">Message</a></li>
+              <li><a href="/accordion.html" data-over="アコーディオン">Accordion</a></li>
+              <li><a href="/toggle.html" data-over="トグルスイッチ">Toggle Switch</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="kk-accordion" data-over="スクリプト系">Script</div>
+            <ul>
+              <li><a href="/enable_with_check.html" data-over="チェック連動型の有効/無効化">Enable With Check</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="kk-sidenav-main kk-padding-leftl@s kk-padding-s">
+        {{template "content" .}}
+      </div>
+    </div>
+  </body>
 </html>
