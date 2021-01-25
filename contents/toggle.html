@@ -10,10 +10,61 @@
   <span>
     スイッチデザインのチェックボックスです。
   </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-toggle</td>
+            <td>トグルスイッチ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>指定なし</td>
+            <td>ON/OFF式デザイン</td>
+          </tr>
+          <tr>
+            <td>theme="select"</td>
+            <td>選択式デザイン</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <h2 class="kk-heading-line"><span class="kk-withsubtext">ON/OFF Switch<p>ON/OFF式スイッチ</p></span></h2>
   <div par>
+    <span>
+      ON/OFF式のトグルスイッチです。<code>kk-toggle</code>を指定してください。
+    </span>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+  &lt;div class=&quot;kk-input-field&quot;&gt;
+    &lt;input id=&quot;toggle1&quot; class=&quot;kk-toggle&quot; type=&quot;checkbox&quot;&gt;
+    &lt;label for=&quot;toggle1&quot;&gt;ON/OFFスイッチ&lt;/label&gt;
+    &lt;label class=&quot;kk-input-label&quot;&gt;default&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+  &lt;div class=&quot;kk-input-field&quot;&gt;
+    &lt;input id=&quot;toggle2&quot; class=&quot;kk-toggle&quot; type=&quot;checkbox&quot; size-s&gt;
+    &lt;label for=&quot;toggle2&quot;&gt;小さいサイズを使用する&lt;/label&gt;
+    &lt;label class=&quot;kk-input-label&quot;&gt;size-s&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+  &lt;div class=&quot;kk-input-field&quot;&gt;
+    &lt;input id=&quot;toggle3&quot; class=&quot;kk-toggle&quot; type=&quot;checkbox&quot; size-l&gt;
+    &lt;label for=&quot;toggle3&quot;&gt;大きいサイズを使用する&lt;/label&gt;
+    &lt;label class=&quot;kk-input-label&quot;&gt;size-l&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
     <div grid-col>
       <div class="kk-col6@m kk-col12" cell>
         <div class="kk-input-field">
@@ -44,8 +95,34 @@
 <div class="kk-container">
   <h2 class="kk-heading-line"><span class="kk-withsubtext">Select Switch<p>選択式スイッチ</p></span></h2>
   <div par>
+    <span>
+      選択式のトグルスイッチです。<br>
+      <code>kk-toggle</code>と合わせて、属性<code>theme="select"</code>を指定してください。<br>
+      属性<code>data-on=</code>と<code>data-off=</code>で選択肢の文言を設定できます。<br>
+      下記サンプルを参考にしてください。
+    </span>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;div class=&quot;kk-col4@m kk-col12&quot; cell&gt;
+  &lt;div class=&quot;kk-input-field&quot;&gt;
+    &lt;input id=&quot;toggle4&quot; class=&quot;kk-toggle&quot; type=&quot;checkbox&quot; theme=&quot;select&quot;&gt;
+    &lt;label for=&quot;toggle4&quot; data-on=&quot;ON&quot; data-off=&quot;OFF&quot;&gt;&lt;/label&gt;
+    &lt;label class=&quot;kk-input-label&quot;&gt;default&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col4@m kk-col12&quot; cell&gt;
+  &lt;div class=&quot;kk-input-field&quot;&gt;
+    &lt;input id=&quot;toggle5&quot; class=&quot;kk-toggle&quot; type=&quot;checkbox&quot; theme=&quot;select&quot; size-s&gt;
+    &lt;label for=&quot;toggle5&quot; data-on=&quot;はい&quot; data-off=&quot;いいえ&quot;&gt;&lt;/label&gt;
+    &lt;label class=&quot;kk-input-label&quot;&gt;size-s&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col4@m kk-col12&quot; cell&gt;
+  &lt;div class=&quot;kk-input-field&quot;&gt;
+    &lt;input id=&quot;toggle6&quot; class=&quot;kk-toggle&quot; type=&quot;checkbox&quot; theme=&quot;select&quot; size-l&gt;
+    &lt;label for=&quot;toggle6&quot; data-on=&quot;小さいサイズ&quot; data-off=&quot;大きいサイズ&quot;&gt;&lt;/label&gt;
+    &lt;label class=&quot;kk-input-label&quot;&gt;size-l&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
     <div grid-col>
       <div class="kk-col4@m kk-col12" cell>
         <div class="kk-input-field">

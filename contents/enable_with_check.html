@@ -7,21 +7,66 @@
 {{define "content"}}
 <div class="kk-container">
   <h1>Enable With Check</h1>
+  <span>
+    チェックに連動する有効／無効化スクリプトです。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-enable-with-check</td>
+            <td>チェックしたら有効化</td>
+          </tr>
+          <tr>
+            <td>kk-disable-with-check</td>
+            <td>チェックしたら無効化</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>target</td>
+            <td>対象のidをカンマ区切りで指定します</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 <div class="kk-container">
   <h2 class="kk-heading-line"><span class="kk-withsubtext">Enable With Check<p>チェックで有効化</p></span></h2>
   <div par>
+    <span>
+      チェックボックスに<code>kk-enable-with-check</code>または<code>kk-disable-with-check</code>を指定し、<br>
+      対象要素のidを属性<code>target=</code>にカンマ区切りで指定してください。
+    </span>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+  &lt;input id=&quot;check_enable&quot; class=&quot;kk-checkbox kk-enable-with-check&quot; type=&quot;checkbox&quot; target=&quot;input1, button1&quot;&gt;
+  &lt;label for=&quot;check_enable&quot;&gt;以下の要素を有効にする&lt;/label&gt;
+  &lt;input id=&quot;input1&quot; class=&quot;kk-input kk-margin-top&quot; type=&quot;text&quot; value=&quot;INPUT&quot; placeholder=&quot;Input&quot;&gt;
+  &lt;button id=&quot;button1&quot; class=&quot;kk-button kk-margin-top&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+  &lt;input id=&quot;check_disable&quot; class=&quot;kk-checkbox kk-disable-with-check&quot; type=&quot;checkbox&quot; target=&quot;input2, button2&quot;&gt;
+  &lt;label for=&quot;check_disable&quot;&gt;以下の要素を無効にする&lt;/label&gt;
+  &lt;input id=&quot;input2&quot; class=&quot;kk-input kk-margin-top&quot; type=&quot;text&quot; value=&quot;INPUT&quot; placeholder=&quot;Input&quot;&gt;
+  &lt;button id=&quot;button2&quot; class=&quot;kk-button kk-margin-top&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
     <div grid-col>
-      <div class="kk-col6@m kk-col12">
+      <div class="kk-col6@m kk-col12" cell>
         <input id="check_enable" class="kk-checkbox kk-enable-with-check" type="checkbox" target="input1, button1">
         <label for="check_enable">以下の要素を有効にする</label>
         <input id="input1" class="kk-input kk-margin-top" type="text" value="INPUT" placeholder="Input">
         <button id="button1" class="kk-button kk-margin-top" type="submit">Button</button>
-
-        <br><br>
-
+      </div>
+      <div class="kk-col6@m kk-col12" cell>
         <input id="check_disable" class="kk-checkbox kk-disable-with-check" type="checkbox" target="input2, button2">
         <label for="check_disable">以下の要素を無効にする</label>
         <input id="input2" class="kk-input kk-margin-top" type="text" value="INPUT" placeholder="Input">
