@@ -7,12 +7,65 @@
 {{define "content"}}
 <div class="kk-container">
   <h1>Message</h1>
+  <span>
+    カードのように表示するための定義です。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-message</td>
+            <td>メッセージ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>指定なし</td>
+            <td>Infomationの配色</td>
+          </tr>
+          <tr>
+            <td>theme="success"</td>
+            <td>Successの配色</td>
+          </tr>
+          <tr>
+            <td>theme="warning"</td>
+            <td>Warningの配色</td>
+          </tr>
+          <tr>
+            <td>theme="error"</td>
+            <td>Errorの配色</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 <div class="kk-container">
   <h2 class="kk-heading-line"><span class="kk-withsubtext">Message<p>メッセージ</p></span></h2>
+  <span>
+    メッセージ表示です。<code>kk-message</code>を指定します。
+  </span>
   <div par>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;div class=&quot;kk-message kk-margin-top&quot;&gt;
+  Infomation message.
+&lt;/div&gt;
+&lt;div class=&quot;kk-message kk-margin-top&quot; theme=&quot;success&quot;&gt;
+  Success message.
+&lt;/div&gt;
+&lt;div class=&quot;kk-message kk-margin-top&quot; theme=&quot;warning&quot;&gt;
+  Warning message.
+&lt;/div&gt;
+&lt;div class=&quot;kk-message kk-margin-top&quot; theme=&quot;error&quot;&gt;
+  Error message.
+&lt;/div&gt;</code></pre>
     <div class="kk-container" size-s>
       <div class="kk-message kk-margin-top">
         Infomation message.

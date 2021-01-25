@@ -1048,6 +1048,9 @@ svg {
   background-color: var(--kk-color-normal);
   border-radius: var(--kk-border-radius-base);
 }
+.kk-card[size-s] {
+  padding: 0.5rem;
+}
 .kk-card[size-l] {
   padding: 2rem;
 }

@@ -7,30 +7,87 @@
 {{define "content"}}
 <div class="kk-container">
   <h1>Card</h1>
+  <span>
+    カードのように表示するための定義です。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-card</td>
+            <td>カード</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>size-s</td>
+            <td>周りの余白が小さくなります</td>
+          </tr>
+          <tr>
+            <td>size-l</td>
+            <td>周りの余白が大きくなります</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 <div class="kk-container">
   <h2 class="kk-heading-line"><span class="kk-withsubtext">Card<p>カード</p></span></h2>
+  <span>
+    カード表示です。<code>kk-card</code>を指定します。
+  </span>
   <div par>
 	  <pre class="kk-codebox" type="dark" title="HTML">
-<code></code></pre>
+<code>&lt;div class=&quot;kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-card&quot;&gt;Default&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-card kk-shadow&quot;&gt;影付き&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-card&quot; theme=&quot;primary&quot;&gt;Primary&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-card&quot; theme=&quot;secondary&quot;&gt;Secondary&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-card&quot; theme=&quot;caution&quot;&gt;Caution&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-card&quot; theme=&quot;primary&quot; size-s&gt;小さいサイズ&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-card kk-shadow&quot; theme=&quot;primary&quot; size-l&gt;大きいサイズ&lt;/div&gt;
+&lt;/div&gt;</code></pre>
     <div class="kk-container" size-s grid-col>
-      <div class="kk-col6 kk-padding-s">
-        <div class="kk-card">Card</div>
+      <div class="kk-col6" cell>
+        <div class="kk-card">Default</div>
       </div>
-      <div class="kk-col6 kk-padding-s">
-        <div class="kk-card kk-shadow">Card</div>
+      <div class="kk-col6" cell>
+        <div class="kk-card kk-shadow">影付き</div>
       </div>
-      <div class="kk-col6 kk-padding-s">
-        <div class="kk-card" theme="primary">Card</div>
+      <div class="kk-col6" cell>
+        <div class="kk-card" theme="primary">Primary</div>
       </div>
-      <div class="kk-col6 kk-padding-s">
-        <div class="kk-card" theme="secondary">Card</div>
+      <div class="kk-col6" cell>
+        <div class="kk-card" theme="secondary">Secondary</div>
       </div>
-      <div class="kk-col6 kk-padding-s">
-        <div class="kk-card" theme="caution">Card</div>
+      <div class="kk-col6" cell>
+        <div class="kk-card" theme="caution">Caution</div>
       </div>
-      <div class="kk-col6 kk-padding-s">
-        <div class="kk-card kk-shadow" theme="primary" size-l>Card</div>
+      <div class="kk-col6" cell>
+        <div class="kk-card" theme="primary" size-s>小さいサイズ</div>
+      </div>
+      <div class="kk-col6" cell>
+        <div class="kk-card kk-shadow" theme="primary" size-l>大きいサイズ</div>
       </div>
     </div>
   </div>
