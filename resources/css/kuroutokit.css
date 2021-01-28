@@ -605,6 +605,10 @@ svg {
   background-color: var(--kk-disabled-bg-color);
 }
 
+.kk-input[fit], .kk-button[fit] {
+  width: max-content;
+}
+
 /*
  * Toggle.
  */
