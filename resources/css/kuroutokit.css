@@ -1073,7 +1073,6 @@ svg {
 .kk-message {
   border-radius: var(--kk-border-radius-base);
   padding: .5rem;
-  word-break: keep-all;
 }
 .kk-message:not([theme]), .kk-message[theme="infomation"] {
   color: var(--kk-color-infomation-font);
@@ -1108,6 +1107,7 @@ svg {
 }
 .kk-codebox {
   overflow: auto;
+  background-color: #fff;
 }
 .kk-box-dashed {
   border-style: dashed;
