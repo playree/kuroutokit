@@ -43,6 +43,10 @@
             <td>size-l</td>
             <td>max-width: 1600px</td>
           </tr>
+          <tr>
+            <td>left</td>
+            <td>左寄せになる</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -54,6 +58,7 @@
     <span>
       devなどのclassに<code>kk-container</code>を指定してください。<br>
       <code>size-*</code>の属性を合わせて指定することでコンテナサイズを指定できます。<br>
+      基本は中央揃えですが、<code>left</code>属性を指定することで左寄せにできます。<br>
       下記サンプルで、ウィンドウ幅を変えながらサイズ指定の挙動をご確認いただけます。
     </span>
 	  <pre class="kk-codebox" theme="dark" title="HTML">
@@ -76,6 +81,11 @@
   &lt;div class=&quot;kk-box-dashed kk-align-center kk-bg-color-attention&quot;&gt;
     size-l (max-width:1600px)
   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-container kk-margin-top&quot; size-ss left&gt;
+  &lt;div class=&quot;kk-box-dashed kk-align-center kk-bg-color-attention&quot;&gt;
+    left
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     <div class="kk-container kk-margin-top" size-ss>
       <div class="kk-box-dashed kk-align-center kk-bg-color-attention">
@@ -97,7 +107,11 @@
         size-l (max-width:1600px)
       </div>
     </div>
-
+    <div class="kk-container kk-margin-top" size-ss left>
+      <div class="kk-box-dashed kk-align-center kk-bg-color-attention">
+        left
+      </div>
+    </div>
   </div>
 </div>
 <br><br><br>

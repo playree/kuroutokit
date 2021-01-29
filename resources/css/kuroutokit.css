@@ -30,7 +30,7 @@
   --kk-font-color-base: #333;
   --kk-font-color-light: #888;
   --kk-font-color-superlight: #ccc;
-  --kk-font-color-form: var(--kk-font-color-light);
+  --kk-font-color-form: var(--kk-font-color-base);
   --kk-font-color-mute: #888;
   --kk-font-color-inverse: #fff;
   --kk-font-color-link: #29f;
@@ -212,6 +212,7 @@ svg {
   margin-right: auto;
   max-width: 1200px;
 }
+.kk-container[left] { margin-left: 0; }
 .kk-container[size-ss] { max-width: 480px; }
 .kk-container[size-s] { max-width: 720px; }
 .kk-container[size-l] { max-width: 1600px; }
