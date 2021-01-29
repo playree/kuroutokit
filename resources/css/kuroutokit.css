@@ -455,20 +455,20 @@ svg {
   background-color: #fff;
   color: var(--kk-font-color-base);
   height: var(--kk-form-obj-height-m);
+  line-height: calc(var(--kk-form-obj-height-m) - 2px);
   width: 100%;
   padding: 0 0.5em;
   display: inline-block;
   text-align: center;
 }
-a.kk-button {
-  padding-top: 2px;
-}
 .kk-button[size-s] {
   height: var(--kk-form-obj-height-s);
+  line-height: calc(var(--kk-form-obj-height-s) - 2px);
   font-size: var(--kk-font-size-s);
 }
 .kk-button[size-l] {
   height: var(--kk-form-obj-height-l);
+  line-height: calc(var(--kk-form-obj-height-l) - 2px);
   font-size: var(--kk-font-size-l);
 }
 .kk-button[theme] {
@@ -811,21 +811,27 @@ a.kk-button {
  * Align
  */
 .kk-align-center {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 .kk-align-center-v {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 .kk-align-center-h {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
 }
 .kk-align-bottom {
-  display: flex;
+  display: inline-flex;
   align-items: flex-end;
+}
+div.kk-align-center,
+div.kk-align-center-v,
+div.kk-align-center-h,
+div.kk-align-bottom {
+  display: flex;
 }
 
 /*
@@ -1010,6 +1016,9 @@ a.kk-button {
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+.kk-sidenav-menu>ul a:hover {
+  text-decoration: unset;
 }
 .kk-sidenav-menu>ul li:hover::before {
   content: var(--kk-svg-select);
