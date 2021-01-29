@@ -1146,7 +1146,7 @@ a.kk-button {
   color: #fff;
   font-family: var(--kk-font-family-code);
 }
-.kk-codebox[type="dark"] {
+.kk-codebox[theme="dark"] {
   background-color: #244;
   color: #fff;
 }
