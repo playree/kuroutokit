@@ -137,15 +137,18 @@
   <div par>
     <span>
       縦横線が入ったタイプです。<br>
-      属性として<code>theme="cross"</code>を指定してください。
+      属性として<code>theme="cross"</code>を指定してください。<br>
+      さらに<code>thead</code>タグに<code>center</code>属性を付与することで、ヘッダ部をセンタリングできます。
     </span>
 	  <pre class="kk-codebox" theme="dark" title="HTML">
 <code>&lt;table class=&quot;kk-table kk-bg-color-normal&quot; theme=&quot;cross&quot;&gt;
+  &lt;caption&gt;Cross Table&lt;/caption&gt;
+  &lt;thead center&gt;
   ・・・
 &lt;/table&gt;</code></pre>
     <table class="kk-table kk-bg-color-normal" theme="cross">
       <caption>Cross Table</caption>
-      <thead>
+      <thead center>
         <tr>
           <th>Header</th>
           <th>ヘッダ</th>

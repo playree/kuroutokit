@@ -129,6 +129,14 @@ svg {
 }
 
 /*
+ * Icon
+ */
+.material-icons {
+  font-size: 22px;
+  line-height: unset;
+}
+
+/*
  * Hidden.
  */
  [hidden],
@@ -180,6 +188,12 @@ svg {
 }
 .kk-font-color-superlight {
   color: var(--kk-font-color-superlight);
+}
+.kk-font-color-success {
+  color: var(--kk-color-success-font);
+}
+.kk-font-color-error {
+  color: var(--kk-color-error-font);
 }
 .kk-bg-color-normal {
   background-color: var(--kk-color-normal);
@@ -338,6 +352,9 @@ svg {
   font-weight: normal;
   text-align: left;
 }
+.kk-table>thead[center] th {
+  text-align: center;
+}
 .kk-table[theme="hline"] th, .kk-table[theme="cross"] th {
   border-bottom: 3px double var(--kk-border-color-base);
 }
@@ -459,8 +476,10 @@ svg {
   line-height: calc(var(--kk-form-obj-height-m) - 2px);
   width: 100%;
   padding: 0 0.5em;
-  display: inline-block;
+  display: inline-flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .kk-button[size-s] {
   height: var(--kk-form-obj-height-s);
