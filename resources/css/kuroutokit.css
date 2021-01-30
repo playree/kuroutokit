@@ -418,9 +418,11 @@ svg {
 }
 .kk-input:disabled, .kk-textarea:disabled {
   background-color: var(--kk-disabled-bg-color);
+  color: var(--kk-font-color-light);
 }
 .kk-input:read-only, .kk-textarea:read-only {
   border-style: dashed;
+  color: var(--kk-font-color-light);
 }
 .kk-input[list]::-webkit-calendar-picker-indicator {
   display: none;
@@ -816,11 +818,21 @@ svg {
 .kk-margin-top,
 .kk-margin-top-m { margin-top: 1.0rem !important; }
 .kk-margin-top-l { margin-top: 2.0rem !important; }
+.kk-margin-bottom-ss { margin-bottom: 0.25rem !important; }
+.kk-margin-bottom-s { margin-bottom: 0.5rem !important; }
+.kk-margin-bottom,
+.kk-margin-bottom-m { margin-bottom: 1.0rem !important; }
+.kk-margin-bottom-l { margin-bottom: 2.0rem !important; }
 .kk-margin-left-ss { margin-left: 0.25rem !important; }
 .kk-margin-left-s { margin-left: 0.5rem !important; }
 .kk-margin-left,
 .kk-margin-left-m { margin-left: 1.0rem !important; }
 .kk-margin-left-l { margin-left: 2.0rem !important; }
+.kk-margin-right-ss { margin-right: 0.25rem !important; }
+.kk-margin-right-s { margin-right: 0.5rem !important; }
+.kk-margin-right,
+.kk-margin-right-m { margin-right: 1.0rem !important; }
+.kk-margin-right-l { margin-right: 2.0rem !important; }
 .kk-margin-rm { margin: 0 !important; }
 .kk-margin-rm-top { margin-top: 0 !important; }
 .kk-margin-rm-bottom { margin-bottom: 0 !important; }
