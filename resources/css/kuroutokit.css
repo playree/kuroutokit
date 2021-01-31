@@ -778,8 +778,15 @@ svg {
 /*
  * Paragraph.
  */
-[par] {
-  margin-left: 1rem;
+[par] { margin-left: 1rem; }
+@media (min-width: 640px) {
+  [par\@s] { margin-left: 1rem; }
+}
+@media (min-width: 960px) {
+  [par\@m] { margin-left: 1rem; }
+}
+@media (min-width: 1200px) {
+  [par\@l] { margin-left: 1rem; }
 }
 
 /*
