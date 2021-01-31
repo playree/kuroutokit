@@ -424,6 +424,10 @@ svg {
   border-style: dashed;
   color: var(--kk-font-color-light);
 }
+.kk-input[invalid], .kk-textarea[invalid] {
+  border-color: var(--kk-color-error-font);
+  color: var(--kk-color-error-font);
+}
 .kk-input[list]::-webkit-calendar-picker-indicator {
   display: none;
 }

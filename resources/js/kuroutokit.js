@@ -10,12 +10,14 @@
     });
 
     function loaded() {
+        KuroutoKit.initInput();
         KuroutoKit.initAccordion();
         KuroutoKit.initMovableLabel();
     }
 })));
 
 let kk_initAccordion = false;
+let kk_initInput = false;
 let kk_initMovableLabel = false;
 let kk_initEnableWithCheck = false;
 
@@ -41,6 +43,26 @@ class KuroutoKit {
             if(!el.hasAttribute("closed")) {
                 const ac = el.nextElementSibling;
                 ac.style.height = ac.scrollHeight + "px";
+            }
+        });
+    }
+
+    static initInput() {
+        if(kk_initInput) return;
+        kk_initInput = true;
+
+        [].forEach.call(document.getElementsByTagName("INPUT"), (el) => {
+            if(el.hasAttribute("invalid")) {
+                el.addEventListener("focus", (event) => {
+                    el.removeAttribute("invalid")
+                }, {once:true});
+            }
+        });
+        [].forEach.call(document.getElementsByTagName("TEXTAREA"), (el) => {
+            if(el.hasAttribute("invalid")) {
+                el.addEventListener("focus", (event) => {
+                    el.removeAttribute("invalid")
+                }, {once:true});
             }
         });
     }
