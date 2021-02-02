@@ -1100,6 +1100,9 @@ div.kk-align-bottom {
   line-height: var(--kk-sidenav-line-height);
   background-color: var(--kk-sidenav-select-bg-color);
 }
+.kk-sidenav-menu li>a, .kk-sidenav-menu li>span {
+  display: flex;
+}
 
 /*
  * Card.
