@@ -1130,6 +1130,11 @@ div.kk-align-bottom {
 .kk-card[theme="caution"] {
   background-color: var(--kk-color-caution);
 }
+.kk-card-title {
+  font-size: var(--kk-font-size-l);
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
 
 /*
  * Message.
