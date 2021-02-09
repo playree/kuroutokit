@@ -80,7 +80,7 @@
   --kk-svg-select: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%3Cpath%20d%3D%22m8.7708%205c0.0051811-0.14952-0.080888-0.28982-0.22507-0.36685l-5.5825-2.9741c-0.30973-0.16558-0.7042%200.03264-0.70428%200.35391v5.9481c8.37e-5%200.32127%200.39456%200.5195%200.70428%200.35391l5.5825-2.9741c0.13529-0.072344%200.22004-0.20075%200.22507-0.34098z%22%20fill%3D%22%23888%22%20stroke-width%3D%22.78946%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   --kk-svg-menu: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%225%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%20%3Crect%20x%3D%222%22%20y%3D%222%22%20width%3D%227%22%20height%3D%221%22%20fill%3D%22%23888%22%2F%3E%0D%0A%3C%2Fsvg%3E");
   --kk-svg-check: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22rect1943%22%20d%3D%22M%204%2C6%2011%2C0%205%2C11%200%2C5%20Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
-  --kk-svg-radio: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22path34%22%20d%3D%22M%207.1328125%201.8476562%20A%202%202%200%200%201%207.4980469%203%20A%202%202%200%200%201%205.4980469%205%20A%202%202%200%200%201%203.4980469%203%20A%202%202%200%200%201%203.8613281%201.8515625%20A%204%204%200%200%200%201.5%205.5%20A%204%204%200%200%200%205.5%209.5%20A%204%204%200%200%200%209.5%205.5%20A%204%204%200%200%200%207.1328125%201.8476562%20z%20%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E%0D%0A");
+  --kk-svg-radio: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cpath%20id%3D%22path14%22%20d%3D%22M%205.4394531%201.5%20A%204%204%200%200%200%201.5%205.5%20A%204%204%200%200%200%202.4628906%208.0996094%20L%208.1210938%202.4785156%20A%204%204%200%200%200%205.5%201.5%20A%204%204%200%200%200%205.4394531%201.5%20z%20M%208.5332031%202.8945312%20L%202.875%208.5175781%20A%204%204%200%200%200%205.5%209.5%20A%204%204%200%200%200%209.5%205.5%20A%204%204%200%200%200%208.5332031%202.8945312%20z%20%22%20fill%3D%22%23fff%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A");
   --kk-svg-list: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20id%3D%22rect3338%22%20d%3D%22M%205.4908703%2C9%20C%205.6452164%2C9.00555%205.7900455%2C8.913389%205.8695593%2C8.7590091%20L%208.9395942%2C2.7815544%20C%209.1105185%2C2.4499121%208.9059008%2C2.0275285%208.57426%2C2.0274389%20H%202.4341902%20C%202.1025498%2C2.0275285%201.897932%2C2.4499121%202.0688562%2C2.7815544%20L%205.1388909%2C8.7590091%20C%205.2135688%2C8.9038728%205.3461182%2C8.9946139%205.4908703%2C9%20Z%22%20fill%3D%22%23888%22%20style%3D%22stroke-width%3A0.829983%22%20%2F%3E%3C%2Fsvg%3E%0D%0A");
   --kk-svg-open: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C1%201%2C3%205.5%2C6%2010%2C3%2010%2C1%205.5%2C4%20%22%20id%3D%22polygon1%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C5%201%2C7%205.5%2C10%2010%2C7%2010%2C5%205.5%2C8%20%22%20id%3D%22polygon2%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%3C%2Fsvg%3E");
   --kk-svg-close: url("data:image/svg+xml,%3Csvg%20width%3D%2211px%22%20height%3D%2211px%22%20version%3D%221.1%22%20viewBox%3D%220%200%2011%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C10%201%2C8%205.5%2C5%2010%2C8%2010%2C10%205.5%2C7%20%22%20id%3D%22polygon1%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%20%3Cpolygon%20points%3D%221%2C6%201%2C4%205.5%2C1%2010%2C4%2010%2C6%205.5%2C3%20%22%20id%3D%22polygon2%22%20fill%3D%22%2329f%22%2F%3E%0D%0A%3C%2Fsvg%3E");
@@ -1036,7 +1036,7 @@ div.kk-align-bottom {
   position: relative;
   overflow: hidden;
   margin: 0;
-  padding-left: 24px;
+  padding-left: 20px;
   font-size: var(--kk-font-size-s);
   line-height: var(--kk-sidenav-line-height);
   color: var(--kk-font-color-mute);
@@ -1070,7 +1070,7 @@ div.kk-align-bottom {
 }
 .kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul li:hover::before {
   content: "";
-  margin-left: -24px;
+  margin-left: -20px;
   margin-top: -1px;
   width: 6px;
   height: calc(var(--kk-sidenav-line-height) + 2px);
@@ -1090,18 +1090,14 @@ div.kk-align-bottom {
   border-top: solid 1px var(--kk-border-color-base);
   margin: 0 0 8px 0;
 }
-.kk-sidenav-container>.kk-sidenav-menu>ul li>a[data-over]:hover:before,
-.kk-sidenav-container>.kk-sidenav-menu>ul li:hover>.kk-accordion[data-over]:before {
-  content: attr(data-over);
-  position: absolute;
-  width: 100%;
-  margin: 0;
-  font: inherit;
-  line-height: var(--kk-sidenav-line-height);
-  background-color: var(--kk-sidenav-select-bg-color);
-}
-.kk-sidenav-menu li>a, .kk-sidenav-menu li>span {
+.kk-sidenav-menu li>a, .kk-sidenav-menu li>span, .kk-sidenav-menu li>div {
   display: flex;
+}
+.kk-sidenav-menu li:hover>[menu-normal],
+.kk-sidenav-menu li:hover>*>[menu-normal],
+.kk-sidenav-menu li:not(:hover)>[menu-active],
+.kk-sidenav-menu li:not(:hover)>*>[menu-active] {
+  display: none;
 }
 
 /*
@@ -1242,4 +1238,20 @@ div.kk-align-bottom {
   padding: 1px 6px;
   border-radius: var(--kk-border-radius-base);
   background-color: var(--kk-color-primary);
+}
+
+/*
+ * Scroll.
+ */
+.kk-scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+.kk-scroll-h {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.kk-scroll-v {
+  overflow-y: auto;
+  white-space: nowrap;
 }

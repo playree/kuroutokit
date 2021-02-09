@@ -43,6 +43,14 @@
             <td>shadow</td>
             <td>影付きデザイン</td>
           </tr>
+          <tr>
+            <td>menu-normal<br>menu-active</td>
+            <td>
+              マウスオーバーで表示を切り替えたい場合に使用します。<br>
+              li要素配下の2階層まで有効。<br>
+              使い方は下のサンプルコードを参照ください。
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -71,13 +79,27 @@
 <code>&lt;div id=&quot;sidenav_container&quot; class=&quot;kk-sidenav-container&quot; theme=&quot;panel&quot;&gt;
   &lt;div id=&quot;sidenav_menu&quot; class=&quot;kk-sidenav-menu kk-font-bold&quot; shadow&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;/&quot; data-over=&quot;はじめに&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;./&quot;&gt;
+        &lt;i class=&quot;material-icons kk-margin-right-ss&quot;&gt;touch_app&lt;/i&gt;
+        &lt;span menu-normal&gt;Getting Started&lt;/span&gt;
+        &lt;span menu-active&gt;はじめに&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;kk-divider&quot;&gt;&lt;/li&gt;
       &lt;li&gt;
-        &lt;div class=&quot;kk-accordion&quot; data-over=&quot;レイアウト系&quot;&gt;Layout&lt;/div&gt;
+        &lt;div class=&quot;kk-accordion&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;view_quilt&lt;/i&gt;
+          &lt;span menu-normal&gt;Layout&lt;/span&gt;
+          &lt;span menu-active&gt;レイアウト系&lt;/span&gt;
+        &lt;/div&gt;
         &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;/webfont.html&quot; data-over=&quot;Webフォント&quot;&gt;Web Font&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;/container.html&quot; data-over=&quot;コンテナ&quot;&gt;Container&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;./webfont.html&quot;&gt;
+            &lt;span menu-normal&gt;Web Font&lt;/span&gt;
+            &lt;span menu-active&gt;Webフォント&lt;/span&gt;
+          &lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;./container.html&quot;&gt;
+            &lt;span menu-normal&gt;Container&lt;/span&gt;
+            &lt;span menu-active&gt;コンテナ&lt;/span&gt;
+          &lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
