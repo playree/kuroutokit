@@ -26,14 +26,15 @@
 		CSS定義はまだまだ少ないですが、徐々に追加していく予定です。<br>
 	</p>
 	<div class="kk-message kk-margin-top" theme="warning">
-		※いまだ開発途中なので、大幅に仕様が変更される可能性があります。
+		※いまだ開発途中なので、大幅に仕様が変更される可能性があります。<br>
+		　定義がある程度まとまり、大枠の仕様が固まった時点で v1.0.0 としてリリースします。
 	</div>
 	<h2 class="kk-heading-line"><span class="kk-withsubtext">Installation<p>使い方</p></span></h2>
   <div par@s>
 		<pre class="kk-codebox" title="HTML">
 <code>&lt;!-- KUROUTO Kit --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.1/dist/kuroutokit.min.css&quot; /&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.1/dist/kuroutokit.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.2/dist/kuroutokit.min.css&quot; /&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.2/dist/kuroutokit.min.js&quot;&gt;&lt;/script&gt;</code></pre>
   <p>
 		ローカルに取り込む場合は、<a href="https://github.com/playree/kuroutokit/releases">GitHubのリリースページ</a>よりダウンロードすることができます。
 	</p>
@@ -51,7 +52,10 @@
 				各種デバイスでフォントを統一。(もちろん、通常フォントも使えます。)
 			</li>
 			<li>
-				Class名は<code>kk-*</code>で統一し、クラス名の衝突を回避。
+				クラス名は<code>kk-*</code>で統一し、クラス名の衝突を回避。
+			</li>
+			<li>
+				クラスで基本コンポーネントを指定し、大きさやデザインなどの違いを属性で指定する形の設計としています。
 			</li>
 			<li>
 				日本語のドキュメント。（整備中ですが。。。
@@ -71,8 +75,8 @@
 				<tbody>
 					<tr>
 						<td>ver 0.0.2</td>
-						<td>2021/xx/xx</td>
-						<td></td>
+						<td>2021/02/12</td>
+						<td>各種ブラッシュアップ</td>
 					</tr>
 					<tr>
 						<td>ver 0.0.1</td>
