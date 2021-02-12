@@ -35,6 +35,7 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     
     <link rel="stylesheet" href="./resources/css/kuroutokit.css?v=2021012600" />
@@ -48,34 +49,90 @@
     <div id="sidenav_container" class="kk-sidenav-container" theme="panel">
       <div id="sidenav_menu" class="kk-sidenav-menu kk-font-bold" shadow>
         <ul>
-          <li><a href="./" data-over="はじめに">Getting Started</a></li>
+          <li><span><i class="material-icons kk-margin-right-ss">home</i>KUROUTO Kit</span></li>
+          <li><a href="./">
+            <i class="material-icons kk-margin-right-ss">touch_app</i>
+            <span menu-normal>Getting Started</span>
+            <span menu-active>はじめに</span>
+          </a></li>
           <li class="kk-divider"></li>
           <li>
-            <div class="kk-accordion" data-over="レイアウト系">Layout</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">view_quilt</i>
+              <span menu-normal>Layout</span>
+              <span menu-active>レイアウト系</span>
+            </div>
             <ul>
-              <li><a href="./custom_properties.html" data-over="カスタムプロパティ">Custom properties</a></li>
-              <li><a href="./webfont.html" data-over="Webフォント">Web Font</a></li>
-              <li><a href="./container.html" data-over="コンテナ">Container</a></li>
-              <li><a href="./grid.html" data-over="グリッド">Grid</a></li>
-              <li><a href="./table.html" data-over="テーブル">Table</a></li>
-              <li><a href="./padding_margin.html" data-over="余白関連">Padding & Margin</a></li>
-              <li><a href="./sidenav.html" data-over="サイドナビ">Side Navigation</a></li>
+              <li><a href="./custom_properties.html">
+                <span menu-normal>Custom properties</span>
+                <span menu-active>カスタムプロパティ</span>
+              </a></li>
+              <li><a href="./webfont.html">
+                <span menu-normal>Web Font</span>
+                <span menu-active>Webフォント</span>
+              </a></li>
+              <li><a href="./container.html">
+                <span menu-normal>Container</span>
+                <span menu-active>コンテナ</span>
+              </a></li>
+              <li><a href="./grid.html">
+                <span menu-normal>Grid</span>
+                <span menu-active>グリッド</span>
+              </a></li>
+              <li><a href="./table.html">
+                <span menu-normal>Table</span>
+                <span menu-active>テーブル</span>
+              </a></li>
+              <li><a href="./padding_margin.html">
+                <span menu-normal>Padding & Margin</span>
+                <span menu-active>余白関連</span>
+              </a></li>
+              <li><a href="./sidenav.html">
+                <span menu-normal>Side Navigation</span>
+                <span menu-active>サイドナビ</span>
+              </a></li>
             </ul>
           </li>
           <li>
-            <div class="kk-accordion" data-over="コンポーネント系">Component</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">fact_check</i>
+              <span menu-normal>Component</span>
+              <span menu-active>コンポーネント系</span>
+            </div>
             <ul>
-              <li><a href="./form.html" data-over="フォーム関連部品">Form Parts</a></li>
-              <li><a href="./card.html" data-over="カード型表示">Card</a></li>
-              <li><a href="./message.html" data-over="メッセージ表示">Message</a></li>
-              <li><a href="./accordion.html" data-over="アコーディオン">Accordion</a></li>
-              <li><a href="./toggle.html" data-over="トグルスイッチ">Toggle Switch</a></li>
+              <li><a href="./form.html">
+                <span menu-normal>Form Parts</span>
+                <span menu-active>フォーム関連部品</span>
+              </a></li>
+              <li><a href="./card.html">
+                <span menu-normal>Card</span>
+                <span menu-active>カード型表示</span>
+              </a></li>
+              <li><a href="./message.html">
+                <span menu-normal>Message</span>
+                <span menu-active>メッセージ表示</span>
+              </a></li>
+              <li><a href="./accordion.html">
+                <span menu-normal>Accordion</span>
+                <span menu-active>アコーディオン</span>
+              </a></li>
+              <li><a href="./toggle.html">
+                <span menu-normal>Toggle Switch</span>
+                <span menu-active>トグルスイッチ</span>
+              </a></li>
             </ul>
           </li>
           <li>
-            <div class="kk-accordion" data-over="スクリプト系">Script</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">subscriptions</i>
+              <span menu-normal>Script</span>
+              <span menu-active>スクリプト系</span>
+            </div>
             <ul>
-              <li><a href="./enable_with_check.html" data-over="チェック連動型の有効/無効化">Enable With Check</a></li>
+              <li><a href="./enable_with_check.html">
+                <span menu-normal>Enable With Check</span>
+                <span menu-active>チェック連動型の有効/無効化</span>
+              </a></li>
             </ul>
           </li>
         </ul>
@@ -120,6 +177,10 @@
             <td>size-l</td>
             <td>max-width: 1600px</td>
           </tr>
+          <tr>
+            <td>left</td>
+            <td>左寄せになる</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -131,9 +192,10 @@
     <span>
       devなどのclassに<code>kk-container</code>を指定してください。<br>
       <code>size-*</code>の属性を合わせて指定することでコンテナサイズを指定できます。<br>
+      基本は中央揃えですが、<code>left</code>属性を指定することで左寄せにできます。<br>
       下記サンプルで、ウィンドウ幅を変えながらサイズ指定の挙動をご確認いただけます。
     </span>
-	  <pre class="kk-codebox" type="dark" title="HTML">
+	  <pre class="kk-codebox" theme="dark" title="HTML">
 <code>&lt;div class=&quot;kk-container kk-margin-top&quot; size-ss&gt;
   &lt;div class=&quot;kk-box-dashed kk-align-center kk-bg-color-attention&quot;&gt;
     size-ss (max-width: 480px)
@@ -152,6 +214,11 @@
 &lt;div class=&quot;kk-container kk-margin-top&quot; size-l&gt;
   &lt;div class=&quot;kk-box-dashed kk-align-center kk-bg-color-attention&quot;&gt;
     size-l (max-width:1600px)
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-container kk-margin-top&quot; size-ss left&gt;
+  &lt;div class=&quot;kk-box-dashed kk-align-center kk-bg-color-attention&quot;&gt;
+    left
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     <div class="kk-container kk-margin-top" size-ss>
@@ -174,7 +241,11 @@
         size-l (max-width:1600px)
       </div>
     </div>
-
+    <div class="kk-container kk-margin-top" size-ss left>
+      <div class="kk-box-dashed kk-align-center kk-bg-color-attention">
+        left
+      </div>
+    </div>
   </div>
 </div>
 <br><br><br>

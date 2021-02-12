@@ -35,6 +35,7 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     
     <link rel="stylesheet" href="./resources/css/kuroutokit.css?v=2021012600" />
@@ -48,34 +49,90 @@
     <div id="sidenav_container" class="kk-sidenav-container" theme="panel">
       <div id="sidenav_menu" class="kk-sidenav-menu kk-font-bold" shadow>
         <ul>
-          <li><a href="./" data-over="はじめに">Getting Started</a></li>
+          <li><span><i class="material-icons kk-margin-right-ss">home</i>KUROUTO Kit</span></li>
+          <li><a href="./">
+            <i class="material-icons kk-margin-right-ss">touch_app</i>
+            <span menu-normal>Getting Started</span>
+            <span menu-active>はじめに</span>
+          </a></li>
           <li class="kk-divider"></li>
           <li>
-            <div class="kk-accordion" data-over="レイアウト系">Layout</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">view_quilt</i>
+              <span menu-normal>Layout</span>
+              <span menu-active>レイアウト系</span>
+            </div>
             <ul>
-              <li><a href="./custom_properties.html" data-over="カスタムプロパティ">Custom properties</a></li>
-              <li><a href="./webfont.html" data-over="Webフォント">Web Font</a></li>
-              <li><a href="./container.html" data-over="コンテナ">Container</a></li>
-              <li><a href="./grid.html" data-over="グリッド">Grid</a></li>
-              <li><a href="./table.html" data-over="テーブル">Table</a></li>
-              <li><a href="./padding_margin.html" data-over="余白関連">Padding & Margin</a></li>
-              <li><a href="./sidenav.html" data-over="サイドナビ">Side Navigation</a></li>
+              <li><a href="./custom_properties.html">
+                <span menu-normal>Custom properties</span>
+                <span menu-active>カスタムプロパティ</span>
+              </a></li>
+              <li><a href="./webfont.html">
+                <span menu-normal>Web Font</span>
+                <span menu-active>Webフォント</span>
+              </a></li>
+              <li><a href="./container.html">
+                <span menu-normal>Container</span>
+                <span menu-active>コンテナ</span>
+              </a></li>
+              <li><a href="./grid.html">
+                <span menu-normal>Grid</span>
+                <span menu-active>グリッド</span>
+              </a></li>
+              <li><a href="./table.html">
+                <span menu-normal>Table</span>
+                <span menu-active>テーブル</span>
+              </a></li>
+              <li><a href="./padding_margin.html">
+                <span menu-normal>Padding & Margin</span>
+                <span menu-active>余白関連</span>
+              </a></li>
+              <li><a href="./sidenav.html">
+                <span menu-normal>Side Navigation</span>
+                <span menu-active>サイドナビ</span>
+              </a></li>
             </ul>
           </li>
           <li>
-            <div class="kk-accordion" data-over="コンポーネント系">Component</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">fact_check</i>
+              <span menu-normal>Component</span>
+              <span menu-active>コンポーネント系</span>
+            </div>
             <ul>
-              <li><a href="./form.html" data-over="フォーム関連部品">Form Parts</a></li>
-              <li><a href="./card.html" data-over="カード型表示">Card</a></li>
-              <li><a href="./message.html" data-over="メッセージ表示">Message</a></li>
-              <li><a href="./accordion.html" data-over="アコーディオン">Accordion</a></li>
-              <li><a href="./toggle.html" data-over="トグルスイッチ">Toggle Switch</a></li>
+              <li><a href="./form.html">
+                <span menu-normal>Form Parts</span>
+                <span menu-active>フォーム関連部品</span>
+              </a></li>
+              <li><a href="./card.html">
+                <span menu-normal>Card</span>
+                <span menu-active>カード型表示</span>
+              </a></li>
+              <li><a href="./message.html">
+                <span menu-normal>Message</span>
+                <span menu-active>メッセージ表示</span>
+              </a></li>
+              <li><a href="./accordion.html">
+                <span menu-normal>Accordion</span>
+                <span menu-active>アコーディオン</span>
+              </a></li>
+              <li><a href="./toggle.html">
+                <span menu-normal>Toggle Switch</span>
+                <span menu-active>トグルスイッチ</span>
+              </a></li>
             </ul>
           </li>
           <li>
-            <div class="kk-accordion" data-over="スクリプト系">Script</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">subscriptions</i>
+              <span menu-normal>Script</span>
+              <span menu-active>スクリプト系</span>
+            </div>
             <ul>
-              <li><a href="./enable_with_check.html" data-over="チェック連動型の有効/無効化">Enable With Check</a></li>
+              <li><a href="./enable_with_check.html">
+                <span menu-normal>Enable With Check</span>
+                <span menu-active>チェック連動型の有効/無効化</span>
+              </a></li>
             </ul>
           </li>
         </ul>
@@ -85,7 +142,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
 <div class="kk-container">
 	<div class="kk-align-center-h" style="font-family: 'Merienda', cursive; font-size: 48px;">KUROUTO Kit</div>
-	<div class="kk-align-center-h">最新バージョン　<span class="kk-label">0.0.1</span></div>
+	<div class="kk-align-center-h">
+		サポートブラウザ
+		<span class="kk-label kk-margin-left-s">Chrome</span>
+		<span class="kk-label kk-margin-left-s">Firefox</span>
+		<span class="kk-label kk-margin-left-s">Edge</span>
+	</div>
+	<div class="kk-align-center-h kk-margin-top-s">最新バージョン<span class="kk-label kk-margin-left-s">0.0.2</span></div>
 	<br><br>
 	<p>
 		<code>KUROUTO Kit</code>は、製作者の好みを大いに盛り込んだCSSフレームワークです。<br>
@@ -97,14 +160,15 @@
 		CSS定義はまだまだ少ないですが、徐々に追加していく予定です。<br>
 	</p>
 	<div class="kk-message kk-margin-top" theme="warning">
-		※いまだ開発途中なので、大幅に仕様が変更される可能性があります。
+		※いまだ開発途中なので、大幅に仕様が変更される可能性があります。<br>
+		　定義がある程度まとまり、大枠の仕様が固まった時点で v1.0.0 としてリリースします。
 	</div>
 	<h2 class="kk-heading-line"><span class="kk-withsubtext">Installation<p>使い方</p></span></h2>
   <div par@s>
-		<pre class="kk-codebox" type="dark" title="HTML">
+		<pre class="kk-codebox" title="HTML">
 <code>&lt;!-- KUROUTO Kit --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.1/dist/kuroutokit.min.css&quot; /&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.1/dist/kuroutokit.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.2/dist/kuroutokit.min.css&quot; /&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/playree/kuroutokit@0.0.2/dist/kuroutokit.min.js&quot;&gt;&lt;/script&gt;</code></pre>
   <p>
 		ローカルに取り込む場合は、<a href="https://github.com/playree/kuroutokit/releases">GitHubのリリースページ</a>よりダウンロードすることができます。
 	</p>
@@ -122,7 +186,10 @@
 				各種デバイスでフォントを統一。(もちろん、通常フォントも使えます。)
 			</li>
 			<li>
-				Class名は<code>kk-*</code>で統一し、クラス名の衝突を回避。
+				クラス名は<code>kk-*</code>で統一し、クラス名の衝突を回避。
+			</li>
+			<li>
+				クラスで基本コンポーネントを指定し、大きさやデザインなどの違いを属性で指定する形の設計としています。
 			</li>
 			<li>
 				日本語のドキュメント。（整備中ですが。。。
@@ -140,11 +207,16 @@
 		<div grid-col>
 			<table class="kk-col6@m kk-col12 kk-table kk-bg-color-normal kk-margin-top" theme="hline">
 				<tbody>
-						<tr>
-								<td>ver 0.0.1</td>
-								<td>2021/01/26</td>
-								<td>公開開始</td>
-						</tr>
+					<tr>
+						<td>ver 0.0.2</td>
+						<td>2021/02/12</td>
+						<td>各種ブラッシュアップ</td>
+					</tr>
+					<tr>
+						<td>ver 0.0.1</td>
+						<td>2021/01/26</td>
+						<td>公開開始</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>

@@ -35,6 +35,7 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     
     <link rel="stylesheet" href="./resources/css/kuroutokit.css?v=2021012600" />
@@ -48,34 +49,90 @@
     <div id="sidenav_container" class="kk-sidenav-container" theme="panel">
       <div id="sidenav_menu" class="kk-sidenav-menu kk-font-bold" shadow>
         <ul>
-          <li><a href="./" data-over="はじめに">Getting Started</a></li>
+          <li><span><i class="material-icons kk-margin-right-ss">home</i>KUROUTO Kit</span></li>
+          <li><a href="./">
+            <i class="material-icons kk-margin-right-ss">touch_app</i>
+            <span menu-normal>Getting Started</span>
+            <span menu-active>はじめに</span>
+          </a></li>
           <li class="kk-divider"></li>
           <li>
-            <div class="kk-accordion" data-over="レイアウト系">Layout</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">view_quilt</i>
+              <span menu-normal>Layout</span>
+              <span menu-active>レイアウト系</span>
+            </div>
             <ul>
-              <li><a href="./custom_properties.html" data-over="カスタムプロパティ">Custom properties</a></li>
-              <li><a href="./webfont.html" data-over="Webフォント">Web Font</a></li>
-              <li><a href="./container.html" data-over="コンテナ">Container</a></li>
-              <li><a href="./grid.html" data-over="グリッド">Grid</a></li>
-              <li><a href="./table.html" data-over="テーブル">Table</a></li>
-              <li><a href="./padding_margin.html" data-over="余白関連">Padding & Margin</a></li>
-              <li><a href="./sidenav.html" data-over="サイドナビ">Side Navigation</a></li>
+              <li><a href="./custom_properties.html">
+                <span menu-normal>Custom properties</span>
+                <span menu-active>カスタムプロパティ</span>
+              </a></li>
+              <li><a href="./webfont.html">
+                <span menu-normal>Web Font</span>
+                <span menu-active>Webフォント</span>
+              </a></li>
+              <li><a href="./container.html">
+                <span menu-normal>Container</span>
+                <span menu-active>コンテナ</span>
+              </a></li>
+              <li><a href="./grid.html">
+                <span menu-normal>Grid</span>
+                <span menu-active>グリッド</span>
+              </a></li>
+              <li><a href="./table.html">
+                <span menu-normal>Table</span>
+                <span menu-active>テーブル</span>
+              </a></li>
+              <li><a href="./padding_margin.html">
+                <span menu-normal>Padding & Margin</span>
+                <span menu-active>余白関連</span>
+              </a></li>
+              <li><a href="./sidenav.html">
+                <span menu-normal>Side Navigation</span>
+                <span menu-active>サイドナビ</span>
+              </a></li>
             </ul>
           </li>
           <li>
-            <div class="kk-accordion" data-over="コンポーネント系">Component</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">fact_check</i>
+              <span menu-normal>Component</span>
+              <span menu-active>コンポーネント系</span>
+            </div>
             <ul>
-              <li><a href="./form.html" data-over="フォーム関連部品">Form Parts</a></li>
-              <li><a href="./card.html" data-over="カード型表示">Card</a></li>
-              <li><a href="./message.html" data-over="メッセージ表示">Message</a></li>
-              <li><a href="./accordion.html" data-over="アコーディオン">Accordion</a></li>
-              <li><a href="./toggle.html" data-over="トグルスイッチ">Toggle Switch</a></li>
+              <li><a href="./form.html">
+                <span menu-normal>Form Parts</span>
+                <span menu-active>フォーム関連部品</span>
+              </a></li>
+              <li><a href="./card.html">
+                <span menu-normal>Card</span>
+                <span menu-active>カード型表示</span>
+              </a></li>
+              <li><a href="./message.html">
+                <span menu-normal>Message</span>
+                <span menu-active>メッセージ表示</span>
+              </a></li>
+              <li><a href="./accordion.html">
+                <span menu-normal>Accordion</span>
+                <span menu-active>アコーディオン</span>
+              </a></li>
+              <li><a href="./toggle.html">
+                <span menu-normal>Toggle Switch</span>
+                <span menu-active>トグルスイッチ</span>
+              </a></li>
             </ul>
           </li>
           <li>
-            <div class="kk-accordion" data-over="スクリプト系">Script</div>
+            <div class="kk-accordion">
+              <i class="material-icons kk-margin-right-ss">subscriptions</i>
+              <span menu-normal>Script</span>
+              <span menu-active>スクリプト系</span>
+            </div>
             <ul>
-              <li><a href="./enable_with_check.html" data-over="チェック連動型の有効/無効化">Enable With Check</a></li>
+              <li><a href="./enable_with_check.html">
+                <span menu-normal>Enable With Check</span>
+                <span menu-active>チェック連動型の有効/無効化</span>
+              </a></li>
             </ul>
           </li>
         </ul>
@@ -87,97 +144,86 @@
   <span>
     各種入力フォームに使用するコンポーネント群です。
   </span>
-  <div grid-col>
-    <div class="kk-col6@m kk-col12" cell>
-      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
-        <caption>Class</caption>
-        <tbody class="kk-font-size-s">
-          <tr>
-            <td>kk-input</td>
-            <td>インプットボックス</td>
-          </tr>
-          <tr>
-            <td>kk-input-field</td>
-            <td>パーツ上部にマージンを設定します<br>kk-input-labelと合わせて使用します</td>
-          </tr>
-          <tr>
-            <td>kk-input-label</td>
-            <td>パーツ上部にラベルを表示します</td>
-          </tr>
-          <tr>
-            <td>kk-movable-label</td>
-            <td>未入力時はプレースホルダ、<br>入力時にはパーツ上部に移動しラベルとなります</td>
-          </tr>
-          <tr>
-            <td>kk-button</td>
-            <td>ボタン</td>
-          </tr>
-          <tr>
-            <td>kk-checkbox</td>
-            <td>チェックボックス</td>
-          </tr>
-          <tr>
-            <td>kk-radio</td>
-            <td>ラジオボタン</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="kk-col6@m kk-col12" cell>
-      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
-        <caption>Attribute</caption>
-        <tbody class="kk-font-size-s">
-          <tr>
-            <td>size-s</td>
-            <td>小さいパーツ</td>
-          </tr>
-          <tr>
-            <td>size-l</td>
-            <td>大きいパーツ</td>
-          </tr>
-          <tr>
-            <td>theme="primary"</td>
-            <td>Primaryの配色(ボタン用)</td>
-          </tr>
-          <tr>
-            <td>theme="secondary"</td>
-            <td>Secondaryの配色(ボタン用)</td>
-          </tr>
-          <tr>
-            <td>theme="caution"</td>
-            <td>Cautionの配色(ボタン用)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+  <ul>
+    <li><a href="#input">Input</a></li>
+    <li><a href="#mlinput">Movable Label Input</a></li>
+    <li><a href="#button">Button</a></li>
+    <li><a href="#checkbox">Checkbox</a></li>
+    <li><a href="#radio">Radio Button</a></li>
+    <li><a href="#textarea">Textarea</a></li>
+    <li><a href="#select">Select</a></li>
+  </ul>
 </div>
 <div class="kk-container">
-  <h2 class="kk-heading-line"><span class="kk-withsubtext">Input<p>インプット</p></span></h2>
+  <h2 id="input" class="kk-heading-line"><span class="kk-withsubtext">Input<p>インプット</p></span></h2>
   <div par@s>
     <span>
       入力ボックスです。<code>kk-input</code>を指定してください。
     </span>
-	  <pre class="kk-codebox" type="dark" title="HTML">
-<code>&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+    <div grid-col>
+      <div class="kk-col6@m kk-col12" cell>
+        <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+          <caption>Class</caption>
+          <tbody class="kk-font-size-s">
+            <tr>
+              <td>kk-input</td>
+              <td>インプットボックス</td>
+            </tr>
+            <tr>
+              <td>kk-input-field</td>
+              <td>パーツ上部にマージンを設定します<br>kk-input-labelと合わせて使用します</td>
+            </tr>
+            <tr>
+              <td>kk-input-label</td>
+              <td>パーツ上部にラベルを表示します</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="kk-col6@m kk-col12" cell>
+        <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+          <caption>Attribute</caption>
+          <tbody class="kk-font-size-s">
+            <tr>
+              <td>size-s</td>
+              <td>小さいパーツ</td>
+            </tr>
+            <tr>
+              <td>size-l</td>
+              <td>大きいパーツ</td>
+            </tr>
+            <tr>
+              <td>fit</td>
+              <td>幅を100%ではなく、コンテンツに合わせる</td>
+            </tr>
+            <tr>
+              <td>invalid</td>
+              <td>不正状態表示<br>入力値が不正な場合の表示などにお使いください</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+	  <pre class="kk-codebox" theme="dark" title="HTML">
+<code>&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;input class=&quot;kk-input&quot; type=&quot;text&quot; value=&quot;abc123あいう&quot; placeholder=&quot;Input&quot;&gt;
     &lt;label class=&quot;kk-input-label&quot;&gt;default&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;input class=&quot;kk-input&quot; size-s type=&quot;text&quot; value=&quot;abc123あいう&quot;&gt;
     &lt;label class=&quot;kk-input-label&quot;&gt;size-s&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;input class=&quot;kk-input&quot; size-l type=&quot;text&quot; value=&quot;abc123あいう&quot;&gt;
     &lt;label class=&quot;kk-input-label&quot;&gt;size-l&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;input class=&quot;kk-input&quot; type=&quot;text&quot; value=&quot;&quot; placeholder=&quot;入力/選択可&quot; list=&quot;datalist&quot;&gt;
     &lt;datalist id=&quot;datalist&quot;&gt;
@@ -187,45 +233,51 @@
     &lt;/datalist&gt;
     &lt;label class=&quot;kk-input-label&quot;&gt;datalist&lt;/label&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-input-field&quot;&gt;
+    &lt;input class=&quot;kk-input&quot; type=&quot;text&quot; value=&quot;abc123あいう&quot; placeholder=&quot;Input&quot; maxlength=&quot;16&quot; fit&gt;
+    &lt;label class=&quot;kk-input-label&quot;&gt;fit&lt;/label&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     <div grid-col>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <input class="kk-input" type="text" value="abc123あいう" placeholder="Input">
           <label class="kk-input-label">default</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <input class="kk-input" type="text" value="Disabled" disabled>
           <label class="kk-input-label">disabled</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <input class="kk-input" type="text" value="Readonly" readonly>
           <label class="kk-input-label">readonly</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <input class="kk-input" size-s type="text" value="abc123あいう">
           <label class="kk-input-label">size-s</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <input class="kk-input" size-l type="text" value="abc123あいう">
           <label class="kk-input-label">size-l</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <input class="kk-input" type="date" value="2021-01-02">
           <label class="kk-input-label">type="date"</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <input class="kk-input" type="text" value="" placeholder="入力/選択可" list="datalist">
           <datalist id="datalist">
@@ -236,17 +288,57 @@
           <label class="kk-input-label">datalist</label>
         </div>
       </div>
+      <div class="kk-col4@m kk-col6" cell>
+        <div class="kk-input-field">
+          <input class="kk-input" type="text" value="abc123あいう" placeholder="Input" maxlength="16" fit>
+          <label class="kk-input-label">fit</label>
+        </div>
+      </div>
+      <div class="kk-col4@m kk-col6" cell>
+        <div class="kk-input-field">
+          <input class="kk-input" type="text" value="abc123あいう" value="不正＠＠" invalid>
+          <label class="kk-input-label">invalid</label>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <div class="kk-container">
-  <h2 class="kk-heading-line"><span class="kk-withsubtext">Movable Label Input<p>ラベルが動くインプット</p></span></h2>
+  <h2 id="mlinput" class="kk-heading-line"><span class="kk-withsubtext">Movable Label Input<p>ラベルが動くインプット</p></span></h2>
   <div par@s>
     <span>
       プレースホルダとラベルを兼用する動くラベルです。<br>
       <code>kk-movable-label</code>を指定してください。
     </span>
-	  <pre class="kk-codebox" type="dark" title="HTML">
+    <div grid-col>
+      <div class="kk-col6@m kk-col12" cell>
+        <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+          <caption>Class</caption>
+          <tbody class="kk-font-size-s">
+            <tr>
+              <td>kk-input-field</td>
+              <td>パーツ上部にマージンを設定します<br>kk-input-labelと合わせて使用します</td>
+            </tr>
+            <tr>
+              <td>kk-input-label</td>
+              <td>パーツ上部にラベルを表示します</td>
+            </tr>
+            <tr>
+              <td>kk-movable-label</td>
+              <td>未入力時はプレースホルダ、<br>入力時にはパーツ上部に移動しラベルとなります</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="kk-col6@m kk-col12" cell>
+        <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+          <caption>Attribute</caption>
+          <tbody class="kk-font-size-s">
+          </tbody>
+        </table>
+      </div>
+    </div>
+	  <pre class="kk-codebox" theme="dark" title="HTML">
 <code>&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;input id=&quot;input_m1&quot; class=&quot;kk-input&quot; type=&quot;text&quot;&gt;
@@ -276,13 +368,57 @@
   </div>
 </div>
 <div class="kk-container">
-  <h2 class="kk-heading-line"><span class="kk-withsubtext">Button<p>ボタン</p></span></h2>
+  <h2 id="button" class="kk-heading-line"><span class="kk-withsubtext">Button<p>ボタン</p></span></h2>
   <div par@s>
     <span>
       ボタンです。<code>kk-button</code>を指定してください。<br>
       属性<code>theme=</code>を指定することで色違いのボタンを使用できます。
     </span>
-	  <pre class="kk-codebox" type="dark" title="HTML">
+    <div grid-col>
+      <div class="kk-col6@m kk-col12" cell>
+        <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+          <caption>Class</caption>
+          <tbody class="kk-font-size-s">
+            <tr>
+              <td>kk-button</td>
+              <td>ボタン</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="kk-col6@m kk-col12" cell>
+        <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+          <caption>Attribute</caption>
+          <tbody class="kk-font-size-s">
+            <tr>
+              <td>size-s</td>
+              <td>小さいパーツ</td>
+            </tr>
+            <tr>
+              <td>size-l</td>
+              <td>大きいパーツ</td>
+            </tr>
+            <tr>
+              <td>fit</td>
+              <td>幅を100%ではなく、コンテンツに合わせる</td>
+            </tr>
+            <tr>
+              <td>theme="primary"</td>
+              <td>Primaryの配色</td>
+            </tr>
+            <tr>
+              <td>theme="secondary"</td>
+              <td>Secondaryの配色</td>
+            </tr>
+            <tr>
+              <td>theme="caution"</td>
+              <td>Cautionの配色</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+	  <pre class="kk-codebox" theme="dark" title="HTML">
 <code>&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;button class=&quot;kk-button&quot;&gt;Default&lt;/button&gt;
@@ -321,9 +457,21 @@
 &lt;/div&gt;
 &lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
-    &lt;button class=&quot;kk-button&quot; theme=&quot;primary&quot; size-l&gt;大きいサイズ&lt;/button&gt;
+    &lt;button class=&quot;kk-button&quot; theme=&quot;secondary&quot; size-l&gt;大きいサイズ&lt;/button&gt;
     &lt;label class=&quot;kk-input-label&quot;&gt;size-l&lt;/label&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
+  &lt;div class=&quot;kk-input-field&quot;&gt;
+    &lt;button class=&quot;kk-button&quot; theme=&quot;secondary&quot; fit&gt;文字列に合わせた横幅&lt;/button&gt;
+    &lt;label class=&quot;kk-input-label&quot;&gt;fit&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
+&lt;div class=&quot;kk-input-field&quot;&gt;
+  &lt;a class=&quot;kk-button&quot; theme=&quot;primary&quot; href=&quot;#&quot;&gt;Aタグボタン&lt;/a&gt;
+  &lt;label class=&quot;kk-input-label&quot;&gt;aタグ&lt;/label&gt;
+&lt;/div&gt;
 &lt;/div&gt;</code></pre>
     <div grid-col>
       <div class="kk-col4@m kk-col6" cell>
@@ -370,21 +518,61 @@
       </div>
       <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
-          <button class="kk-button" theme="primary" size-l>大きいサイズ</button>
+          <button class="kk-button" theme="secondary" size-l>大きいサイズ</button>
           <label class="kk-input-label">size-l</label>
+        </div>
+      </div>
+      <div class="kk-col4@m kk-col6" cell>
+        <div class="kk-input-field">
+          <button class="kk-button" theme="caution" fit>文字列に合わせた横幅</button>
+          <label class="kk-input-label">fit</label>
+        </div>
+      </div>
+      <div class="kk-col4@m kk-col6" cell>
+        <div class="kk-input-field">
+          <a class="kk-button" theme="primary" href="#"><i class="material-icons">pan_tool</i>&nbsp;Aタグボタン</a>
+          <label class="kk-input-label">aタグ</label>
         </div>
       </div>
     </div>
   </div>
 </div>
 <div class="kk-container">
-  <h2 class="kk-heading-line"><span class="kk-withsubtext">Checkbox<p>チェックボックス</p></span></h2>
+  <h2 id="checkbox" class="kk-heading-line"><span class="kk-withsubtext">Checkbox<p>チェックボックス</p></span></h2>
   <span>
     チェックボックスです。<code>kk-checkbox</code>を指定してください。<br>
     <a href="./toggle.html">トグルスイッチデザイン</a>のものも用意しています。
   </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-checkbox</td>
+            <td>チェックボックス</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>size-s</td>
+            <td>小さいパーツ</td>
+          </tr>
+          <tr>
+            <td>size-l</td>
+            <td>大きいパーツ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <div par@s>
-	  <pre class="kk-codebox" type="dark" title="HTML">
+	  <pre class="kk-codebox" theme="dark" title="HTML">
 <code>&lt;div class=&quot;kk-col6 kk-margin-top-s&quot;&gt;
   &lt;input id=&quot;check1&quot; class=&quot;kk-checkbox&quot; type=&quot;checkbox&quot;&gt;
   &lt;label for=&quot;check1&quot;&gt;CheckBox&lt;/label&gt;
@@ -420,12 +608,40 @@
   </div>
 </div>
 <div class="kk-container">
-  <h2 class="kk-heading-line"><span class="kk-withsubtext">Radio Button<p>ラジオボタン</p></span></h2>
+  <h2 id="radio" class="kk-heading-line"><span class="kk-withsubtext">Radio Button<p>ラジオボタン</p></span></h2>
   <span>
     ラジオボタンです。<code>kk-radio</code>を指定してください。
   </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-radio</td>
+            <td>ラジオボタン</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>size-s</td>
+            <td>小さいパーツ</td>
+          </tr>
+          <tr>
+            <td>size-l</td>
+            <td>大きいパーツ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <div par@s>
-	  <pre class="kk-codebox" type="dark" title="HTML">
+	  <pre class="kk-codebox" theme="dark" title="HTML">
 <code>&lt;div class=&quot;kk-col6 kk-margin-top-s&quot;&gt;
   &lt;input id=&quot;radio1&quot; name=&quot;radio&quot; class=&quot;kk-radio&quot; type=&quot;radio&quot;&gt;
   &lt;label for=&quot;radio1&quot;&gt;Normal&lt;/label&gt;
@@ -461,84 +677,162 @@
   </div>
 </div>
 <div class="kk-container">
-  <h2 class="kk-heading-line"><span class="kk-withsubtext">Textarea<p>テキストエリア</p></span></h2>
+  <h2 id="textarea" class="kk-heading-line"><span class="kk-withsubtext">Textarea<p>テキストエリア</p></span></h2>
   <span>
     テキストエリアです。<code>kk-textarea</code>を指定してください。
   </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-textarea</td>
+            <td>テキストエリア</td>
+          </tr>
+          <tr>
+            <td>kk-input-field</td>
+            <td>パーツ上部にマージンを設定します<br>kk-input-labelと合わせて使用します</td>
+          </tr>
+          <tr>
+            <td>kk-input-label</td>
+            <td>パーツ上部にラベルを表示します</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>size-s</td>
+            <td>小さいパーツ</td>
+          </tr>
+          <tr>
+            <td>size-l</td>
+            <td>大きいパーツ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <div par@s>
-	  <pre class="kk-codebox" type="dark" title="HTML">
-<code>&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+	  <pre class="kk-codebox" theme="dark" title="HTML">
+<code>&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;textarea id=&quot;text1&quot; class=&quot;kk-textarea&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
     &lt;label class=&quot;kk-input-label&quot;&gt;default&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;textarea id=&quot;text1&quot; class=&quot;kk-textarea&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
     &lt;label class=&quot;kk-movable-label&quot;&gt;動くラベル&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;textarea class=&quot;kk-textarea&quot; rows=&quot;3&quot; placeholder=&quot;Textarea&quot; size-s&gt;小さいサイズ&lt;/textarea&gt;
     &lt;label class=&quot;kk-input-label&quot;&gt;size-s&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;textarea class=&quot;kk-textarea&quot; rows=&quot;3&quot; placeholder=&quot;Textarea&quot; size-l&gt;大きいサイズ&lt;/textarea&gt;
     &lt;label class=&quot;kk-input-label&quot;&gt;size-l&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     <div grid-col>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <textarea id="text1" class="kk-textarea" rows="3"></textarea>
           <label class="kk-input-label">default</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <textarea id="text1" class="kk-textarea" rows="3"></textarea>
           <label class="kk-movable-label">動くラベル</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <textarea class="kk-textarea" rows="3" placeholder="Textarea" disabled>Disabled</textarea>
           <label class="kk-input-label">disabled</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <textarea class="kk-textarea" rows="3" placeholder="Textarea" readonly>読み取り専用</textarea>
           <label class="kk-input-label">readonly</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <textarea class="kk-textarea" rows="3" placeholder="Textarea" size-s>小さいサイズ</textarea>
           <label class="kk-input-label">size-s</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <textarea class="kk-textarea" rows="3" placeholder="Textarea" size-l>大きいサイズ</textarea>
           <label class="kk-input-label">size-l</label>
+        </div>
+      </div>
+      <div class="kk-col4@m kk-col6" cell>
+        <div class="kk-input-field">
+          <textarea id="text1" class="kk-textarea" rows="3" invalid></textarea>
+          <label class="kk-input-label">invalid</label>
         </div>
       </div>
     </div>
   </div>
 </div>
 <div class="kk-container">
-  <h2 class="kk-heading-line"><span class="kk-withsubtext">Select<p>選択リスト</p></span></h2>
+  <h2 id="select" class="kk-heading-line"><span class="kk-withsubtext">Select<p>選択リスト</p></span></h2>
   <span>
     選択リストです。<code>kk-select</code>を指定してください。
   </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-select</td>
+            <td>選択リスト</td>
+          </tr>
+          <tr>
+            <td>kk-input-field</td>
+            <td>パーツ上部にマージンを設定します<br>kk-input-labelと合わせて使用します</td>
+          </tr>
+          <tr>
+            <td>kk-input-label</td>
+            <td>パーツ上部にラベルを表示します</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>size-s</td>
+            <td>小さいパーツ</td>
+          </tr>
+          <tr>
+            <td>size-l</td>
+            <td>大きいパーツ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <div par@s>
-	  <pre class="kk-codebox" type="dark" title="HTML">
-<code>&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+	  <pre class="kk-codebox" theme="dark" title="HTML">
+<code>&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;select class=&quot;kk-select&quot;&gt;
       &lt;option value=”on”&gt;ON&lt;/option&gt;
@@ -547,7 +841,7 @@
     &lt;label class=&quot;kk-input-label&quot;&gt;default&lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;kk-col6@m kk-col12&quot; cell&gt;
+&lt;div class=&quot;kk-col4@m kk-col6&quot; cell&gt;
   &lt;div class=&quot;kk-input-field&quot;&gt;
     &lt;select class=&quot;kk-select&quot; disabled&gt;
       &lt;option value=”on”&gt;ON&lt;/option&gt;
@@ -557,7 +851,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     <div grid-col>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <select class="kk-select">
             <option value=”on”>ON</option>
@@ -566,7 +860,7 @@
           <label class="kk-input-label">default</label>
         </div>
       </div>
-      <div class="kk-col6@m kk-col12" cell>
+      <div class="kk-col4@m kk-col6" cell>
         <div class="kk-input-field">
           <select class="kk-select" disabled>
             <option value=”on”>ON</option>
