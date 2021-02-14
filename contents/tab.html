@@ -1,0 +1,136 @@
+<!--params
+  {
+    "title":"KUROUTO Kit - Tab"
+  }
+-->
+{{extends "_parts/base.html"}}
+{{define "content"}}
+<div class="kk-container">
+  <h1>Tab</h1>
+  <span>
+    表示の切り替えなどに使用できるタブ表示です。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-tab</td>
+            <td>タブ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>size-s</td>
+            <td>小さいサイズ</td>
+          </tr>
+          <tr>
+            <td>size-l</td>
+            <td>大きいサイズ</td>
+          </tr>
+          <tr>
+            <td>theme="top"</td>
+            <td>上部に表示する用のデザイン</td>
+          </tr>
+          <tr>
+            <td>theme="bottom"</td>
+            <td>下部に表示する用のデザイン</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col12" cell>
+      <div class="kk-margin-top">機能を有効化(初期化)するために下記コードを記述してください。</div>
+      <pre class="kk-codebox" title="JavaScript"><code>KuroutoKit.initTab();</code></pre>
+    </div>
+  </div>
+<div class="kk-container">
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">Tab View<p>タブ表示</p></span></h2>
+  <div par@s>
+    <span>
+      ラジオボタン(inputタグのtype="radio")の要素に<code>kk-tab</code>を指定してください。
+    </span>
+    <pre class="kk-codebox" theme="dark" title="HTML">
+<code>&lt;div class=&quot;kk-col12&quot;&gt;
+  &lt;input id=&quot;tab1&quot; name=&quot;tab&quot; class=&quot;kk-tab&quot; for=&quot;tab1_view&quot; theme=&quot;top&quot; type=&quot;radio&quot; checked&gt;
+  &lt;label for=&quot;tab1&quot;&gt;Tab1&lt;/label&gt;
+  &lt;input id=&quot;tab2&quot; name=&quot;tab&quot; class=&quot;kk-tab&quot; for=&quot;tab2_view&quot; theme=&quot;top&quot; type=&quot;radio&quot;&gt;
+  &lt;label for=&quot;tab2&quot;&gt;Tab2&lt;/label&gt;
+  &lt;input id=&quot;tab3&quot; name=&quot;tab&quot; class=&quot;kk-tab&quot; for=&quot;tab3_view&quot; theme=&quot;top&quot; type=&quot;radio&quot;&gt;
+  &lt;label for=&quot;tab3&quot;&gt;Tab3&lt;/label&gt;
+  &lt;div id=&quot;tab1_view&quot; class=&quot;kk-box kk-bg-color-normal&quot;&gt;
+    Tab1の内容です。
+  &lt;/div&gt;
+  &lt;div id=&quot;tab2_view&quot; class=&quot;kk-box kk-bg-color-normal&quot;&gt;
+    Tab2の内容です。
+  &lt;/div&gt;
+  &lt;div id=&quot;tab3_view&quot; class=&quot;kk-box kk-bg-color-normal&quot;&gt;
+    Tab3の内容です。
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    <div grid-col>
+      <div class="kk-col12">
+        <input id="tab1" name="tab" class="kk-tab" for="tab1_view" theme="top" type="radio" checked>
+        <label for="tab1">Tab1</label>
+        <input id="tab2" name="tab" class="kk-tab" for="tab2_view" theme="top" type="radio">
+        <label for="tab2">Tab2</label>
+        <input id="tab3" name="tab" class="kk-tab" for="tab3_view" theme="top" type="radio">
+        <label for="tab3">Tab3</label>
+        <div id="tab1_view" class="kk-box kk-bg-color-normal">
+          Tab1の内容です。
+        </div>
+        <div id="tab2_view" class="kk-box kk-bg-color-normal">
+          Tab2の内容です。
+        </div>
+        <div id="tab3_view" class="kk-box kk-bg-color-normal">
+          Tab3の内容です。
+        </div>
+      </div>
+      <div class="kk-col12 kk-margin-top">
+        <div id="tab1s_view" class="kk-box kk-bg-color-normal">
+          Tab1の内容です。
+        </div>
+        <div id="tab2s_view" class="kk-box kk-bg-color-normal">
+          Tab2の内容です。
+        </div>
+        <div id="tab3s_view" class="kk-box kk-bg-color-normal">
+          Tab3の内容です。
+        </div>
+        <input id="tab1s" name="tab-s" class="kk-tab" for="tab1s_view" theme="bottom" size-s type="radio" checked>
+        <label for="tab1s">Tab1</label>
+        <input id="tab2s" name="tab-s" class="kk-tab" for="tab2s_view" theme="bottom" size-s type="radio">
+        <label for="tab2s">Tab2</label>
+        <input id="tab3s" name="tab-s" class="kk-tab" for="tab3s_view" theme="bottom" size-s type="radio">
+        <label for="tab3s">Tab3</label>
+      </div>
+      <div class="kk-col12 kk-margin-top">
+        <input id="tab1l" name="tab-l" class="kk-tab" for="tab1l_view" size-l type="radio" checked>
+        <label for="tab1l">Tab1</label>
+        <input id="tab2l" name="tab-l" class="kk-tab" for="tab2l_view" size-l type="radio">
+        <label for="tab2l">Tab2</label>
+        <input id="tab3l" name="tab-l" class="kk-tab" for="tab3l_view" size-l type="radio">
+        <label for="tab3l">Tab3</label>
+        <div id="tab1l_view" class="kk-box kk-bg-color-normal kk-margin-top-ss">
+          Tab1の内容です。
+        </div>
+        <div id="tab2l_view" class="kk-box kk-bg-color-normal kk-margin-top-ss">
+          Tab2の内容です。
+        </div>
+        <div id="tab3l_view" class="kk-box kk-bg-color-normal kk-margin-top-ss">
+          Tab3の内容です。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<script>
+  KuroutoKit.initTab();
+</script>
+{{end}}

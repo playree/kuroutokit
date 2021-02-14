@@ -19,7 +19,19 @@
 let kk_initAccordion = false;
 let kk_initInput = false;
 let kk_initMovableLabel = false;
+let kk_initTab = false;
 let kk_initEnableWithCheck = false;
+
+function _initTab() {
+    [].forEach.call(document.getElementsByClassName("kk-tab"), (el) => {
+        const view = document.getElementById(el.getAttribute("for"))
+        if(el.checked){
+            view.removeAttribute("hidden");
+        } else {
+            view.setAttribute("hidden", "");
+        }
+    });
+}
 
 class KuroutoKit {
     static initAccordion() {
@@ -96,6 +108,20 @@ class KuroutoKit {
                 }
             }
         });
+    }
+
+    static initTab() {
+        if(kk_initTab) return;
+        kk_initTab = true;
+
+        document.addEventListener("change", (event) => {
+            if(event.target.tagName == "INPUT") {
+                if(event.target.classList.contains("kk-tab")) {
+                    _initTab()
+                }
+            }
+        }, false);
+        _initTab()
     }
 
     static initEnableWithCheck() {
