@@ -440,7 +440,7 @@ svg {
 
 .kk-input-field {
   position: relative;
-  margin-top: 1.6em;
+  margin-top: 1.5em;
 }
 .kk-input-field>.kk-input-label {
   position: absolute;
@@ -1266,14 +1266,12 @@ div.kk-align-bottom {
 .kk-tab+label {
   display: inline-block;
   box-sizing: border-box;
-  padding: 0 6px;
+  padding: 0 10px;
   line-height: calc(var(--kk-form-obj-height-m) - 8px);
   text-align: center;
+  color: var(--kk-font-color-mute);
   background-color: var(--kk-color-normal);
-  border: 1px solid var(--kk-border-color-base);
   border-radius: var(--kk-border-radius-base);
-  transition: ease-in-out .2s;
-  -webkit-transition: ease-in-out .2s;
   word-break: keep-all;
 }
 .kk-tab[size-s]+label {
@@ -1285,14 +1283,25 @@ div.kk-align-bottom {
   line-height: calc(var(--kk-form-obj-height-l) - 12px);
 }
 .kk-tab[theme="top"]+label {
-  border-bottom: unset;
   vertical-align: bottom;
 }
+.kk-tab:not([theme])+label {
+  border: solid 1px var(--kk-border-color-base);
+}
+.kk-tab[theme="top"]:not(:checked)+label {
+  border-bottom: solid 1px var(--kk-border-color-base);
+}
 .kk-tab[theme="bottom"]+label {
-  border-top: unset;
   vertical-align: top;
 }
+.kk-tab[theme="bottom"]:not(:checked)+label {
+  border-top: solid 1px var(--kk-border-color-base);
+}
 .kk-tab:checked+label {
+  color: var(--kk-font-color-base);
+  font-weight: bold;
+}
+.kk-tab:checked:not([theme])+label {
   color: var(--kk-font-color-inverse);
   background-color: var(--kk-color-primary);
 }
