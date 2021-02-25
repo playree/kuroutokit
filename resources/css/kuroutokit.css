@@ -139,8 +139,8 @@ svg {
 /*
  * Hidden.
  */
- [hidden],
- .kk-hidden {
+[hidden],
+.kk-hidden {
   display: none !important;
 }
 @media (max-width: 559px) {
@@ -157,6 +157,19 @@ svg {
   .kk-hidden\@l {
     display: none !important;
   }
+}
+
+/*
+ * Aligin.
+ */
+[center] {
+  text-align: center;
+}
+[right] {
+  text-align: right;
+}
+[left] {
+  text-align: left;
 }
 
 /*
@@ -1252,6 +1265,18 @@ div.kk-align-bottom {
 }
 .kk-scroll-v {
   overflow-y: auto;
+  white-space: nowrap;
+}
+.kk-scroll-fixed {
+  overflow: scroll;
+  white-space: nowrap;
+}
+.kk-scroll-h-fixed {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.kk-scroll-v-fixed {
+  overflow-y: scroll;
   white-space: nowrap;
 }
 
