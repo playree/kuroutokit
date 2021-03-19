@@ -655,6 +655,9 @@ svg {
 }
 
 .kk-file {
+  max-width: 100%;
+  width: 100%;
+  height: var(--kk-form-obj-height-m);
   cursor: pointer;
   background-color: var(--kk-color-normal);
 }
