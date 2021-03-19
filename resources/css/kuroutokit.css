@@ -384,7 +384,8 @@ svg {
 /*
  * Form Parts.
  */
-.kk-input, .kk-textarea, .kk-button, .kk-checkbox, .kk-radio, .kk-select, .kk-toggle:not([theme]) {
+.kk-input, .kk-textarea, .kk-button, .kk-checkbox, .kk-radio, .kk-select, .kk-file,
+.kk-toggle:not([theme]) {
   font: inherit;
   box-sizing: border-box;
   border: 1px solid var(--kk-border-color-base);
@@ -651,6 +652,25 @@ svg {
 
 .kk-input[fit], .kk-button[fit] {
   width: max-content;
+}
+
+.kk-file {
+  cursor: pointer;
+  background-color: var(--kk-color-normal);
+}
+.kk-file:focus, .kk-file:hover {
+  border-color: var(--kk-border-color-focus);
+}
+.kk-file::-webkit-file-upload-button {
+  box-sizing: border-box;
+  font-size: var(--kk-font-size-ss);
+  height: var(--kk-form-obj-height-m);
+  border: none;
+  border-right: 1px solid var(--kk-border-color-base);
+  background-color: var(--kk-color-normal);
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /*
