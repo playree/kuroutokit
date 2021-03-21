@@ -616,6 +616,9 @@ svg {
 .kk-checkbox:disabled:checked, .kk-radio:disabled:checked {
   background-color: var(--kk-disabled-bg-color);
 }
+.kk-checkbox:disabled+label {
+  color: var(--kk-font-color-mute);
+}
 
 .kk-select {
   margin: 0;
