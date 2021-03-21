@@ -658,11 +658,16 @@ svg {
   max-width: 100%;
   width: 100%;
   height: var(--kk-form-obj-height-m);
-  cursor: pointer;
   background-color: var(--kk-color-normal);
 }
-.kk-file:focus, .kk-file:hover {
+.kk-file:focus:not(:disabled), .kk-file:hover:not(:disabled) {
   border-color: var(--kk-border-color-focus);
+}
+.kk-file:disabled {
+  background-color: var(--kk-disabled-bg-color);
+}
+.kk-file:not(:disabled) {
+  cursor: pointer;
 }
 .kk-file::-webkit-file-upload-button {
   box-sizing: border-box;
