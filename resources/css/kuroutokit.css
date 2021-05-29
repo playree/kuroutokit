@@ -229,6 +229,9 @@ svg {
 .kk-shadow {
   box-shadow: var(--kk-shadow);
 }
+.kk-border-bottom {
+  border-bottom: 1px solid var(--kk-border-color-base);
+}
 
 /*
  * Container.
@@ -505,6 +508,7 @@ svg {
   height: var(--kk-form-obj-height-s);
   line-height: calc(var(--kk-form-obj-height-s) - 2px);
   font-size: var(--kk-font-size-s);
+  padding: 0 2px;
 }
 .kk-button[size-l] {
   height: var(--kk-form-obj-height-l);
@@ -1282,6 +1286,12 @@ div.kk-align-bottom {
   border-radius: var(--kk-border-radius-base);
   background-color: var(--kk-color-primary);
 }
+.kk-label[size-s] {
+  font-size: var(--kk-font-size-ss);
+}
+.kk-label[theme="orange"] {
+  background-color: orange;
+}
 
 /*
  * Scroll.
@@ -1366,4 +1376,29 @@ div.kk-align-bottom {
 }
 .kk-tab:not(:checked)+label:hover {
   border-color: var(--kk-color-primary);
+}
+
+/*
+ * Modal.
+ */
+.kk-modal {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .4s;
+  -webkit-transition: .4s;
+}
+.kk-modal>div {
+  max-width: 480px;
+  margin: auto;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin-top: 10%;
+}
+.kk-modal[closed] {
+  top: -100%;
 }
