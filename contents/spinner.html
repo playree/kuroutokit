@@ -1,0 +1,100 @@
+<!--params
+  {
+    "title":"KUROUTO Kit - Spinner"
+  }
+-->
+{{extends "_parts/base.html"}}
+{{define "content"}}
+<div class="kk-container">
+  <h1>Spinner</h1>
+  <span>
+    ローディングなどに使用できるスピナーです。
+  </span>
+  <div grid-col>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Class</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>kk-spinner</td>
+            <td>スピナー</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kk-col6@m kk-col12" cell>
+      <table class="kk-table kk-bg-color-normal kk-margin-top" theme="cross">
+        <caption>Attribute</caption>
+        <tbody class="kk-font-size-s">
+          <tr>
+            <td>size-ss</td>
+            <td>小さいサイズ</td>
+          </tr>
+          <tr>
+            <td>size-s</td>
+            <td>少し小さいサイズ</td>
+          </tr>
+          <tr>
+            <td>size-l</td>
+            <td>大きいサイズ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <h2 class="kk-heading-line"><span class="kk-withsubtext">ON/OFF Switch<p>ON/OFF式スイッチ</p></span></h2>
+  <div par@s>
+    <span>
+      くるくる回るスピナーです。<code>kk-spinner</code>を指定してください。
+    </span>
+	  
+    <div class="kk-margin-top" grid-col>
+      <div class="kk-col12" cell>
+        <div class="kk-input-field">
+          <div class="kk-card" size-s>
+            <div class="kk-spinner"></div>
+            <div class="kk-spinner" style="color: red;"></div>
+            <div class="kk-spinner" style="color: blue;"></div>
+          </div>
+          <label class="kk-input-label">default</label>
+        </div>
+      </div>
+      <div class="kk-col12" cell>
+        <div class="kk-input-field">
+          <div class="kk-card" size-s>
+            <div class="kk-spinner" size-ss></div>
+            <div class="kk-spinner" size-ss style="color: red;"></div>
+            <div class="kk-spinner" size-ss style="color: blue;"></div>
+          </div>
+          <label class="kk-input-label">size-ss</label>
+        </div>
+      </div>
+      <div class="kk-col12" cell>
+        <div class="kk-input-field">
+          <div class="kk-card" size-s>
+            <div class="kk-spinner" size-s></div>
+            <div class="kk-spinner" size-s style="color: red;"></div>
+            <div class="kk-spinner" size-s style="color: blue;"></div>
+          </div>
+          <label class="kk-input-label">size-s</label>
+        </div>
+      </div>
+      <div class="kk-col12" cell>
+        <div class="kk-input-field">
+          <div class="kk-card" size-s>
+            <div class="kk-spinner" size-l></div>
+            <div class="kk-spinner" size-l style="color: red;"></div>
+            <div class="kk-spinner" size-l style="color: blue;"></div>
+          </div>
+          <label class="kk-input-label">size-l</label>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+<script>
+</script>
+{{end}}
