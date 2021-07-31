@@ -474,6 +474,14 @@ svg {
   color: var(--kk-font-color-light);
   line-height: 1;
 }
+.kk-input-field>.kk-input-label-end {
+  position: absolute;
+  top: -1.3em;
+  right: 0.25em;
+  font-size: 0.8em;
+  color: var(--kk-font-color-light);
+  line-height: 1;
+}
 .kk-movable-label {
   position: absolute;
   top: 0.5em;

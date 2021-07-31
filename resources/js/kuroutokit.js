@@ -61,6 +61,36 @@ class KuroutoKit {
         });
     }
 
+    static convUnitNotation(num) {
+        if (!isNaN(num)) {
+            let ret = '';
+            let _a = 0;
+            let _b = Number(num);
+
+            _a = Math.floor(_b / 100000000);
+            _b = _b % 100000000;
+            if (_a > 0) {
+                ret += _a.toLocaleString() + '億';
+            }
+
+            _a = Math.floor(_b / 10000);
+            _b = _b % 10000;
+            if (_a > 0) {
+                ret += _a.toLocaleString() + '万';
+            }
+
+            if (_b > 0) {
+                ret += _b.toLocaleString();
+            }
+
+            if (ret == '') {
+                return '0';
+            }
+            return ret;
+        }
+        return '0';
+    }
+
     static initInput() {
         if(kk_initInput) return;
         kk_initInput = true;
@@ -78,6 +108,16 @@ class KuroutoKit {
                     el.removeAttribute('invalid')
                 }, {once:true});
             }
+        });
+        [].forEach.call(document.getElementsByClassName('kk-input-unit'), (el) => {
+            let lb = document.createElement('label');
+            lb.setAttribute('id', '_unit_' + el.id);
+            lb.classList.add('kk-input-label-end');
+            lb.innerHTML = KuroutoKit.convUnitNotation(el.value);
+            el.parentElement.appendChild(lb);
+            el.addEventListener('input', (event) => {
+                document.getElementById('_unit_' + event.target.id).innerHTML = KuroutoKit.convUnitNotation(event.target.value);
+            });
         });
     }
 
