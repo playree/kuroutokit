@@ -264,9 +264,17 @@ svg {
 .kk-grid, .kk-grid-col {
   grid-template-columns: repeat(12, calc(100% / 12));
 }
+[grid-col], .kk-grid-col {
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
+}
 [grid], [grid-row],
 .kk-grid, .kk-grid-row {
   grid-template-rows: repeat(12, calc(100% / 12));
+}
+[grid-row], .kk-grid-row {
+  grid-template-columns: max-content;
+  grid-auto-columns: max-content;
 }
 [cell],
 .kk-cell {
