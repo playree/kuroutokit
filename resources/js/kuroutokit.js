@@ -22,6 +22,7 @@ let kk_initMovableLabel = false;
 let kk_initTab = false;
 let kk_initEnableWithCheck = false;
 let kk_initModal = false;
+let kk_initToast = false;
 let kk_modalArgs = null;
 
 function _initTab() {
@@ -286,5 +287,36 @@ class KuroutoKit {
     } else {
       KuroutoKit.closeModal();
     }
+  }
+
+  static initToast() {
+    if(kk_initToast) return;
+    kk_initToast = true;
+
+    var body_element = document.getElementsByTagName('body')[0];
+    body_element.insertAdjacentHTML('beforeend',
+      '<div id="kk_toast" class="kk-toast"></div>');
+  }
+
+  static showToast(text, theme='infomation') {
+    KuroutoKit.initToast();
+
+    var elm = document.createElement('div');
+    elm.innerText = text;
+    elm.classList.add('kk-message');
+    elm.setAttribute('theme', theme);
+    document.getElementById('kk_toast').insertAdjacentElement('beforeend', elm);
+    elm.style.top = (elm.scrollHeight + 10) + 'px';
+    
+    setTimeout(()=>{
+      elm.style.top = '0';
+    }, 10);
+
+    setTimeout(()=>{
+      elm.style.opacity = 0;
+      setTimeout(()=>{
+        elm.remove();
+      },500)
+    }, 3000)
   }
 }

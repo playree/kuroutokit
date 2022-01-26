@@ -179,19 +179,19 @@ svg {
  * Attribute.
  */
  .kk-font-bold {
-   font-weight: bold;
+   font-weight: bold !important;
  }
  .kk-font-size-ss {
-  font-size: var(--kk-font-size-ss);
+  font-size: var(--kk-font-size-ss) !important;
 }
 .kk-font-size-s {
-  font-size: var(--kk-font-size-s);
+  font-size: var(--kk-font-size-s) !important;
 }
 .kk-font-size-l {
-  font-size: var(--kk-font-size-l);
+  font-size: var(--kk-font-size-l) !important;
 }
 .kk-font-size-xl {
-  font-size: var(--kk-font-size-xl);
+  font-size: var(--kk-font-size-xl) !important;
 }
 .kk-font-color-base {
   color: var(--kk-font-color-base);
@@ -1424,6 +1424,27 @@ div.kk-align-bottom {
 }
 .kk-modal[closed] {
   top: -100%;
+}
+
+/*
+ * Toast.
+ */
+.kk-toast {
+  position: absolute;
+  z-index: 110;
+  bottom: 16px;
+  width: 480px;
+  left: calc((100% - 480px) / 2);
+  padding: 4px;
+  overflow: hidden;
+}
+.kk-toast>div {
+  position: relative;
+  max-width: 480px;
+  margin-top: 8px;
+  box-shadow: var(--kk-shadow);
+  transition: .2s;
+  -webkit-transition: .2s;
 }
 
 /*
