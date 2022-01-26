@@ -298,7 +298,7 @@ class KuroutoKit {
       '<div id="kk_toast" class="kk-toast"></div>');
   }
 
-  static showToast(text, theme='infomation') {
+  static showToast(text, theme='infomation', wait=0) {
     KuroutoKit.initToast();
 
     var elm = document.createElement('div');
@@ -310,7 +310,7 @@ class KuroutoKit {
     
     setTimeout(()=>{
       elm.style.top = '0';
-    }, 10);
+    }, 10 + wait);
 
     setTimeout(()=>{
       elm.style.opacity = 0;
