@@ -316,7 +316,7 @@ class KuroutoKit {
       elm.style.opacity = 0;
       setTimeout(()=>{
         elm.remove();
-      },500)
-    }, 3000)
+      },500);
+    }, 3000);
   }
 }

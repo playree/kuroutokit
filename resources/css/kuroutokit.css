@@ -1001,6 +1001,9 @@ div.kk-align-bottom {
 .kk-accordion[closed]+* {
   height: 0;
 }
+.kk-accordion > * {
+  pointer-events: none;
+}
 
 /*
  * SideNav.
@@ -1433,14 +1436,18 @@ div.kk-align-bottom {
   position: absolute;
   z-index: 110;
   bottom: 16px;
-  width: 480px;
-  left: calc((100% - 480px) / 2);
   padding: 4px;
+  width: 100%;
   overflow: hidden;
+}
+@media (min-width: 560px) {
+  .kk-toast {
+    width: 540px;
+    left: calc((100% - 540px) / 2);
+  }
 }
 .kk-toast>div {
   position: relative;
-  max-width: 480px;
   margin-top: 8px;
   box-shadow: var(--kk-shadow);
   transition: .2s;
