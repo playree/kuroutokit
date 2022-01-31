@@ -29,7 +29,7 @@
   /* font color */
   --kk-font-color-base: #333;
   --kk-font-color-light: #888;
-  --kk-font-color-superlight: #ccc;
+  --kk-font-color-superlight: #bbb;
   --kk-font-color-form: var(--kk-font-color-base);
   --kk-font-color-mute: #888;
   --kk-font-color-inverse: #fff;
@@ -983,15 +983,15 @@ div.kk-align-bottom {
 }
 .kk-accordion[theme="icon"]::before {
   content: "";
-  background-color: var(--kk-font-color-light);
+  background-color: var(--kk-font-color-superlight);
   display: inline-block;
   width: 14px;
   height: 14px;
   margin-right: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
   -webkit-mask: var(--kk-svg-arrow);
   mask: var(--kk-svg-arrow);
-  -webkit-mask-size: cover;
-  mask-size: cover;
   transform: rotate(90deg);
   -webkit-transition: .3s;
   transition: .3s;
