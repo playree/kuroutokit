@@ -1141,6 +1141,10 @@ div.kk-align-bottom {
 }
 .kk-sidenav-menu>ul a:hover {
   text-decoration: unset;
+  background:linear-gradient(transparent 90%, #f8f8f8 0%);
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul a:hover {
+  background: none;
 }
 .kk-sidenav-menu>ul li:hover::before {
   content: var(--kk-svg-select);
