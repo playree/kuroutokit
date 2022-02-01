@@ -43,9 +43,9 @@
      inkscape:snap-perpendicular="false"
      inkscape:snap-tangential="false"
      inkscape:zoom="50"
-     inkscape:cx="5.51"
+     inkscape:cx="5.5"
      inkscape:cy="8.34"
-     inkscape:window-x="-7"
+     inkscape:window-x="0"
      inkscape:window-y="205"
      inkscape:window-maximized="0"
      inkscape:current-layer="triangle-11"
@@ -58,6 +58,6 @@
   </sodipodi:namedview>
   <path
      id="rect1943"
-     d="M 1,1 15,8 1,14 5,8 Z"
+     d="M 2,2 14,8 2,14 6,8 Z"
      sodipodi:nodetypes="ccccc" />
 </svg>
