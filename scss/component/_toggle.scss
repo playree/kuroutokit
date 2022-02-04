@@ -1,0 +1,131 @@
+/* Toggle. */
+.kk-toggle:not([theme]) {
+  width: 60px;
+  height: var(--kk-form-obj-height-m);
+  margin: 0;
+  border-radius: var(--kk-form-obj-height-m) var(--kk-form-obj-height-m);
+  background-color: var(--kk-color-normal);
+}
+.kk-toggle:not([theme])[size-s] {
+  height: var(--kk-form-obj-height-s);
+  border-radius: var(--kk-form-obj-height-s) var(--kk-form-obj-height-s);
+}
+.kk-toggle:not([theme])[size-l] {
+  height: var(--kk-form-obj-height-l);
+  border-radius: var(--kk-form-obj-height-l) var(--kk-form-obj-height-l);
+}
+.kk-toggle:not([theme])::after {
+  --kk-tmp-size: calc(var(--kk-form-obj-height-m) - 8px);
+}
+.kk-toggle:not([theme])[size-s]::after {
+  --kk-tmp-size: calc(var(--kk-form-obj-height-s) - 8px);
+}
+.kk-toggle:not([theme])[size-l]::after {
+  --kk-tmp-size: calc(var(--kk-form-obj-height-l) - 8px);
+}
+.kk-toggle:not([theme])::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: var(--kk-tmp-size);
+  width: var(--kk-tmp-size);
+  margin-left: 4px;
+  margin-top: 3px;
+  box-sizing: border-box;
+  border: 1px solid var(--kk-border-color-base);
+  border-radius: var(--kk-tmp-size) var(--kk-tmp-size);
+  background-color: var(--kk-color-dim);
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
+}
+.kk-toggle:not([theme])+label {
+  position: absolute;
+  margin-left: 8px;
+  line-height: var(--kk-form-obj-height-m);
+}
+.kk-toggle:not([theme])[size-s]+label {
+  line-height: var(--kk-form-obj-height-s);
+}
+.kk-toggle:not([theme])[size-l]+label {
+  line-height: var(--kk-form-obj-height-l);
+}
+.kk-toggle:not([theme]):checked {
+  background-color: var(--kk-color-primary);
+}
+.kk-toggle:not([theme]):checked::after {
+  margin-left: calc(55px - var(--kk-tmp-size));
+  background-color: var(--kk-color-normal);
+}
+.kk-toggle:not([theme]):not(:disabled),
+.kk-toggle:not([theme]):not(:disabled)+label {
+  cursor: pointer;
+}
+.kk-toggle:not([theme]):focus, .kk-toggle:not([theme]):hover {
+  border-color: var(--kk-border-color-focus);
+}
+.kk-toggle[theme="select"] {
+  position: absolute;
+  width: 0;
+  opacity: 0;
+}
+.kk-toggle[theme="select"]+label::before,
+.kk-toggle[theme="select"]+label::after {
+  content: attr(data-off);
+  display: inline-block;
+  width: calc(50% - 4px);
+  box-sizing: border-box;
+  margin: 4px 0 0 4px;
+  line-height: calc(var(--kk-form-obj-height-m) - 10px);
+  text-align: center;
+  border-radius: var(--kk-border-radius-base);
+  transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
+  word-break: keep-all;
+  overflow: hidden;
+}
+.kk-toggle[theme="select"][size-s]+label::before,
+.kk-toggle[theme="select"][size-s]+label::after {
+  line-height: calc(var(--kk-form-obj-height-s) - 10px);
+  font-size: var(--kk-font-size-ss);
+}
+.kk-toggle[theme="select"][size-l]+label::before,
+.kk-toggle[theme="select"][size-l]+label::after {
+  line-height: calc(var(--kk-form-obj-height-l) - 10px);
+}
+.kk-toggle[theme="select"]+label::after {
+  content: attr(data-on);
+  margin: 4px 4px 0 0;
+}
+.kk-toggle[theme="select"]+label {
+  display: block;
+  height: var(--kk-form-obj-height-m);
+  background-color: var(--kk-color-normal);
+  box-sizing: border-box;
+  border: 1px solid var(--kk-border-color-base);
+  border-radius: var(--kk-border-radius-base);
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: ease-in-out .2s;
+  -webkit-transition: ease-in-out .2s;
+}
+.kk-toggle[theme="select"]:not(:checked)+label::before,
+.kk-toggle[theme="select"]:checked+label::after {
+  background-color: var(--kk-color-primary);
+  color: var(--kk-color-normal);
+}
+.kk-toggle[theme="select"][size-s]+label {
+  height: var(--kk-form-obj-height-s);
+}
+.kk-toggle[theme="select"][size-l]+label {
+  height: var(--kk-form-obj-height-l);
+}
+.kk-toggle[theme="select"]:not(:disabled)+label {
+  cursor: pointer;
+}
+.kk-toggle[theme="select"]:focus+label, .kk-toggle[theme="select"]+label:hover {
+  border-color: var(--kk-border-color-focus);
+}

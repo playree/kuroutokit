@@ -1,0 +1,160 @@
+/* SideNav. */
+.kk-sidenav-container {
+  --kk-sidenav-width: 280px;
+  --kk-sidenav-menu-bg-color: var(--kk-color-dim);
+  --kk-sidenav-main-bg-color: var(--kk-color-normal);
+  --kk-sidenav-icon: var(--kk-svg-menu);
+  --kk-sidenav-select-bg-color: var(--kk-sidenav-menu-bg-color);
+  --kk-sidenav-line-height: 26px;
+}
+.kk-sidenav-container[theme="panel"] {
+  --kk-sidenav-menu-bg-color: var(--kk-color-normal);
+  --kk-sidenav-main-bg-color: var(--kk-color-dim);
+  --kk-sidenav-select-color: #88f;
+  --kk-sidenav-select-bg-color: var(--kk-color-select);
+  --kk-sidenav-line-height: 26px;
+}
+.kk-sidenav-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--kk-sidenav-width);
+  background-color: var(--kk-sidenav-menu-bg-color);
+  z-index: 99;
+  -webkit-transition: left .3s;
+  transition: left .3s;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.kk-sidenav-menu::-webkit-scrollbar {
+  display: none;
+}
+.kk-sidenav-main {
+  position: fixed;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: var(--kk-sidenav-width);
+  background-color: var(--kk-sidenav-main-bg-color);
+  overflow: auto;
+  -webkit-transition: left .3s;
+  transition: left .3s;
+}
+.kk-sidenav-menu[shadow] {
+  box-shadow: var(--kk-shadow);
+}
+@media (max-width: 1199px) {
+  .kk-sidenav-menu {
+    left: calc(-1 * var(--kk-sidenav-width));
+  }
+  .kk-sidenav-menu:hover {
+    left: 0;
+  }
+  .kk-sidenav-menu[shadow]:not(:hover) {
+    box-shadow: unset;
+  }
+  .kk-sidenav-menu::after {
+    position: fixed;
+    top: 4px;
+    left: 4px;
+    content: var(--kk-sidenav-icon);
+    height: 24px;
+    width: 32px;
+    color: #888;
+    background-color: #e8e8ff;
+    text-align: center;
+    line-height: 24px;
+    opacity: 0.8;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  }
+  .kk-sidenav-menu:hover:after {
+    opacity: 0;
+  }
+  .kk-sidenav-main {
+    left: 0;
+  }
+}
+.kk-sidenav-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+.kk-sidenav-menu>ul {
+  padding-right: 8px;
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul {
+  padding-right: 0;
+}
+.kk-sidenav-menu>ul li {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding-left: 20px;
+  font-size: var(--kk-font-size-s);
+  line-height: var(--kk-sidenav-line-height);
+  color: var(--kk-font-color-mute);
+  background-color: var(--kk-sidenav-menu-bg-color);
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul li {
+  border: solid 1px var(--kk-border-color-base);
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul>li:not(:last-child) {
+  border-bottom: none;
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul ul li {
+  border-right: none;
+  border-bottom: none;
+}
+.kk-sidenav-menu>ul a {
+  color: unset;
+  text-decoration: unset;
+  display: block;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.kk-sidenav-menu>ul a:hover {
+  text-decoration: unset;
+  background:linear-gradient(transparent 90%, #f8f8f8 0%);
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul a:hover {
+  background: none;
+}
+.kk-sidenav-menu>ul li:hover::before {
+  content: var(--kk-svg-select);
+  position: absolute;
+  margin-left: -16px;
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul li:hover::before {
+  content: "";
+  margin-left: -20px;
+  margin-top: -1px;
+  width: 2px;
+  height: calc(var(--kk-sidenav-line-height) + 2px);
+  background-color: var(--kk-sidenav-select-color);
+}
+.kk-sidenav-menu>ul li:hover {
+  color: var(--kk-font-color-base);
+}
+.kk-sidenav-container[theme="panel"]>.kk-sidenav-menu>ul li:hover {
+  background-color: var(--kk-sidenav-select-bg-color);
+}
+.kk-sidenav-menu>ul li:empty {
+  border-top: solid 1px var(--kk-border-color-base);
+  margin: 8px;
+}
+.kk-sidenav-container[theme="panel"] ul li:empty {
+  border-top: solid 1px var(--kk-border-color-base);
+  margin: 0 0 8px 0;
+}
+.kk-sidenav-menu li>a, .kk-sidenav-menu li>span, .kk-sidenav-menu li>div {
+  display: flex;
+}
+.kk-sidenav-menu li:hover>[menu-normal],
+.kk-sidenav-menu li:hover>*>[menu-normal],
+.kk-sidenav-menu li:not(:hover)>[menu-active],
+.kk-sidenav-menu li:not(:hover)>*>[menu-active] {
+  display: none;
+}

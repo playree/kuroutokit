@@ -1,0 +1,22 @@
+/* Modal. */
+.kk-modal {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+.kk-modal>div {
+  max-width: 480px;
+  margin: auto;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin-top: 10%;
+}
+.kk-modal[closed] {
+  top: -100%;
+}

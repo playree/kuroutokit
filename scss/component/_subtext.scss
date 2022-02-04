@@ -1,0 +1,19 @@
+/* With SubText. */
+.kk-withsubtext,
+.kk-withsubtext-end {
+    display: inline-block;
+}
+.kk-withsubtext>p,
+.kk-withsubtext-end>p {
+    font-size: var(--kk-font-size-s);
+    font-weight: normal;
+    color: var(--kk-font-color-mute);
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.kk-withsubtext-end>p {
+    text-align: end;
+}
+.kk-withsubtext>p::before {
+    content: "\0bb\00a0";
+}

@@ -1,0 +1,29 @@
+/* Card. */
+.kk-card {
+  padding: 1rem;
+  background-color: var(--kk-color-normal);
+  border-radius: var(--kk-border-radius-base);
+}
+.kk-card[size-s] {
+  padding: 0.5rem;
+}
+.kk-card[size-l] {
+  padding: 2rem;
+}
+.kk-card[theme] {
+  color: var(--kk-font-color-inverse);
+}
+.kk-card[theme="primary"] {
+  background-color: var(--kk-color-primary);
+}
+.kk-card[theme="secondary"] {
+  background-color: var(--kk-color-secondary);
+}
+.kk-card[theme="caution"] {
+  background-color: var(--kk-color-caution);
+}
+.kk-card-title {
+  font-size: var(--kk-font-size-l);
+  font-weight: bold;
+  margin: 0.5rem 0;
+}

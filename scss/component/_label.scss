@@ -1,0 +1,14 @@
+/* Label. */
+.kk-label {
+  font-size: var(--kk-font-size-s);
+  color: var(--kk-color-normal);
+  padding: 1px 6px;
+  border-radius: var(--kk-border-radius-base);
+  background-color: var(--kk-color-primary);
+}
+.kk-label[size-s] {
+  font-size: var(--kk-font-size-ss);
+}
+.kk-label[theme="orange"] {
+  background-color: orange;
+}

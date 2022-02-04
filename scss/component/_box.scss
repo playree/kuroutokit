@@ -1,0 +1,44 @@
+/* Box / CodeBox. */
+.kk-box,
+.kk-box-dashed,
+.kk-codebox {
+   border: solid 1px var(--kk-border-color-base);
+   border-radius: var(--kk-border-radius-base);
+   padding: 8px;
+ }
+ .kk-codebox {
+   overflow: auto;
+   background-color: #fff;
+ }
+ .kk-box-dashed {
+   border-style: dashed;
+ }
+ .kk-codebox, .kk-codebox>code {
+   font-size: var(--kk-font-size-ss);
+   font-weight: normal;
+   line-height: var(--kk-font-size-s);
+ }
+ .kk-codebox>code {
+   color: inherit;
+   background-color: unset;
+   padding: 0;
+ }
+ .kk-codebox[title]::before {
+   content: attr(title);
+   position: relative;
+   top: -8px;
+   left: -8px;
+   display: block;
+   width: max-content;
+   padding: 1px 8px;
+   border-top-left-radius: var(--kk-border-radius-base);
+   border-bottom: solid 1px var(--kk-border-color-base);
+   border-right: solid 1px var(--kk-border-color-base);
+   background-color: #888;
+   color: #fff;
+   font-family: var(--kk-font-family-code);
+ }
+ .kk-codebox[theme="dark"] {
+   background-color: #244;
+   color: #fff;
+ }

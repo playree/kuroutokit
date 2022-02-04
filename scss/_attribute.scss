@@ -1,0 +1,163 @@
+/* Hidden. */
+
+[hidden],
+.kk-hidden {
+  display: none !important;
+}
+
+@media (max-width: 559px) {
+  .kk-hidden\@s {
+    display: none !important;
+  }
+}
+
+@media (max-width: 959px) {
+  .kk-hidden\@m {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1359px) {
+  .kk-hidden\@l {
+    display: none !important;
+  }
+}
+
+/* Aligin. */
+
+[center] {
+  text-align: center;
+}
+
+[right] {
+  text-align: right;
+}
+
+[left] {
+  text-align: left;
+}
+
+/* */
+
+.kk-font-bold {
+  font-weight: bold !important;
+}
+.kk-font-size-ss {
+ font-size: var(--kk-font-size-ss) !important;
+}
+.kk-font-size-s {
+ font-size: var(--kk-font-size-s) !important;
+}
+.kk-font-size-l {
+ font-size: var(--kk-font-size-l) !important;
+}
+.kk-font-size-xl {
+ font-size: var(--kk-font-size-xl) !important;
+}
+.kk-font-color-base {
+ color: var(--kk-font-color-base);
+}
+.kk-font-color-mute {
+ color: var(--kk-font-color-mute);
+}
+.kk-font-color-light {
+ color: var(--kk-font-color-light);
+}
+.kk-font-color-superlight {
+ color: var(--kk-font-color-superlight);
+}
+.kk-font-color-success {
+ color: var(--kk-font-color-success);
+}
+.kk-font-color-error {
+ color: var(--kk-font-color-error);
+}
+.kk-font-color-warning {
+ color: var(--kk-font-color-warning);
+}
+.kk-bg-color-normal {
+ background-color: var(--kk-color-normal);
+}
+.kk-bg-color-primary {
+ background-color: var(--kk-color-primary);
+}
+.kk-bg-color-secondary {
+ background-color: var(--kk-color-secondary);
+}
+.kk-bg-color-caution {
+ background-color: var(--kk-color-caution);
+}
+.kk-bg-color-dim {
+ background-color: var(--kk-color-dim);
+}
+.kk-bg-color-attention {
+ background-color: var(--kk-color-attention);
+}
+.kk-shadow {
+ box-shadow: var(--kk-shadow);
+}
+.kk-border-bottom {
+ border-bottom: 1px solid var(--kk-border-color-base);
+}
+
+/* Paragraph. */
+[par] { margin-left: 1rem; }
+@media (min-width: 640px) {
+  [par\@s] { margin-left: 1rem; }
+}
+@media (min-width: 960px) {
+  [par\@m] { margin-left: 1rem; }
+}
+@media (min-width: 1200px) {
+  [par\@l] { margin-left: 1rem; }
+}
+
+/* Align. */
+.kk-align-center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.kk-align-center-v {
+  display: inline-flex;
+  align-items: center;
+}
+.kk-align-center-h {
+  display: inline-flex;
+  justify-content: center;
+}
+.kk-align-bottom {
+  display: inline-flex;
+  align-items: flex-end;
+}
+div.kk-align-center,
+div.kk-align-center-v,
+div.kk-align-center-h,
+div.kk-align-bottom {
+  display: flex;
+}
+
+/* Heading Line. */
+.kk-heading-line {
+  overflow: hidden;
+}
+.kk-heading-line>* {
+  display: inline-block;
+  position: relative;
+}
+.kk-heading-line>::before,
+.kk-heading-line>::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - ((0.2px + 0.05em) / 2));
+  width: 1980px;
+  border-bottom: calc(0.2px + 0.05em) solid var(--kk-border-color-base)
+}
+.kk-heading-line>::before {
+  right: 100%;
+  margin-right: calc(5px + 0.3em);
+}
+.kk-heading-line>::after {
+  left: 100%;
+  margin-left: calc(5px + 0.3em);
+}

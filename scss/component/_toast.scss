@@ -1,0 +1,21 @@
+/* Toast. */
+.kk-toast {
+  position: absolute;
+  z-index: 110;
+  bottom: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+.kk-toast>div {
+  position: relative;
+  width: calc(100% - 28px);
+  margin: 8px auto;
+  box-shadow: var(--kk-shadow);
+  transition: .2s;
+  -webkit-transition: .2s;
+}
+@media (min-width: 560px) {
+  .kk-toast>div {
+    width: 540px;
+  }
+}

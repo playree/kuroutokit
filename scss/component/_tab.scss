@@ -1,0 +1,54 @@
+/* Tab. */
+.kk-tab {
+  position: absolute;
+  width: 0;
+  opacity: 0;
+}
+.kk-tab+label {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 10px;
+  line-height: calc(var(--kk-form-obj-height-m) - 8px);
+  text-align: center;
+  color: var(--kk-font-color-mute);
+  background-color: var(--kk-color-normal);
+  border-radius: var(--kk-border-radius-base);
+  word-break: keep-all;
+}
+.kk-tab[size-s]+label {
+  font-size: var(--kk-font-size-s);
+  line-height: calc(var(--kk-form-obj-height-s) - 4px);
+}
+.kk-tab[size-l]+label {
+  font-size: var(--kk-font-size-l);
+  line-height: calc(var(--kk-form-obj-height-l) - 12px);
+}
+.kk-tab[theme="top"]+label {
+  vertical-align: bottom;
+}
+.kk-tab:not([theme])+label {
+  border: solid 1px var(--kk-border-color-base);
+}
+.kk-tab[theme="top"]:not(:checked)+label {
+  border-bottom: solid 1px var(--kk-border-color-base);
+}
+.kk-tab[theme="bottom"]+label {
+  vertical-align: top;
+}
+.kk-tab[theme="bottom"]:not(:checked)+label {
+  border-top: solid 1px var(--kk-border-color-base);
+}
+.kk-tab:checked+label {
+  color: var(--kk-font-color-base);
+  font-weight: bold;
+}
+.kk-tab:checked:not([theme])+label {
+  color: var(--kk-font-color-inverse);
+  background-color: var(--kk-color-primary);
+}
+.kk-tab:not(:checked)+label {
+  cursor: pointer;
+}
+.kk-tab:not(:checked)+label:hover {
+  border-color: var(--kk-color-primary);
+}

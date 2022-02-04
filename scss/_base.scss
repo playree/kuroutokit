@@ -1,0 +1,53 @@
+/* Global. */
+
+body {
+    font-family: var(--kk-font-family);
+    font-size: var(--kk-font-size-base);
+    color: var(--kk-font-color-base);
+    line-height: 1.4;
+    margin: 0;
+}
+
+a {
+  color: var(--kk-font-color-link);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+a:not(.kk-button):hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--kk-font-family-heading);
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+code {
+  font-family: var(--kk-font-family-code);
+  font-size: var(--kk-font-size-s);
+  font-weight: bold;
+  color: var(--kk-color-caution-active);
+  background-color: var(--kk-color-attention);
+  padding: 4px 4px;
+}
+
+svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* Icon. */
+
+.material-icons {
+  font-size: 22px;
+  line-height: unset;
+}

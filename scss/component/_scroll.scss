@@ -1,0 +1,25 @@
+/* Scroll. */
+.kk-scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+.kk-scroll-h {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.kk-scroll-v {
+  overflow-y: auto;
+  white-space: nowrap;
+}
+.kk-scroll-fixed {
+  overflow: scroll;
+  white-space: nowrap;
+}
+.kk-scroll-h-fixed {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.kk-scroll-v-fixed {
+  overflow-y: scroll;
+  white-space: nowrap;
+}

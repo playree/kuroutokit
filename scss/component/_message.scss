@@ -1,0 +1,25 @@
+/* Message. */
+.kk-message {
+  border-radius: var(--kk-border-radius-base);
+  padding: .5rem;
+}
+.kk-message:not([theme]), .kk-message[theme="infomation"] {
+  color: var(--kk-color-infomation-font);
+  border: solid 1px var(--kk-color-infomation-border);
+  background-color: var(--kk-color-infomation);
+}
+.kk-message[theme="success"] {
+  color: var(--kk-color-success-font);
+  border: solid 1px var(--kk-color-success-border);
+  background-color: var(--kk-color-success);
+}
+.kk-message[theme="warning"] {
+  color: var(--kk-color-warning-font);
+  border: solid 1px var(--kk-color-warning-border);
+  background-color: var(--kk-color-warning);
+}
+.kk-message[theme="error"] {
+  color: var(--kk-color-error-font);
+  border: solid 1px var(--kk-color-error-border);
+  background-color: var(--kk-color-error);
+}
