@@ -1,2 +1,17 @@
 // Variable definition.
 
+// Reference width.
+$width-s :  640px;
+$width-m :  960px;
+$width-l :  1200px;
+$width-xl : 1600px;
+
+$min-width-s : $width-s;
+$min-width-m : $width-m;
+$min-width-l : $width-l;
+$min-width-xl : $width-xl;
+
+$max-width-s : $width-s - 1px;
+$max-width-m : $width-m - 1px;
+$max-width-l : $width-l - 1px;
+$max-width-xl : $width-xl - 1px;
