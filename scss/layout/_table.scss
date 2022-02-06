@@ -2,33 +2,34 @@
 .kk-table {
   width: 100%;
   border-spacing: 0;
-}
-.kk-table caption {
-  color: var(--kk-font-color-light);
-  margin-bottom: 0.5em;
-  text-align: left;
-  text-decoration: underline;
-}
-.kk-table th, .kk-table td {
-  padding: 0.25em 0.5em;
-}
-.kk-table th {
-  color: var(--kk-font-color-light);
-  font-weight: normal;
-  text-align: left;
-}
-.kk-table>thead[center] th {
-  text-align: center;
-}
-.kk-table[theme="hline"] th, .kk-table[theme="cross"] th {
-  border-bottom: 3px double var(--kk-border-color-base);
-}
-.kk-table[theme="hline"] tr:not(:first-child)>td, .kk-table[theme="cross"] tr:not(:first-child)>td {
-  border-top: 1px solid var(--kk-border-color-base);
-}
-.kk-table[theme="cross"] th:not(:first-child), .kk-table[theme="cross"] td:not(:first-child) {
-  border-left: 1px solid var(--kk-border-color-base);
-}
-.kk-table[hover]>tbody>tr:hover {
-  background-color: var(--kk-color-select);
+
+  caption {
+    color: var(--kk-font-color-light);
+    margin-bottom: 0.5em;
+    text-align: left;
+    text-decoration: underline;
+  }
+  th, td {
+    padding: 0.25em 0.5em;
+  }
+  th {
+    color: var(--kk-font-color-light);
+    font-weight: normal;
+    text-align: left;
+  }
+  &>thead[center] th {
+    text-align: center;
+  }
+  &[theme="hline"] th, &[theme="cross"] th {
+    border-bottom: 3px double var(--kk-border-color-base);
+  }
+  &[theme="hline"] tr:not(:first-child)>td, &[theme="cross"] tr:not(:first-child)>td {
+    border-top: 1px solid var(--kk-border-color-base);
+  }
+  &[theme="cross"] th:not(:first-child), &[theme="cross"] td:not(:first-child) {
+    border-left: 1px solid var(--kk-border-color-base);
+  }
+  &[hover]>tbody>tr:hover {
+    background-color: var(--kk-color-select);
+  }
 }
