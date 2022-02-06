@@ -1,4 +1,6 @@
+@use "../common/variables" as v;
 /* Padding. */
+
 .kk-padding-ss { padding: 0.25rem !important; }
 .kk-padding-s { padding: 0.5rem !important; }
 .kk-padding,
@@ -6,21 +8,21 @@
 .kk-padding-l { padding: 2.0rem !important; }
 .kk-padding-leftl { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
 .kk-padding-rm { padding: 0 !important; }
-@media (min-width: 640px) {
+@media (min-width: v.$min-width-s) {
   .kk-padding-s\@s { padding: 0.5rem !important; }
   .kk-padding\@s,
   .kk-padding-m\@s { padding: 1.0rem !important; }
   .kk-padding-l\@s { padding: 2.0rem !important; }
   .kk-padding-leftl\@s { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
 }
-@media (min-width: 960px) {
+@media (min-width: v.$min-width-m) {
   .kk-padding-s\@m { padding: 0.5rem !important; }
   .kk-padding\@m,
   .kk-padding-m\@m { padding: 1.0rem !important; }
   .kk-padding-l\@m { padding: 2.0rem !important; }
   .kk-padding-leftl\@m { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
 }
-@media (min-width: 1200px) {
+@media (min-width: v.$min-width-l) {
   .kk-padding-s\@l { padding: 0.5rem !important; }
   .kk-padding\@l,
   .kk-padding-m\@l { padding: 1.0rem !important; }

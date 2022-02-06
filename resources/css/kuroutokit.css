@@ -674,12 +674,12 @@ div.kk-align-bottom {
 }
 .kk-table caption {
   color: var(--kk-font-color-light);
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   text-align: left;
   text-decoration: underline;
 }
 .kk-table th, .kk-table td {
-  padding: 0.25em 0.5em;
+  padding: 0.25rem 0.5rem;
 }
 .kk-table th {
   color: var(--kk-font-color-light);
@@ -800,6 +800,10 @@ div.kk-align-bottom {
   margin-top: 2rem !important;
 }
 
+.kk-margin-rm-top {
+  margin-top: 0 !important;
+}
+
 .kk-margin-bottom-ss {
   margin-bottom: 0.25rem !important;
 }
@@ -815,6 +819,10 @@ div.kk-align-bottom {
 
 .kk-margin-bottom-l {
   margin-bottom: 2rem !important;
+}
+
+.kk-margin-rm-bottom {
+  margin-bottom: 0 !important;
 }
 
 .kk-margin-left-ss {
@@ -834,6 +842,10 @@ div.kk-align-bottom {
   margin-left: 2rem !important;
 }
 
+.kk-margin-rm-left {
+  margin-left: 0 !important;
+}
+
 .kk-margin-right-ss {
   margin-right: 0.25rem !important;
 }
@@ -851,24 +863,12 @@ div.kk-align-bottom {
   margin-right: 2rem !important;
 }
 
-.kk-margin-rm {
-  margin: 0 !important;
-}
-
-.kk-margin-rm-top {
-  margin-top: 0 !important;
-}
-
-.kk-margin-rm-bottom {
-  margin-bottom: 0 !important;
-}
-
 .kk-margin-rm-right {
   margin-right: 0 !important;
 }
 
-.kk-margin-rm-left {
-  margin-left: 0 !important;
+.kk-margin-rm {
+  margin: 0 !important;
 }
 
 /* SideNav. */
