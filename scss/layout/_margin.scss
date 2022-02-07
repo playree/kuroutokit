@@ -3,8 +3,7 @@
 @each $pos in top, bottom, left, right {
   .kk-margin-#{$pos}-ss { margin-#{$pos}: 0.25rem !important; }
   .kk-margin-#{$pos}-s { margin-#{$pos}: 0.5rem !important; }
-  .kk-margin-#{$pos},
-  .kk-margin-#{$pos}-m { margin-#{$pos}: 1.0rem !important; }
+  .kk-margin-#{$pos}, .kk-margin-#{$pos}-m { margin-#{$pos}: 1.0rem !important; }
   .kk-margin-#{$pos}-l { margin-#{$pos}: 2.0rem !important; }
   .kk-margin-rm-#{$pos} { margin-#{$pos}: 0 !important; }
 }
