@@ -1,31 +1,14 @@
 @use "../common/variables" as v;
+@use "../common/mixin" as m;
 /* Padding. */
 
-.kk-padding-ss { padding: 0.25rem !important; }
-.kk-padding-s { padding: 0.5rem !important; }
-.kk-padding,
-.kk-padding-m { padding: 1.0rem !important; }
-.kk-padding-l { padding: 2.0rem !important; }
-.kk-padding-leftl { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
-.kk-padding-rm { padding: 0 !important; }
-@media (min-width: v.$min-width-s) {
-  .kk-padding-s\@s { padding: 0.5rem !important; }
-  .kk-padding\@s,
-  .kk-padding-m\@s { padding: 1.0rem !important; }
-  .kk-padding-l\@s { padding: 2.0rem !important; }
-  .kk-padding-leftl\@s { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
-}
-@media (min-width: v.$min-width-m) {
-  .kk-padding-s\@m { padding: 0.5rem !important; }
-  .kk-padding\@m,
-  .kk-padding-m\@m { padding: 1.0rem !important; }
-  .kk-padding-l\@m { padding: 2.0rem !important; }
-  .kk-padding-leftl\@m { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
-}
-@media (min-width: v.$min-width-l) {
-  .kk-padding-s\@l { padding: 0.5rem !important; }
-  .kk-padding\@l,
-  .kk-padding-m\@l { padding: 1.0rem !important; }
-  .kk-padding-l\@l { padding: 2.0rem !important; }
-  .kk-padding-leftl\@l { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
+@each $sfx in null, \@s, \@m, \@l {
+  @include m.min-width($sfx) {
+    .kk-padding-ss#{$sfx} { padding: 0.25rem !important; }
+    .kk-padding-s#{$sfx} { padding: 0.5rem !important; }
+    .kk-padding#{$sfx}, .kk-padding-m#{$sfx} { padding: 1.0rem !important; }
+    .kk-padding-l#{$sfx} { padding: 2.0rem !important; }
+    .kk-padding-leftl#{$sfx} { padding: 1.0rem 1.0rem 1.0rem 2.0rem !important; }
+    .kk-padding-rm#{$sfx} { padding: 0 !important; }
+  }
 }

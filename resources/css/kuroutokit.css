@@ -711,8 +711,7 @@ div.kk-align-bottom {
   padding: 0.5rem !important;
 }
 
-.kk-padding,
-.kk-padding-m {
+.kk-padding, .kk-padding-m {
   padding: 1rem !important;
 }
 
@@ -729,12 +728,15 @@ div.kk-align-bottom {
 }
 
 @media (min-width: 640px) {
+  .kk-padding-ss\@s {
+    padding: 0.25rem !important;
+  }
+
   .kk-padding-s\@s {
     padding: 0.5rem !important;
   }
 
-  .kk-padding\@s,
-.kk-padding-m\@s {
+  .kk-padding\@s, .kk-padding-m\@s {
     padding: 1rem !important;
   }
 
@@ -745,14 +747,21 @@ div.kk-align-bottom {
   .kk-padding-leftl\@s {
     padding: 1rem 1rem 1rem 2rem !important;
   }
+
+  .kk-padding-rm\@s {
+    padding: 0 !important;
+  }
 }
 @media (min-width: 960px) {
+  .kk-padding-ss\@m {
+    padding: 0.25rem !important;
+  }
+
   .kk-padding-s\@m {
     padding: 0.5rem !important;
   }
 
-  .kk-padding\@m,
-.kk-padding-m\@m {
+  .kk-padding\@m, .kk-padding-m\@m {
     padding: 1rem !important;
   }
 
@@ -763,14 +772,21 @@ div.kk-align-bottom {
   .kk-padding-leftl\@m {
     padding: 1rem 1rem 1rem 2rem !important;
   }
+
+  .kk-padding-rm\@m {
+    padding: 0 !important;
+  }
 }
 @media (min-width: 1200px) {
+  .kk-padding-ss\@l {
+    padding: 0.25rem !important;
+  }
+
   .kk-padding-s\@l {
     padding: 0.5rem !important;
   }
 
-  .kk-padding\@l,
-.kk-padding-m\@l {
+  .kk-padding\@l, .kk-padding-m\@l {
     padding: 1rem !important;
   }
 
@@ -780,6 +796,10 @@ div.kk-align-bottom {
 
   .kk-padding-leftl\@l {
     padding: 1rem 1rem 1rem 2rem !important;
+  }
+
+  .kk-padding-rm\@l {
+    padding: 0 !important;
   }
 }
 /* Margin. */

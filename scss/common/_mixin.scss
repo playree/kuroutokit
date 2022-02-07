@@ -1,0 +1,19 @@
+@use "./variables" as v;
+// Mixin definition.
+
+// @s @m @l のメディアクエリ
+@mixin min-width($size) {
+  $w : v.$min-width-s;
+  @if $size == \@m {
+    $w : v.$min-width-m;
+  } @else if $size == \@l {
+    $w : v.$min-width-l;
+  }
+  @if $size == null {
+    @content;
+  } @else {
+    @media (min-width: $w) {
+      @content;
+    }
+  }
+}
