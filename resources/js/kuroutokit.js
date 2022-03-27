@@ -276,6 +276,21 @@ class KuroutoKit {
       }
     });
   }
+  static wrapModalClickByName(element_name, args) {
+    let items = document.getElementsByName(element_name);
+    items.forEach( (item) => {
+      item.addEventListener("click", (event) => {
+        if (event.isTrusted) {
+          // clickをキャンセル
+          event.stopPropagation();
+          event.preventDefault();
+          args.yes_func = function() {event.target.click();}
+          delete args.no_func;
+          KuroutoKit.openModal(args);
+        }
+      });
+    });
+  }
   static onModalYes() {
     if ('yes_func' in kk_modalArgs) {
       kk_modalArgs.yes_func();

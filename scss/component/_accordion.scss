@@ -11,17 +11,14 @@
   margin-right: 4px;
   margin-top: auto;
   margin-bottom: auto;
-  -webkit-mask: var(--kk-svg-arrow);
   mask: var(--kk-svg-arrow);
   transform: rotate(90deg);
-  -webkit-transition: .3s;
   transition: .3s;
 }
 .kk-accordion[theme="icon"][closed]::before {
   transform: none;
 }
 .kk-accordion+* {
-  -webkit-transition: height .3s;
   transition: height .3s;
   overflow-y: hidden;
 }

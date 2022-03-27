@@ -896,7 +896,6 @@ div.kk-align-bottom {
   --kk-sidenav-select-bg-color: var(--kk-sidenav-menu-bg-color);
   --kk-sidenav-line-height: 26px;
 }
-
 .kk-sidenav-container[theme=panel] {
   --kk-sidenav-menu-bg-color: var(--kk-color-normal);
   --kk-sidenav-main-bg-color: var(--kk-color-dim);
@@ -918,7 +917,6 @@ div.kk-align-bottom {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 .kk-sidenav-menu::-webkit-scrollbar {
   display: none;
 }
@@ -1547,7 +1545,7 @@ div.kk-align-bottom {
   margin-top: auto;
   margin-bottom: auto;
   -webkit-mask: var(--kk-svg-arrow);
-  mask: var(--kk-svg-arrow);
+          mask: var(--kk-svg-arrow);
   transform: rotate(90deg);
   transition: 0.3s;
 }
@@ -1982,5 +1980,29 @@ div.kk-align-bottom {
   100% {
     transform: rotate(360deg);
   }
+}
+/* Modal. */
+.kk-modal {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.kk-modal > div {
+  max-width: 480px;
+  margin: auto;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin-top: 10%;
+}
+
+.kk-modal[closed] {
+  top: -100%;
 }
 /*# sourceMappingURL=kuroutokit.css.map */

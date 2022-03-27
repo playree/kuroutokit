@@ -1,4 +1,6 @@
+@use "../common/variables" as v;
 /* SideNav. */
+
 .kk-sidenav-container {
   --kk-sidenav-width: 280px;
   --kk-sidenav-menu-bg-color: var(--kk-color-dim);
@@ -6,14 +8,16 @@
   --kk-sidenav-icon: var(--kk-svg-menu);
   --kk-sidenav-select-bg-color: var(--kk-sidenav-menu-bg-color);
   --kk-sidenav-line-height: 26px;
+
+  &[theme="panel"] {
+    --kk-sidenav-menu-bg-color: var(--kk-color-normal);
+    --kk-sidenav-main-bg-color: var(--kk-color-dim);
+    --kk-sidenav-select-color: #88f;
+    --kk-sidenav-select-bg-color: var(--kk-color-select);
+    --kk-sidenav-line-height: 26px;
+  }
 }
-.kk-sidenav-container[theme="panel"] {
-  --kk-sidenav-menu-bg-color: var(--kk-color-normal);
-  --kk-sidenav-main-bg-color: var(--kk-color-dim);
-  --kk-sidenav-select-color: #88f;
-  --kk-sidenav-select-bg-color: var(--kk-color-select);
-  --kk-sidenav-line-height: 26px;
-}
+
 .kk-sidenav-menu {
   position: fixed;
   top: 0;
@@ -21,16 +25,17 @@
   left: 0;
   width: var(--kk-sidenav-width);
   background-color: var(--kk-sidenav-menu-bg-color);
-  z-index: 99;
-  -webkit-transition: left .3s;
+  z-index: 99;;
   transition: left .3s;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
-.kk-sidenav-menu::-webkit-scrollbar {
-  display: none;
-}
+
 .kk-sidenav-main {
   position: fixed;
   display: block;
@@ -40,7 +45,6 @@
   left: var(--kk-sidenav-width);
   background-color: var(--kk-sidenav-main-bg-color);
   overflow: auto;
-  -webkit-transition: left .3s;
   transition: left .3s;
 }
 .kk-sidenav-menu[shadow] {
