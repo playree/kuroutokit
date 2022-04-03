@@ -5,7 +5,7 @@
   typeof define === 'function' && define.amd ? define('kuroutokit', factory) :
   (global = global || self, global.KuroutoKit = factory());
 }(this, (function () { 'use strict';
-  document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
     loaded();
   });
 
