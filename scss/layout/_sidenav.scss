@@ -112,7 +112,7 @@
   border-bottom: none;
 }
 .kk-sidenav-menu>ul a {
-  color: unset;
+  color: var(--kk-font-color-mute);
   text-decoration: unset;
   display: block;
   outline: none;
@@ -120,6 +120,7 @@
   -moz-appearance: none;
 }
 .kk-sidenav-menu>ul a:hover {
+  color: var(--kk-font-color-base);
   text-decoration: unset;
   background:linear-gradient(transparent 90%, #f8f8f8 0%);
 }
