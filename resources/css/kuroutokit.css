@@ -317,6 +317,15 @@ div.kk-align-bottom {
   margin-left: calc(5px + 0.3em);
 }
 
+/* flex */
+.kk-flex {
+  display: flex;
+}
+
+.kk-iflex {
+  display: inline-flex;
+}
+
 /* Container. */
 .kk-container {
   margin-left: auto;
@@ -2005,5 +2014,6 @@ div.kk-align-bottom {
 
 .kk-modal[closed] {
   top: -100%;
+  opacity: 0;
 }
 /*# sourceMappingURL=kuroutokit.css.map */

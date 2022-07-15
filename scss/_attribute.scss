@@ -161,3 +161,11 @@ div.kk-align-bottom {
   left: 100%;
   margin-left: calc(5px + 0.3em);
 }
+
+/* flex */
+.kk-flex {
+  display: flex;
+}
+.kk-iflex {
+  display: inline-flex;
+}
