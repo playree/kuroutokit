@@ -47,12 +47,25 @@
   &lt;button id=&quot;button1&quot; class=&quot;kk-button kk-margin-top&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
 &lt;/div&gt;</code></pre>
     <div grid-col>
-      <div class="kk-col6@m kk-col12">
+      <div class="kk-col6@m kk-col12" cell>
         <div class="kk-accordion kk-font-bold" theme="icon">Accordion</div>
         <div id="view">
           <div class="kk-margin-top">↑をクリックすることで表示を隠すことができます。</div>
           <input id="input1" class="kk-input kk-margin-top" type="text" value="INPUT" placeholder="Input">
           <button id="button1" class="kk-button kk-margin-top" type="submit">Button</button>
+        </div>
+      </div>
+      <div class="kk-col6 kk-hidden@m"></div>
+      <div class="kk-col6@m kk-col12" cell>
+        <div class="kk-accordion kk-font-bold" theme="icon">Accordion親</div>
+        <div par@s>
+          <div class="kk-accordion kk-font-bold" theme="icon">Accordion子</div>
+          <div par@s>
+            <div class="kk-accordion kk-font-bold" theme="icon">Accordion孫</div>
+            <div par@s>
+              入れ子
+            </div>
+          </div>
         </div>
       </div>
     </div>

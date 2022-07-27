@@ -36,6 +36,31 @@ function _initTab() {
   });
 }
 
+function _initAccordion() {
+  [].forEach.call(document.getElementsByClassName('kk-accordion'), (el) => {
+    if(!el.hasAttribute('closed')) {
+      const ac = el.nextElementSibling;
+      ac.style.height = ac.scrollHeight + 'px';
+    }
+  });
+}
+
+function _resizeAccordion(target, addHight) {
+  const parent = target.parentElement;
+  if (parent) {
+    const previous = parent.previousElementSibling;
+    if (previous) {
+      if(previous.classList.contains('kk-accordion')) {
+        if(!previous.hasAttribute('closed')) {
+          parent.style.height = (parent.scrollHeight + addHight) + 'px';
+          console.log(parent.scrollHeight);
+          _resizeAccordion(parent, addHight);
+        }
+      }
+    }
+  }
+}
+
 class KuroutoKit {
   static initAccordion() {
     if(kk_initAccordion) return;
@@ -48,18 +73,16 @@ class KuroutoKit {
         if(event.target.hasAttribute('closed')) {
           ac.style.height = ac.scrollHeight + 'px';
           event.target.removeAttribute('closed');
+          _resizeAccordion(ac, ac.scrollHeight);
         } else {
           ac.style.height = 0;
           event.target.setAttribute('closed', '');
         }
       }
     }, false);
-    [].forEach.call(document.getElementsByClassName('kk-accordion'), (el) => {
-      if(!el.hasAttribute('closed')) {
-        const ac = el.nextElementSibling;
-        ac.style.height = ac.scrollHeight + 'px';
-      }
-    });
+
+    // Accordion Init
+    _initAccordion();
   }
 
   static convUnitNotation(num) {
