@@ -52,9 +52,8 @@ function _resizeAccordion(target, addHight) {
     if (previous) {
       if(previous.classList.contains('kk-accordion')) {
         if(!previous.hasAttribute('closed')) {
-          parent.style.height = (parent.scrollHeight + addHight) + 'px';
-          console.log(parent.scrollHeight);
           _resizeAccordion(parent, addHight);
+          parent.style.height = (parent.scrollHeight + addHight) + 'px';
         }
       }
     }
@@ -71,12 +70,13 @@ class KuroutoKit {
       if(event.target.classList.contains('kk-accordion')) {
         const ac = event.target.nextElementSibling;
         if(event.target.hasAttribute('closed')) {
+          _resizeAccordion(ac, ac.scrollHeight);
           ac.style.height = ac.scrollHeight + 'px';
           event.target.removeAttribute('closed');
-          _resizeAccordion(ac, ac.scrollHeight);
         } else {
           ac.style.height = 0;
           event.target.setAttribute('closed', '');
+          _resizeAccordion(ac, ac.scrollHeight * -1);
         }
       }
     }, false);
