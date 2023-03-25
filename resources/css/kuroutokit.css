@@ -113,11 +113,6 @@ code {
   padding: 4px 4px;
 }
 
-svg {
-  fill: currentColor;
-  stroke: currentColor;
-}
-
 /* Icon. */
 .material-icons {
   font-size: 22px;
@@ -436,47 +431,36 @@ div.kk-align-bottom {
   .kk-col1\@s {
     grid-column: span 1;
   }
-
   .kk-col2\@s {
     grid-column: span 2;
   }
-
   .kk-col3\@s {
     grid-column: span 3;
   }
-
   .kk-col4\@s {
     grid-column: span 4;
   }
-
   .kk-col5\@s {
     grid-column: span 5;
   }
-
   .kk-col6\@s {
     grid-column: span 6;
   }
-
   .kk-col7\@s {
     grid-column: span 7;
   }
-
   .kk-col8\@s {
     grid-column: span 8;
   }
-
   .kk-col9\@s {
     grid-column: span 9;
   }
-
   .kk-col10\@s {
     grid-column: span 10;
   }
-
   .kk-col11\@s {
     grid-column: span 11;
   }
-
   .kk-col12\@s {
     grid-column: span 12;
   }
@@ -485,47 +469,36 @@ div.kk-align-bottom {
   .kk-col1\@m {
     grid-column: span 1;
   }
-
   .kk-col2\@m {
     grid-column: span 2;
   }
-
   .kk-col3\@m {
     grid-column: span 3;
   }
-
   .kk-col4\@m {
     grid-column: span 4;
   }
-
   .kk-col5\@m {
     grid-column: span 5;
   }
-
   .kk-col6\@m {
     grid-column: span 6;
   }
-
   .kk-col7\@m {
     grid-column: span 7;
   }
-
   .kk-col8\@m {
     grid-column: span 8;
   }
-
   .kk-col9\@m {
     grid-column: span 9;
   }
-
   .kk-col10\@m {
     grid-column: span 10;
   }
-
   .kk-col11\@m {
     grid-column: span 11;
   }
-
   .kk-col12\@m {
     grid-column: span 12;
   }
@@ -534,47 +507,36 @@ div.kk-align-bottom {
   .kk-col1\@l {
     grid-column: span 1;
   }
-
   .kk-col2\@l {
     grid-column: span 2;
   }
-
   .kk-col3\@l {
     grid-column: span 3;
   }
-
   .kk-col4\@l {
     grid-column: span 4;
   }
-
   .kk-col5\@l {
     grid-column: span 5;
   }
-
   .kk-col6\@l {
     grid-column: span 6;
   }
-
   .kk-col7\@l {
     grid-column: span 7;
   }
-
   .kk-col8\@l {
     grid-column: span 8;
   }
-
   .kk-col9\@l {
     grid-column: span 9;
   }
-
   .kk-col10\@l {
     grid-column: span 10;
   }
-
   .kk-col11\@l {
     grid-column: span 11;
   }
-
   .kk-col12\@l {
     grid-column: span 12;
   }
@@ -583,47 +545,36 @@ div.kk-align-bottom {
   .kk-col1\@xl {
     grid-column: span 1;
   }
-
   .kk-col2\@xl {
     grid-column: span 2;
   }
-
   .kk-col3\@xl {
     grid-column: span 3;
   }
-
   .kk-col4\@xl {
     grid-column: span 4;
   }
-
   .kk-col5\@xl {
     grid-column: span 5;
   }
-
   .kk-col6\@xl {
     grid-column: span 6;
   }
-
   .kk-col7\@xl {
     grid-column: span 7;
   }
-
   .kk-col8\@xl {
     grid-column: span 8;
   }
-
   .kk-col9\@xl {
     grid-column: span 9;
   }
-
   .kk-col10\@xl {
     grid-column: span 10;
   }
-
   .kk-col11\@xl {
     grid-column: span 11;
   }
-
   .kk-col12\@xl {
     grid-column: span 12;
   }
@@ -740,23 +691,18 @@ div.kk-align-bottom {
   .kk-padding-ss\@s {
     padding: 0.25rem !important;
   }
-
   .kk-padding-s\@s {
     padding: 0.5rem !important;
   }
-
   .kk-padding\@s, .kk-padding-m\@s {
     padding: 1rem !important;
   }
-
   .kk-padding-l\@s {
     padding: 2rem !important;
   }
-
   .kk-padding-leftl\@s {
     padding: 1rem 1rem 1rem 2rem !important;
   }
-
   .kk-padding-rm\@s {
     padding: 0 !important;
   }
@@ -765,23 +711,18 @@ div.kk-align-bottom {
   .kk-padding-ss\@m {
     padding: 0.25rem !important;
   }
-
   .kk-padding-s\@m {
     padding: 0.5rem !important;
   }
-
   .kk-padding\@m, .kk-padding-m\@m {
     padding: 1rem !important;
   }
-
   .kk-padding-l\@m {
     padding: 2rem !important;
   }
-
   .kk-padding-leftl\@m {
     padding: 1rem 1rem 1rem 2rem !important;
   }
-
   .kk-padding-rm\@m {
     padding: 0 !important;
   }
@@ -790,23 +731,18 @@ div.kk-align-bottom {
   .kk-padding-ss\@l {
     padding: 0.25rem !important;
   }
-
   .kk-padding-s\@l {
     padding: 0.5rem !important;
   }
-
   .kk-padding\@l, .kk-padding-m\@l {
     padding: 1rem !important;
   }
-
   .kk-padding-l\@l {
     padding: 2rem !important;
   }
-
   .kk-padding-leftl\@l {
     padding: 1rem 1rem 1rem 2rem !important;
   }
-
   .kk-padding-rm\@l {
     padding: 0 !important;
   }
@@ -950,15 +886,12 @@ div.kk-align-bottom {
   .kk-sidenav-menu {
     left: calc(-1 * var(--kk-sidenav-width));
   }
-
   .kk-sidenav-menu:hover {
     left: 0;
   }
-
   .kk-sidenav-menu[shadow]:not(:hover) {
     box-shadow: unset;
   }
-
   .kk-sidenav-menu::after {
     position: fixed;
     top: 4px;
@@ -973,11 +906,9 @@ div.kk-align-bottom {
     opacity: 0.8;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   }
-
   .kk-sidenav-menu:hover:after {
     opacity: 0;
   }
-
   .kk-sidenav-main {
     left: 0;
   }
@@ -1116,10 +1047,6 @@ div.kk-align-bottom {
 }
 
 .kk-input::-moz-placeholder, .kk-textarea::-moz-placeholder {
-  color: var(--kk-font-color-superlight);
-}
-
-.kk-input:-ms-input-placeholder, .kk-textarea:-ms-input-placeholder {
   color: var(--kk-font-color-superlight);
 }
 
@@ -1993,7 +1920,7 @@ div.kk-align-bottom {
 }
 /* Modal. */
 .kk-modal {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
